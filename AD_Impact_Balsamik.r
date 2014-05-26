@@ -1,5 +1,71 @@
 
-Pre_Avant_Apres<-function(){
+
+pre_lm_diff<-function(){
+  #init
+  data <- read.csv("balsamik//tinyData_visit_gain2.csv",header=TRUE)
+  print (head(data))
+  data$Heure[data$Heure==0]<-24
+  nms <- c(4,5,9,11,13) 
+  data[,nms]<- lapply(data[,nms], as.factor) 
+  #data$Heure <- as.factor(data$Heure)
+ 
+  Visite.gain <- data$Apres.Visites - data$Avant.Visites
+
+  #data$Heure <- as.factor(data$Heure)
+  FulldataSize <- nrow(data)
+  index<-1:FulldataSize
+  traningSize <- as.integer(0.9 * FulldataSize)
+  subdata <- data.frame(Visite.gain,data[1:FulldataSize,c(-1,-2,-3)])
+  #print (head(subdata))
+  traindata <- subdata[1:traningSize,]
+  
+  lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
+  #lm_model_pow2 <- lm(Visite.gain~.^2,data =traindata)
+  #lm_model_pow3 <- lm(Visite.gain~.^3,data =traindata)
+  print (summary(lm_model_pow1))
+  #print (summary(lm_model_pow2))
+  #print (summary(lm_model_pow3))
+  print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
+  predictAndPlot(index,subdata,lm_model_pow1,traningSize,FulldataSize)
+}
+predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
+  
+  test_data <- subdata[,c(-1)]
+  pre <-predict(lm_model,test_data)
+  originY <- subdata[,1]
+  plot(index,originY,type = 'n',col='red',xlab='date',ylab='sessions')
+  points(index,originY,col="red",lwd=2)
+  points(index[traningSize:FulldataSize],pre[traningSize:FulldataSize],col="blue",lwd=2)
+  points(index[1:traningSize],pre[1:traningSize],col="black",lwd=2)
+  
+}
+getTidyData <- function(){
+  data <- read.csv("balsamik//predict_visit.csv",header=TRUE)
+  #   First we get a list of all unique classes:
+  #   lname <- c("Chaine","Version","TAv","EmAv","TAp","EmAp")
+  #   for (i in 1:6){
+  #     data <- mapString(data,lname[i])
+  #   }
+  data$Date <- as.Date(data$Date)
+  weekday <- format(data$Date,'%w')
+  nthweek <- format(data$Date,'%W')
+  month <- format(data$Date,'%m')
+  D3<-data.frame(data,weekday,nthweek,month)
+  D3$GRP<- as.numeric(gsub(",",".",D3$GRP))
+  D3$BudgetNet<- as.numeric(gsub(",",".",D3$BudgetNet))
+  #visits_gain <- D3$Apres.Visites - D3$Avant.Visites
+  #D3<-data.frame(D3,visits_gain)
+  D3 <- D3[D3$Isole == 1,]
+  write.csv(D3[,c(1,11,12,2,6:9,17:19)], "balsamik//tinyData_visit_gain.csv", row.names=FALSE)
+  D3 <-add2features()
+  return (D3)
+}
+pre_lm_diff()
+
+
+
+
+Pre_Avant_Apres_glm_poisson<-function(){
   library(statmod)
   #init
   data <- read.csv("balsamik//tinyData_visit_gain2.csv",header=TRUE)
@@ -49,7 +115,27 @@ Pre_Avant_Apres<-function(){
   Plot_Avant_Apres(index,pre,originY,traningSize,FulldataSize)
 }
 
-
+# Pre_cbind_Avant_Apres<-function(){
+#   library(statmod)
+#   data <- read.csv("balsamik//tinyData_visit_gain2.csv",header=TRUE)
+#   data <- data[,-13]
+#   FulldataSize <- nrow(data)
+#   index<-1:FulldataSize
+#   traningSize <- as.integer(0.8 * FulldataSize)
+#   subdata <- data[1:FulldataSize,c(-1)]
+#   traindata <- subdata[1:traningSize,]
+#   
+#   glm_model <- glm(cbind(Avant.Visites) ~ .,data=traindata,family = poisson)
+#   
+#   print (summary(glm_model))
+#   test_data <- subdata[,c(-1,-2)]
+#   pre <-predict(glm_model,test_data,type = "response")
+#   origin_avant <- subdata[,1]
+#   origin_apres <- subdata[,2]
+#   originY<- origin_apres - origin_avant
+#   return (pre)
+# }
+# Pre_cbind_Avant_Apres();
 
 Plot_Avant_Apres<-function(index,pre,originY,traningSize,FulldataSize){
  
@@ -65,22 +151,12 @@ Plot_Avant_Apres<-function(index,pre,originY,traningSize,FulldataSize){
   #          lty=c(1,1,1),                    # Line type  
   #          lwd=c(1,1,1),                    # Line width  
   #          title="Time series")  
-  
+
 }
 
 
 
-predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
-  
-  test_data <- subdata[,c(-1)]
-  pre <-predict(lm_model,test_data)
-  originY <- subdata[,1]
-  plot(index,originY,type = 'n',col='red',xlab='date',ylab='sessions')
-  points(index,originY,col="red",lwd=2)
-  points(index[traningSize:FulldataSize],pre[traningSize:FulldataSize],col="blue",lwd=2)
-  points(index[1:traningSize],pre[1:traningSize],col="black",lwd=2)
-  
-}
+
 
 
 add2features <-function(){
@@ -93,28 +169,7 @@ add2features <-function(){
   return (D3)
 }
 
-getTidyData <- function(){
-  data <- read.csv("balsamik//predict_visit.csv",header=TRUE)
-#   First we get a list of all unique classes:
-#   lname <- c("Chaine","Version","TAv","EmAv","TAp","EmAp")
-#   for (i in 1:6){
-#     data <- mapString(data,lname[i])
-#   }
-  data$Date <- as.Date(data$Date)
-  weekday <- as.numeric(format(data$Date,'%w'))
-  nthweek <- as.numeric(format(data$Date,'%W'))
-  month <- as.numeric(format(data$Date,'%m'))
-  D3<-data.frame(data,weekday,nthweek,month)
-  D3$GRP<- as.numeric(gsub(",",".",D3$GRP))
-  D3$BudgetNet<- as.numeric(gsub(",",".",D3$BudgetNet))
-  #visits_gain <- D3$Apres.Visites - D3$Avant.Visites
-  #D3<-data.frame(D3,visits_gain)
-  D3 <- D3[D3$Isole == 1,]
-  D3$Heure <- as.factor(D3$Heure)
-  write.csv(D3[,c(1,11,12,2,6:9,17:19)], "balsamik//tinyData_visit_gain.csv", row.names=FALSE)
-  D3 <-add2features()
-  return (D3)
-}
+
 
 mapString<- function(data,s){
   print (head(data[,c(s)]))
@@ -132,4 +187,4 @@ mapString<- function(data,s){
   return (data)
 }
 
-Pre_Avant_Apres();
+
