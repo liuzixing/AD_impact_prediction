@@ -4,29 +4,43 @@ pre_lm_diff<-function(){
   #init
   data <- read.csv("balsamik//tinyData_visit_gain2.csv",header=TRUE)
   print (head(data))
+  data <- data[sample(nrow(data), nrow(data)),]
+  print (head(data))
   data$Heure[data$Heure==0]<-24
-  nms <- c(4,5,9,11,13) 
-  data[,nms]<- lapply(data[,nms], as.factor) 
-  #data$Heure <- as.factor(data$Heure)
- 
-  Visite.gain <- data$Apres.Visites - data$Avant.Visites
+  #convert to factors 
+  cf<- c("Chaine" ,"weekday" , "month", "TAv_TAp" ,"DAYPART"  , "festival","weekday_weekend","Heure",  "TAv", "Format")
+  data[,cf]<- lapply(data[,cf], as.factor) 
 
-  #data$Heure <- as.factor(data$Heure)
+  #select features
+  # ,"energy.consumption"
+  sf <- c("Date","Apres.Visites","Avant.Visites","Chaine", "Heure","TAv","festival","GRP",
+          "BudgetNet", "nthweek","Format" ,"weekday" , "month",
+          "TAv_TAp" ,"DAYPART","weekday_weekend")
+  data <- data[,sf]
+  
+  Visite.gain <- data$Apres.Visites - data$Avant.Visites
   FulldataSize <- nrow(data)
   index<-1:FulldataSize
-  traningSize <- as.integer(0.9 * FulldataSize)
+  traningSize <- as.integer(0.8 * FulldataSize)
   subdata <- data.frame(Visite.gain,data[1:FulldataSize,c(-1,-2,-3)])
   #print (head(subdata))
   traindata <- subdata[1:traningSize,]
   
   lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
-  #lm_model_pow2 <- lm(Visite.gain~.^2,data =traindata)
+  lm_model_pow2 <- lm(Visite.gain~.^2,data =traindata)
   #lm_model_pow3 <- lm(Visite.gain~.^3,data =traindata)
-  print (summary(lm_model_pow1))
-  #print (summary(lm_model_pow2))
+  library(DAAG)
+  library(MASS)
+  step <- stepAIC(lm_model_pow2, direction="both")
+  sink(file="report//balsamik5.txt") 
+  
+  print(step$anova) # display results
+ # print (summary(lm_model_pow1))
+  print (summary(lm_model_pow2))
+  sink(NULL) 
   #print (summary(lm_model_pow3))
-  print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
-  predictAndPlot(index,subdata,lm_model_pow1,traningSize,FulldataSize)
+  print (anova(lm_model_pow1,lm_model_pow2,test = "Chisq"))
+  predictAndPlot(index,subdata,lm_model_pow2,traningSize,FulldataSize)
 }
 predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
   
@@ -50,19 +64,22 @@ getTidyData <- function(){
   weekday <- format(data$Date,'%w')
   nthweek <- format(data$Date,'%W')
   month <- format(data$Date,'%m')
-  D3<-data.frame(data,weekday,nthweek,month)
+  TAv_TAp <- as.integer(as.character(data$TAv) == as.character(data$TAp))
+  D3<-data.frame(data,weekday,nthweek,month,TAv_TAp)
   D3$GRP<- as.numeric(gsub(",",".",D3$GRP))
   D3$BudgetNet<- as.numeric(gsub(",",".",D3$BudgetNet))
+  
   #visits_gain <- D3$Apres.Visites - D3$Avant.Visites
   #D3<-data.frame(D3,visits_gain)
-  D3 <- D3[D3$Isole == 1,]
-  write.csv(D3[,c(1,11,12,2,6:9,17:19)], "balsamik//tinyData_visit_gain.csv", row.names=FALSE)
+  #D3 <- D3[D3$Isole == 1,]
+  
+  s <- c("Date","Avant.Visites","Apres.Visites","Chaine","Heure","GRP","BudgetNet","Format","weekday","nthweek","month","TAv_TAp","TAv","DAYPART","weekday_weekend")
+  write.csv(D3[, s], "balsamik//tinyData_visit_gain.csv", row.names=FALSE)
   D3 <-add2features()
   return (D3)
 }
 pre_lm_diff()
-
-
+#ddd<-getTidyData()
 
 
 Pre_Avant_Apres_glm_poisson<-function(){
@@ -165,7 +182,7 @@ add2features <-function(){
   fea <- read.csv("balsamik//energyx.csv",header=FALSE)
   names(fea) <- c("Date","energy.consumption","festival")
   D3<-merge(data,fea,by = "Date")
-  write.csv(D3, "balsamik//tinyData_visit_gain2.csv", row.names=FALSE)
+  write.csv(D3, "balsamik//tinyData.csv", row.names=FALSE)
   return (D3)
 }
 

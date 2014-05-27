@@ -3,7 +3,7 @@ predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
   test_data <- subdata[,c(-1)]
   
   pre <-predict(lm_model,test_data)
-  
+
   originY <- subdata[,1]
   
   plot(index,originY,type = 'l',col='red',xlab='date',ylab='sessions')
@@ -18,7 +18,7 @@ predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
 #          lty=c(1,1,1),                    # Line type  
 #          lwd=c(1,1,1),                    # Line width  
 #          title="Time series")  
-
+  return (pre)
 }
 
 predictAndPlotSpecial<-function(index,subdata,lm_model,traningSize,FulldataSize){

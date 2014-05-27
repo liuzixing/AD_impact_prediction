@@ -1,18 +1,27 @@
-traningSize <- 500
-FulldataSize <- 607
 data <- read.csv("TripAdvisor//tidyData.csv",header=TRUE)
+FulldataSize <- nrow(data)
+traningSize <- as.integer(0.8 * FulldataSize)
+
+cf<- c( "weekday" , "festival","month")
+data[,cf]<- lapply(data[,cf], as.factor)
+
+sf <- c("date","sessions","festival",
+         "nthweek","weekday" , "month","index")
+data <- data[,sf]
+
 subdata <- data[,c(-1)]
 print (names(subdata))
 index<-factor(data[,1])
-names (subdata) <- c("y","x1","x2","x3","x4","x5","x6")
+#names (subdata) <- c("y","x1","x2","x3","x4","x5","x6")
 traindata <- subdata[1:traningSize,]
 
 
-the_best_model <- lm(y~poly(x1,2)+poly(x2,10)+poly(x3,5)+poly(x4,21)+poly(x5,3)+x6,data=traindata, x = TRUE)
 
-linear_model <- lm(y~x1+x2+x3+x4+x5+x6,data=traindata)
+#the_best_model <- lm(y~poly(x1,2)+poly(x2,10)+poly(x3,5)+poly(x4,21)+poly(x5,3)+x6,data=traindata, x = TRUE)
 
-testing_model <- lm(y~I(x1^2)+I(x2^2)+I(x2^5)+I(x2^7)+I(x2^10)+x3+I(x3^4)+poly(x4,21)+x6,data=traindata)
+linear_model <- lm(sessions~(weekday+month+festival)^2+poly(nthweek,21)+index,data=traindata)
+
+#testing_model <- lm(y~I(x1^2)+I(x2^2)+I(x2^5)+I(x2^7)+I(x2^10)+x3+I(x3^4)+poly(x4,21)+x6,data=traindata)
 
 # library(MASS)
 # step <- stepAIC(the_best_model, direction="both")
@@ -20,9 +29,9 @@ testing_model <- lm(y~I(x1^2)+I(x2^2)+I(x2^5)+I(x2^7)+I(x2^10)+x3+I(x3^4)+poly(x
 # step2<- stepAIC(linear_model, direction="both")
 # step2$anova # display results
 
-source('C:/Users/zixing.liu/Desktop/regression/predictAndPlot.r')
-predictAndPlot(index,subdata,testing_model,traningSize,FulldataSize)
-print(summary(the_best_model))
+source('C:/Users/zixing.liu/Desktop/AD_impact_prediction/predictAndPlot.r')
+print(predictAndPlot(index,subdata,linear_model,traningSize,FulldataSize))
+print(summary(linear_model))
 
 # x<-the_best_model$x
 # outs <- leaps(x, traindata[,1], int = FALSE, strictly.compatible = FALSE)

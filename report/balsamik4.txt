@@ -1,0 +1,288 @@
+
+Call:
+lm(formula = Visite.gain ~ .^2, data = traindata)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1220.25   -69.31    -2.45    58.84  2296.23 
+
+Coefficients: (36 not defined because of singularities)
+                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            -7.258e+03  3.450e+03  -2.104 0.035562 *  
+ChaineParisPremiere                     2.690e+02  1.216e+03   0.221 0.824911    
+ChainePuissanceTNT                     -5.374e+02  6.687e+02  -0.804 0.421723    
+ChaineSerieClub                         3.790e+01  1.105e+03   0.034 0.972651    
+ChaineTeva                              3.676e+02  8.037e+02   0.457 0.647472    
+GRP                                     4.269e+02  2.600e+02   1.642 0.100780    
+BudgetNet                              -2.845e-01  4.282e-01  -0.664 0.506574    
+nthweek                                 1.599e+02  2.905e+02   0.550 0.582111    
+Format                                 -1.451e+01  4.977e+01  -0.291 0.770732    
+weekday1                               -4.748e+01  1.339e+03  -0.035 0.971724    
+weekday2                                4.836e+02  1.594e+03   0.303 0.761720    
+weekday3                                1.701e+01  1.479e+03   0.012 0.990826    
+weekday4                                5.674e+02  1.426e+03   0.398 0.690879    
+weekday5                               -4.531e+01  1.281e+03  -0.035 0.971795    
+weekday6                                1.098e+03  1.433e+03   0.767 0.443401    
+month2                                  5.195e+03  3.241e+03   1.603 0.109135    
+month3                                  3.170e+03  3.673e+03   0.863 0.388157    
+month4                                  3.304e+03  3.944e+03   0.838 0.402276    
+month5                                  8.382e+03  3.642e+03   2.302 0.021508 *  
+TAv_TAp1                               -3.020e+01  4.931e+02  -0.061 0.951170    
+DAYPARTDAY                             -2.525e+02  5.822e+02  -0.434 0.664613    
+DAYPARTNIGHT                           -9.132e+02  1.170e+03  -0.780 0.435234    
+DAYPARTPEAK                            -7.481e+02  7.751e+02  -0.965 0.334635    
+weekday_weekendWE                              NA         NA      NA       NA    
+energy.consumption                      2.640e-03  1.210e-03   2.182 0.029293 *  
+ChaineParisPremiere:GRP                 5.949e+00  2.832e+02   0.021 0.983244    
+ChainePuissanceTNT:GRP                 -9.762e+01  5.933e+01  -1.645 0.100130    
+ChaineSerieClub:GRP                     2.198e+01  4.585e+02   0.048 0.961764    
+ChaineTeva:GRP                          3.947e+02  2.414e+02   1.635 0.102310    
+ChaineParisPremiere:BudgetNet          -3.318e-01  5.608e-01  -0.592 0.554144    
+ChainePuissanceTNT:BudgetNet            1.681e-01  9.988e-02   1.683 0.092570 .  
+ChaineSerieClub:BudgetNet              -2.855e-01  1.178e+00  -0.242 0.808522    
+ChaineTeva:BudgetNet                   -4.327e-01  2.630e-01  -1.645 0.100116    
+ChaineParisPremiere:nthweek             1.085e+02  4.520e+01   2.401 0.016481 *  
+ChainePuissanceTNT:nthweek              2.794e+01  3.481e+01   0.803 0.422327    
+ChaineSerieClub:nthweek                 1.038e+02  3.985e+01   2.605 0.009288 ** 
+ChaineTeva:nthweek                      6.807e+01  3.179e+01   2.141 0.032426 *  
+ChaineParisPremiere:Format             -8.058e+00  7.013e+00  -1.149 0.250749    
+ChainePuissanceTNT:Format               1.117e+00  6.932e+00   0.161 0.871981    
+ChaineSerieClub:Format                 -1.168e+01  6.032e+00  -1.936 0.053123 .  
+ChaineTeva:Format                      -3.214e+00  5.853e+00  -0.549 0.583019    
+ChaineParisPremiere:weekday1           -1.651e+02  1.956e+02  -0.844 0.398603    
+ChainePuissanceTNT:weekday1            -1.328e+02  1.232e+02  -1.078 0.281010    
+ChaineSerieClub:weekday1               -2.042e+02  1.693e+02  -1.206 0.227854    
+ChaineTeva:weekday1                    -2.089e+02  1.147e+02  -1.821 0.068858 .  
+ChaineParisPremiere:weekday2           -1.688e+02  2.229e+02  -0.757 0.448891    
+ChainePuissanceTNT:weekday2            -6.482e+01  1.244e+02  -0.521 0.602420    
+ChaineSerieClub:weekday2               -1.035e+02  1.971e+02  -0.525 0.599456    
+ChaineTeva:weekday2                    -1.288e+02  1.238e+02  -1.041 0.298072    
+ChaineParisPremiere:weekday3           -1.452e+02  2.302e+02  -0.631 0.528207    
+ChainePuissanceTNT:weekday3            -1.304e+02  1.269e+02  -1.027 0.304448    
+ChaineSerieClub:weekday3               -2.002e+02  2.053e+02  -0.975 0.329663    
+ChaineTeva:weekday3                    -1.865e+02  1.312e+02  -1.421 0.155519    
+ChaineParisPremiere:weekday4           -9.829e+01  2.120e+02  -0.464 0.643008    
+ChainePuissanceTNT:weekday4            -3.843e+01  1.170e+02  -0.328 0.742704    
+ChaineSerieClub:weekday4               -8.437e+01  1.909e+02  -0.442 0.658539    
+ChaineTeva:weekday4                    -8.627e+01  1.198e+02  -0.720 0.471530    
+ChaineParisPremiere:weekday5           -1.609e+02  1.987e+02  -0.810 0.418081    
+ChainePuissanceTNT:weekday5            -1.975e+01  1.162e+02  -0.170 0.865013    
+ChaineSerieClub:weekday5               -1.524e+02  1.758e+02  -0.867 0.386323    
+ChaineTeva:weekday5                    -1.024e+02  1.143e+02  -0.896 0.370660    
+ChaineParisPremiere:weekday6           -6.630e+01  1.273e+02  -0.521 0.602599    
+ChainePuissanceTNT:weekday6            -1.489e+02  1.099e+02  -1.356 0.175387    
+ChaineSerieClub:weekday6               -5.317e+01  1.171e+02  -0.454 0.649870    
+ChaineTeva:weekday6                    -1.314e+02  9.954e+01  -1.320 0.187037    
+ChaineParisPremiere:month2              9.050e+01  1.195e+02   0.757 0.449085    
+ChainePuissanceTNT:month2                      NA         NA      NA       NA    
+ChaineSerieClub:month2                  1.622e+02  1.073e+02   1.512 0.130845    
+ChaineTeva:month2                       1.875e+02  1.001e+02   1.873 0.061253 .  
+ChaineParisPremiere:month3                     NA         NA      NA       NA    
+ChainePuissanceTNT:month3                      NA         NA      NA       NA    
+ChaineSerieClub:month3                         NA         NA      NA       NA    
+ChaineTeva:month3                              NA         NA      NA       NA    
+ChaineParisPremiere:month4                     NA         NA      NA       NA    
+ChainePuissanceTNT:month4               2.530e+02  8.301e+02   0.305 0.760530    
+ChaineSerieClub:month4                         NA         NA      NA       NA    
+ChaineTeva:month4                              NA         NA      NA       NA    
+ChaineParisPremiere:month5                     NA         NA      NA       NA    
+ChainePuissanceTNT:month5                      NA         NA      NA       NA    
+ChaineSerieClub:month5                         NA         NA      NA       NA    
+ChaineTeva:month5                      -1.443e+03  8.287e+02  -1.742 0.081782 .  
+ChaineParisPremiere:TAv_TAp1           -2.492e+02  6.508e+01  -3.829 0.000134 ***
+ChainePuissanceTNT:TAv_TAp1            -7.879e+01  6.819e+01  -1.156 0.248058    
+ChaineSerieClub:TAv_TAp1               -2.281e+02  7.522e+01  -3.032 0.002472 ** 
+ChaineTeva:TAv_TAp1                    -1.679e+02  5.436e+01  -3.088 0.002058 ** 
+ChaineParisPremiere:DAYPARTDAY          5.165e+01  1.115e+02   0.463 0.643412    
+ChainePuissanceTNT:DAYPARTDAY           1.299e+02  9.008e+01   1.442 0.149457    
+ChaineSerieClub:DAYPARTDAY              6.069e+01  1.146e+02   0.530 0.596406    
+ChaineTeva:DAYPARTDAY                   7.563e+01  1.013e+02   0.746 0.455614    
+ChaineParisPremiere:DAYPARTNIGHT        3.574e+02  2.054e+02   1.740 0.082091 .  
+ChainePuissanceTNT:DAYPARTNIGHT         2.043e+02  1.830e+02   1.116 0.264446    
+ChaineSerieClub:DAYPARTNIGHT            3.425e+02  2.100e+02   1.631 0.103074    
+ChaineTeva:DAYPARTNIGHT                 3.971e+02  1.975e+02   2.010 0.044627 *  
+ChaineParisPremiere:DAYPARTPEAK         3.746e+02  1.646e+02   2.277 0.022967 *  
+ChainePuissanceTNT:DAYPARTPEAK          3.193e+02  1.340e+02   2.383 0.017295 *  
+ChaineSerieClub:DAYPARTPEAK             3.991e+02  1.647e+02   2.424 0.015498 *  
+ChaineTeva:DAYPARTPEAK                  3.533e+02  1.502e+02   2.353 0.018786 *  
+ChaineParisPremiere:weekday_weekendWE          NA         NA      NA       NA    
+ChainePuissanceTNT:weekday_weekendWE           NA         NA      NA       NA    
+ChaineSerieClub:weekday_weekendWE              NA         NA      NA       NA    
+ChaineTeva:weekday_weekendWE                   NA         NA      NA       NA    
+ChaineParisPremiere:energy.consumption -2.342e-04  3.812e-04  -0.614 0.539145    
+ChainePuissanceTNT:energy.consumption  -7.012e-05  3.395e-04  -0.207 0.836370    
+ChaineSerieClub:energy.consumption     -1.566e-04  3.431e-04  -0.456 0.648209    
+ChaineTeva:energy.consumption          -2.542e-04  2.406e-04  -1.057 0.290860    
+GRP:BudgetNet                          -1.313e-02  3.208e-03  -4.093 4.51e-05 ***
+GRP:nthweek                             1.218e+01  9.260e+00   1.315 0.188798    
+GRP:Format                              2.907e+00  1.826e+00   1.592 0.111685    
+GRP:weekday1                           -1.441e+02  4.113e+01  -3.503 0.000474 ***
+GRP:weekday2                           -9.126e+01  4.773e+01  -1.912 0.056109 .  
+GRP:weekday3                           -1.283e+02  4.806e+01  -2.670 0.007678 ** 
+GRP:weekday4                           -9.079e+01  4.570e+01  -1.987 0.047177 *  
+GRP:weekday5                           -3.683e+01  4.524e+01  -0.814 0.415655    
+GRP:weekday6                           -1.045e+02  3.752e+01  -2.784 0.005438 ** 
+GRP:month2                             -5.702e+01  3.152e+01  -1.809 0.070689 .  
+GRP:month3                             -2.190e+02  8.158e+01  -2.685 0.007349 ** 
+GRP:month4                             -2.710e+02  1.186e+02  -2.285 0.022481 *  
+GRP:month5                             -5.891e+02  2.894e+02  -2.035 0.042008 *  
+GRP:TAv_TAp1                            1.309e+01  1.817e+01   0.720 0.471563    
+GRP:DAYPARTDAY                          5.763e+01  3.089e+01   1.866 0.062281 .  
+GRP:DAYPARTNIGHT                        4.502e+00  4.062e+01   0.111 0.911773    
+GRP:DAYPARTPEAK                         7.020e+01  3.864e+01   1.817 0.069471 .  
+GRP:weekday_weekendWE                          NA         NA      NA       NA    
+GRP:energy.consumption                 -1.170e-04  8.427e-05  -1.389 0.165095    
+BudgetNet:nthweek                      -4.247e-02  1.397e-02  -3.041 0.002403 ** 
+BudgetNet:Format                        5.668e-04  2.632e-03   0.215 0.829534    
+BudgetNet:weekday1                      1.136e-01  7.085e-02   1.603 0.109142    
+BudgetNet:weekday2                     -1.620e-02  8.360e-02  -0.194 0.846391    
+BudgetNet:weekday3                      4.488e-02  8.173e-02   0.549 0.582980    
+BudgetNet:weekday4                     -1.828e-02  7.812e-02  -0.234 0.815007    
+BudgetNet:weekday5                     -1.845e-01  7.984e-02  -2.311 0.021003 *  
+BudgetNet:weekday6                     -4.752e-02  7.370e-02  -0.645 0.519223    
+BudgetNet:month2                        2.981e-02  3.880e-02   0.768 0.442527    
+BudgetNet:month3                        4.193e-01  1.334e-01   3.143 0.001708 ** 
+BudgetNet:month4                        5.846e-01  1.879e-01   3.111 0.001900 ** 
+BudgetNet:month5                        1.364e+00  4.871e-01   2.799 0.005193 ** 
+BudgetNet:TAv_TAp1                      1.751e-03  2.813e-02   0.062 0.950366    
+BudgetNet:DAYPARTDAY                   -1.474e-01  6.270e-02  -2.351 0.018864 *  
+BudgetNet:DAYPARTNIGHT                 -8.629e-03  7.324e-02  -0.118 0.906223    
+BudgetNet:DAYPARTPEAK                  -1.075e-01  6.821e-02  -1.576 0.115340    
+BudgetNet:weekday_weekendWE                    NA         NA      NA       NA    
+BudgetNet:energy.consumption            2.612e-07  1.413e-07   1.849 0.064746 .  
+nthweek:Format                         -8.046e-01  1.861e+00  -0.432 0.665581    
+nthweek:weekday1                        4.553e+01  4.366e+01   1.043 0.297205    
+nthweek:weekday2                        2.974e+01  4.636e+01   0.642 0.521288    
+nthweek:weekday3                        2.542e+01  4.616e+01   0.551 0.581969    
+nthweek:weekday4                       -3.980e+00  4.680e+01  -0.085 0.932241    
+nthweek:weekday5                       -1.038e+01  4.455e+01  -0.233 0.815783    
+nthweek:weekday6                        4.092e-01  3.959e+01   0.010 0.991754    
+nthweek:month2                          9.516e+01  6.484e+01   1.468 0.142419    
+nthweek:month3                          1.610e+02  9.298e+01   1.732 0.083505 .  
+nthweek:month4                          1.171e+02  1.050e+02   1.115 0.265087    
+nthweek:month5                         -2.306e+02  3.148e+02  -0.733 0.463954    
+nthweek:TAv_TAp1                       -9.136e+00  1.885e+01  -0.485 0.627945    
+nthweek:DAYPARTDAY                      2.594e+01  2.222e+01   1.167 0.243278    
+nthweek:DAYPARTNIGHT                    2.372e+01  4.607e+01   0.515 0.606658    
+nthweek:DAYPARTPEAK                    -7.680e+00  3.240e+01  -0.237 0.812646    
+nthweek:weekday_weekendWE                      NA         NA      NA       NA    
+nthweek:energy.consumption             -1.139e-04  9.095e-05  -1.252 0.210852    
+Format:weekday1                        -4.184e+00  8.298e+00  -0.504 0.614193    
+Format:weekday2                        -1.470e+01  9.339e+00  -1.574 0.115734    
+Format:weekday3                        -2.721e+00  9.452e+00  -0.288 0.773497    
+Format:weekday4                        -1.529e+01  8.699e+00  -1.758 0.079033 .  
+Format:weekday5                        -8.410e+00  8.203e+00  -1.025 0.305460    
+Format:weekday6                        -9.494e+00  6.166e+00  -1.540 0.123888    
+Format:month2                          -3.628e+00  5.861e+00  -0.619 0.536007    
+Format:month3                           7.321e+00  1.715e+01   0.427 0.669500    
+Format:month4                          -2.162e+00  2.373e+01  -0.091 0.927424    
+Format:month5                           3.213e+01  5.227e+01   0.615 0.538858    
+Format:TAv_TAp1                         6.046e+00  3.605e+00   1.677 0.093708 .  
+Format:DAYPARTDAY                       7.263e-01  4.548e+00   0.160 0.873155    
+Format:DAYPARTNIGHT                     2.875e+00  7.212e+00   0.399 0.690175    
+Format:DAYPARTPEAK                      9.343e-01  6.016e+00   0.155 0.876612    
+Format:weekday_weekendWE                       NA         NA      NA       NA    
+Format:energy.consumption               1.067e-05  1.574e-05   0.678 0.498182    
+weekday1:month2                         7.464e+02  4.928e+02   1.515 0.130069    
+weekday2:month2                         1.107e+03  6.475e+02   1.710 0.087513 .  
+weekday3:month2                         1.210e+03  6.673e+02   1.814 0.069925 .  
+weekday4:month2                         1.175e+03  6.130e+02   1.917 0.055485 .  
+weekday5:month2                         1.145e+03  5.858e+02   1.954 0.050923 .  
+weekday6:month2                         5.498e+02  2.366e+02   2.324 0.020259 *  
+weekday1:month3                         1.958e+02  6.054e+02   0.323 0.746466    
+weekday2:month3                         6.067e+02  7.809e+02   0.777 0.437310    
+weekday3:month3                         8.516e+02  7.716e+02   1.104 0.269898    
+weekday4:month3                         7.492e+02  7.118e+02   1.053 0.292734    
+weekday5:month3                         1.001e+03  6.965e+02   1.437 0.150861    
+weekday6:month3                         4.028e+02  3.536e+02   1.139 0.254880    
+weekday1:month4                         1.214e+02  7.085e+02   0.171 0.863945    
+weekday2:month4                         4.929e+02  8.943e+02   0.551 0.581573    
+weekday3:month4                         6.704e+02  8.711e+02   0.770 0.441679    
+weekday4:month4                         8.293e+02  8.144e+02   1.018 0.308752    
+weekday5:month4                         1.093e+03  8.083e+02   1.352 0.176691    
+weekday6:month4                         3.540e+02  4.576e+02   0.774 0.439236    
+weekday1:month5                        -5.138e+02  1.186e+03  -0.433 0.664915    
+weekday2:month5                        -5.804e+02  1.545e+03  -0.376 0.707230    
+weekday3:month5                        -2.213e+02  1.377e+03  -0.161 0.872343    
+weekday4:month5                        -9.991e+00  1.279e+03  -0.008 0.993770    
+weekday5:month5                         5.933e+02  1.270e+03   0.467 0.640552    
+weekday6:month5                        -7.418e+02  1.156e+03  -0.642 0.521205    
+weekday1:TAv_TAp1                       2.689e+01  7.689e+01   0.350 0.726640    
+weekday2:TAv_TAp1                      -5.943e+01  8.574e+01  -0.693 0.488375    
+weekday3:TAv_TAp1                       5.466e+01  8.460e+01   0.646 0.518316    
+weekday4:TAv_TAp1                      -6.885e+01  8.180e+01  -0.842 0.400087    
+weekday5:TAv_TAp1                      -5.531e+01  7.624e+01  -0.725 0.468317    
+weekday6:TAv_TAp1                      -3.226e+01  6.207e+01  -0.520 0.603352    
+weekday1:DAYPARTDAY                    -5.677e+01  8.959e+01  -0.634 0.526423    
+weekday2:DAYPARTDAY                    -5.840e+01  1.033e+02  -0.565 0.571963    
+weekday3:DAYPARTDAY                    -6.971e+01  1.060e+02  -0.658 0.510798    
+weekday4:DAYPARTDAY                    -4.481e+01  9.419e+01  -0.476 0.634326    
+weekday5:DAYPARTDAY                    -6.325e+01  9.422e+01  -0.671 0.502148    
+weekday6:DAYPARTDAY                    -8.057e+00  7.757e+01  -0.104 0.917289    
+weekday1:DAYPARTNIGHT                  -6.270e-01  1.832e+02  -0.003 0.997270    
+weekday2:DAYPARTNIGHT                   3.197e+01  1.914e+02   0.167 0.867406    
+weekday3:DAYPARTNIGHT                  -6.380e+01  2.094e+02  -0.305 0.760645    
+weekday4:DAYPARTNIGHT                  -5.631e+01  1.856e+02  -0.303 0.761641    
+weekday5:DAYPARTNIGHT                   2.568e+01  1.764e+02   0.146 0.884294    
+weekday6:DAYPARTNIGHT                  -9.207e+00  1.137e+02  -0.081 0.935468    
+weekday1:DAYPARTPEAK                    7.414e+01  1.215e+02   0.610 0.541800    
+weekday2:DAYPARTPEAK                   -8.587e+01  1.385e+02  -0.620 0.535454    
+weekday3:DAYPARTPEAK                   -5.368e+01  1.368e+02  -0.393 0.694739    
+weekday4:DAYPARTPEAK                    1.296e+02  1.330e+02   0.974 0.330046    
+weekday5:DAYPARTPEAK                    9.121e+01  1.265e+02   0.721 0.470956    
+weekday6:DAYPARTPEAK                   -6.529e+00  9.968e+01  -0.065 0.947790    
+weekday1:weekday_weekendWE                     NA         NA      NA       NA    
+weekday2:weekday_weekendWE                     NA         NA      NA       NA    
+weekday3:weekday_weekendWE                     NA         NA      NA       NA    
+weekday4:weekday_weekendWE                     NA         NA      NA       NA    
+weekday5:weekday_weekendWE                     NA         NA      NA       NA    
+weekday6:weekday_weekendWE                     NA         NA      NA       NA    
+weekday1:energy.consumption            -2.567e-04  3.666e-04  -0.700 0.484012    
+weekday2:energy.consumption            -4.222e-04  4.191e-04  -1.007 0.313950    
+weekday3:energy.consumption            -3.843e-04  3.672e-04  -1.047 0.295384    
+weekday4:energy.consumption            -4.148e-04  3.628e-04  -1.143 0.253131    
+weekday5:energy.consumption            -2.347e-04  3.787e-04  -0.620 0.535429    
+weekday6:energy.consumption            -4.677e-04  4.508e-04  -1.037 0.299714    
+month2:TAv_TAp1                        -4.931e+01  6.224e+01  -0.792 0.428357    
+month3:TAv_TAp1                        -9.369e+01  1.628e+02  -0.576 0.564986    
+month4:TAv_TAp1                        -1.697e+01  2.301e+02  -0.074 0.941198    
+month5:TAv_TAp1                         2.352e+02  5.214e+02   0.451 0.651959    
+month2:DAYPARTDAY                      -1.972e+02  7.607e+01  -2.593 0.009629 ** 
+month3:DAYPARTDAY                      -3.395e+02  2.012e+02  -1.688 0.091733 .  
+month4:DAYPARTDAY                      -4.276e+02  2.852e+02  -1.500 0.133969    
+month5:DAYPARTDAY                      -3.201e+02  6.324e+02  -0.506 0.612847    
+month2:DAYPARTNIGHT                    -4.188e+00  1.226e+02  -0.034 0.972744    
+month3:DAYPARTNIGHT                     2.471e+02  3.629e+02   0.681 0.496015    
+month4:DAYPARTNIGHT                     1.689e+02  4.791e+02   0.352 0.724539    
+month5:DAYPARTNIGHT                     1.575e+02  1.062e+03   0.148 0.882166    
+month2:DAYPARTPEAK                      4.139e+01  1.020e+02   0.406 0.685010    
+month3:DAYPARTPEAK                      4.648e+02  2.805e+02   1.657 0.097769 .  
+month4:DAYPARTPEAK                      4.573e+02  3.939e+02   1.161 0.245821    
+month5:DAYPARTPEAK                      4.633e+02  8.254e+02   0.561 0.574651    
+month2:weekday_weekendWE                       NA         NA      NA       NA    
+month3:weekday_weekendWE                       NA         NA      NA       NA    
+month4:weekday_weekendWE                       NA         NA      NA       NA    
+month5:weekday_weekendWE                       NA         NA      NA       NA    
+month2:energy.consumption              -1.874e-03  1.153e-03  -1.625 0.104332    
+month3:energy.consumption              -1.214e-03  1.436e-03  -0.845 0.398061    
+month4:energy.consumption              -9.945e-04  1.649e-03  -0.603 0.546532    
+month5:energy.consumption                      NA         NA      NA       NA    
+TAv_TAp1:DAYPARTDAY                     9.478e-01  4.831e+01   0.020 0.984352    
+TAv_TAp1:DAYPARTNIGHT                   2.138e+01  8.278e+01   0.258 0.796245    
+TAv_TAp1:DAYPARTPEAK                    6.659e+01  6.753e+01   0.986 0.324265    
+TAv_TAp1:weekday_weekendWE                     NA         NA      NA       NA    
+TAv_TAp1:energy.consumption             7.286e-05  1.546e-04   0.471 0.637625    
+DAYPARTDAY:weekday_weekendWE                   NA         NA      NA       NA    
+DAYPARTNIGHT:weekday_weekendWE                 NA         NA      NA       NA    
+DAYPARTPEAK:weekday_weekendWE                  NA         NA      NA       NA    
+DAYPARTDAY:energy.consumption           8.899e-05  1.826e-04   0.487 0.626169    
+DAYPARTNIGHT:energy.consumption         1.191e-04  3.535e-04   0.337 0.736182    
+DAYPARTPEAK:energy.consumption          9.276e-05  2.452e-04   0.378 0.705275    
+weekday_weekendWE:energy.consumption           NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 223.7 on 1365 degrees of freedom
+Multiple R-squared:  0.8573,	Adjusted R-squared:  0.8329 
+F-statistic: 35.06 on 234 and 1365 DF,  p-value: < 2.2e-16
+
