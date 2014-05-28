@@ -22,7 +22,7 @@ data[,cf]<- lapply(data[,cf], as.factor)
 #select features
 
 sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART",
-        "MMDAYPART","crea"
+        "MMDAYPART","crea","visitByhour"
         ,"budgetbrut","budgetnet","grp","grpref","month","dayofweek","consumption","festival")
 
 #    sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART"
@@ -39,11 +39,11 @@ traindata <- subdata[1:traningSize,]
 
 
 
-# ctrl <- trainControl(method = "repeatedcv",number = 10, repeats = 10)
-# grid_rf <- expand.grid(.mtry=c(2,4,8,16))
-# m_rf <- train(Visite.gain~.+poly(grpref,5)+poly(grp,5)+poly(budgetbrut,5),data = traindata,method = "rf",
-#               metric = "Kappa", trControl = ctrl,
-#               tuneGrid = grid_rf)
+#  ctrl <- trainControl(method = "repeatedcv",number = 10, repeats = 10)
+#  grid_rf <- expand.grid(.mtry=c(2,4,8,16))
+#  m_rf <- train(Visite.gain~.+poly(grpref,5)+poly(grp,5)+poly(budgetbrut,5),data = traindata,method = "rf",
+#                metric = "ROC", trControl = ctrl,
+#                tuneGrid = grid_rf)
 
 
 

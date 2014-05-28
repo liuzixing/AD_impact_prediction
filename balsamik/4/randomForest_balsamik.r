@@ -1,6 +1,8 @@
 library(randomForest)
 library(caret)
-set.seed(300)
+library(rpart)
+library(rpart.plot)
+
 #init
 data <- read.csv("tidyData.csv",header=TRUE)
 #data <- data[data$Visite.gain > 0,]
@@ -14,7 +16,7 @@ data <- data[sample(FulldataSize, FulldataSize),]
 
 cf <- c("TypeWeekDay","length","channel","DAYPART",
         "MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea"
-        ,"tav","tavtap","hour","month","dayofweek","festival","nthweek")
+        ,"tav","tavtap","hour","month","dayofweek","festival","nthweek","visitByhour")
 data[,cf]<- lapply(data[,cf], as.factor) 
 
 #select features
@@ -40,28 +42,21 @@ traindata <- subdata[1:traningSize,]
 ctrl <- trainControl(method = "repeatedcv",number = 10, repeats = 10)
 grid_rf <- expand.grid(.mtry=c(2,4,8,16))
 m_rf <- train(Visite.gain~.+poly(grpref,5)+poly(grp,5)+poly(budgetbrut,5),data = traindata,method = "rf",
-              metric = "Kappa", trControl = ctrl,
+              metric = "ROC", trControl = ctrl,
               tuneGrid = grid_rf)
 
 
-#lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
-rf <- randForest(Visite.gain~.+poly(grpref,5)+poly(grp,5)+poly(budgetbrut,5),data =traindata)
 
-sink("sink-examp.txt", split=TRUE)
 
-print (summary(rf))
+print (summary(rt))
 print (mean(data$Visite.gain))
-#print (data[data$Visite.gain>3000,])
-sink()
-#unlink("sink-examp.txt")
-# print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
-#print (summary(lm_model_pow1))
 
-#predictAndPlot(index,subdata,lm_model_pow2,traningSize,FulldataSize)
-predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
+
+predictAndPlot(index,subdata,rt,traningSize,FulldataSize)
+predictAndPlot<-function(index,subdata,model,traningSize,FulldataSize){
   
   test_data <- subdata[,c(-1)]
-  pre <-predict(lm_model,test_data)
+  pre <-predict(model,test_data)
   originY <- subdata[,1]
   plot(index,originY,type = 'n',col='red',xlab='date',ylab='sessions')
   points(index,originY,col="red",lwd=2)
@@ -73,4 +68,7 @@ predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
   y <- MAE(originY[traningSize:FulldataSize],pre[traningSize:FulldataSize])
   print(paste("COR",x))
   print(paste("Mean Err",y))
+}
+MAE <- function (actual, pre){
+  mean(abs(actual - pre))
 }

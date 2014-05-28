@@ -22,10 +22,10 @@ pre_lm_diff<-function(){
   #select features
   
   sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART",
-          "MMDAYPART","crea"
+          "MMDAYPART","crea","gta","visitByhour"
          ,"budgetbrut","budgetnet","grp","grpref","month","dayofweek","consumption","festival")
   
-#    sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART"
+#    sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART","gta"
 #           ,"MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea","tav","tavtap"
 #           ,"budgetbrut","budgetnet","grp","grpref","hour","month","dayofweek","consumption")
   data <- data[,sf]
@@ -38,14 +38,14 @@ pre_lm_diff<-function(){
   traindata <- subdata[1:traningSize,]
   
   #lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
-  lm_model_pow2 <- lm(Visite.gain~.,data =traindata)
+  lm_model_pow2 <- lm(Visite.gain~.+poly(grpref,5)+poly(grp,5)+poly(budgetbrut,5)+poly(visitByhour,5),data =traindata)
 
-  sink("sink-examp.txt", split=TRUE)
+  #sink("sink-examp.txt", split=TRUE)
   
   print (summary(lm_model_pow2))
-  print (mean(data$Visite.gain))
+  #print (mean(data$Visite.gain))
   #print (data[data$Visite.gain>3000,])
-  sink()
+  #sink()
   #unlink("sink-examp.txt")
  # print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
   #print (summary(lm_model_pow1))
@@ -80,7 +80,8 @@ getTidyData <- function(){
   data <- read.csv("Balsamik_2.csv",header=TRUE)
   #"date","TypeWeekDay","length","channel","DAYPART","MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea",
   #"budgetbrut","budgetnet","grp","grpref","tav","tavtap","EmavShort","hour","year","month","dayofweek","Visite.gain","datetime"
-  s <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART","MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea"
+  s <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART","MMDAYPART",
+         "ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea"
          ,"budgetbrut","budgetnet","grp","grpref","tav","tavtap","EmavShort","hour","month","dayofweek","consumption","nthweek")
   
   library(reshape2)
@@ -123,7 +124,6 @@ getTidyData <- function(){
     y <- NULL
   })
   #print(head(data))
-  
   data <-merge(data,energy,by="Date")
   
   data <- data[,s]
@@ -132,10 +132,20 @@ getTidyData <- function(){
   festival <- read.csv("energyx.csv",header=FALSE)
   names(festival) <- c("date","energy.consumption","festival")
   D3<-merge(data,festival[,c(-2)],by = "date")
+  gta <- read.csv("advisor.csv",header=FALSE)
+  #add gta
+  names(gta) <- c("date","gta")
+  D3<-merge(D3,gta,by = "date")
   
+  #add hour_visit
+  hh <- read.csv("Book1.csv",header=FALSE)
+  names(hh) <- c("hour","visitByhour")
+  D3<-merge(D3,hh,by = "hour")
+  print(head(D3))
   write.csv(D3, "tidyData.csv", row.names=FALSE)
   return (D3)
 }
 
 #ddd<-getTidyData()
+
 

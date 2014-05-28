@@ -1,5 +1,7 @@
 library(caret)
 library(RWeka)
+
+m5p_balsamik<- function (iii){
 #init
 data <- read.csv("tidyData.csv",header=TRUE)
 #data <- data[data$Visite.gain > 0,]
@@ -11,22 +13,21 @@ data <- data[sample(FulldataSize, FulldataSize),]
 
 #convert to factors  
 #,"hour","month","dayofweek","nthweek","length","festival"
-cf <- c("TypeWeekDay","channel","DAYPART",
-        "MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea"
-        ,"tav","tavtap")
-data[,cf]<- lapply(data[,cf], as.factor) 
+# cf <- c("TypeWeekDay","channel","DAYPART",
+#         "MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea"
+#         ,"tav","tavtap")
+# data[,cf]<- lapply(data[,cf], as.factor) 
 
 #select features
 
-sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART",
-        "MMDAYPART","crea","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD"
-        ,"budgetbrut","budgetnet","grp","grpref","month","dayofweek","consumption","festival")
-
-#    sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART"
-#           ,"MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea","tav","tavtap"
+sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART","festival","nthweek",
+        "crea","gta","MMDAYPART","ChaineEcranWD","ChaineDaypartWD","hour","ChaineMMDaypartWD"
+        ,"budgetbrut","budgetnet","grp","grpref","month","dayofweek","consumption","visitByhour")
+#,"tav","tavtap","EmavShort"
+#    sf <- c("date","Visite.gain","TypeWeekDay","length","channel","DAYPART","festival","gta"
+#           ,"MMDAYPART","ChaineEcranWD","ChaineDaypartWD","ChaineMMDaypartWD","crea","tav","tavtap","EmavShort"
 #           ,"budgetbrut","budgetnet","grp","grpref","hour","month","dayofweek","consumption","nthweek")
 data <- data[,sf]
-
 
 index<-1:FulldataSize
 traningSize <- as.integer(0.8 * FulldataSize)
@@ -34,25 +35,13 @@ subdata <- data[1:FulldataSize,c(-1)]
 print (names(subdata))
 traindata <- subdata[1:traningSize,]
 
-
-
-
-
-
 m5p <- M5P(Visite.gain~ .,data =traindata)
 
-#rpart.plot(rt,digits = 4,fallen.leaves=TRUE,type= 3,extra = 101)
-sink("sink-examp.txt", split=TRUE)
+print (m5p)
+y <- predictAndPlot(index,subdata,m5p,traningSize,FulldataSize)
+return (y)
+}
 
-print (summary(m5p))
-print (mean(data$Visite.gain))
-#print (data[data$Visite.gain>3000,])
-sink()
-#unlink("sink-examp.txt")
-# print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
-#print (summary(lm_model_pow1))
-
-predictAndPlot(index,subdata,m5p,traningSize,FulldataSize)
 predictAndPlot<-function(index,subdata,model,traningSize,FulldataSize){
   
   test_data <- subdata[,c(-1)]
@@ -68,7 +57,21 @@ predictAndPlot<-function(index,subdata,model,traningSize,FulldataSize){
   y <- MAE(originY[traningSize:FulldataSize],pre[traningSize:FulldataSize])
   print(paste("COR",x))
   print(paste("Mean Err",y))
+  print("")
+  return (y)
 }
 MAE <- function (actual, pre){
   mean(abs(actual - pre))
 }
+
+
+
+
+
+xx <-sapply(rep(0,100),m5p_balsamik)
+#sink("sink-examp.txt", split=TRUE)
+print (paste("mean:",mean(xx)))
+print (paste("max:",max(xx)))
+print (paste("min:",min(xx)))
+#sink()            
+              
