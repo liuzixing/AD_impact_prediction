@@ -7,13 +7,14 @@ pre_lm_diff<-function(){
   data <- data[sample(nrow(data), nrow(data)),]
   print (head(data))
   data$Heure[data$Heure==0]<-24
-  #convert to factors 
-  cf<- c("Chaine" ,"weekday" , "month", "TAv_TAp" ,"DAYPART"  , "festival","weekday_weekend","Heure",  "TAv", "Format")
+  #convert to factors  
+  #
+  cf<- c("Chaine" ,"weekday" , "month", "TAv_TAp" ,"DAYPART"  , "festival","weekday_weekend","Heure",  "TAv", "Format", "nthweek")
   data[,cf]<- lapply(data[,cf], as.factor) 
 
   #select features
-  # ,"energy.consumption"
-  sf <- c("Date","Apres.Visites","Avant.Visites","Chaine", "Heure","TAv","festival","GRP",
+  # ,"energy.consumption","TAv", "Heure"
+  sf <- c("Date","Apres.Visites","Avant.Visites","Chaine","festival","GRP",
           "BudgetNet", "nthweek","Format" ,"weekday" , "month",
           "TAv_TAp" ,"DAYPART","weekday_weekend")
   data <- data[,sf]
@@ -27,20 +28,25 @@ pre_lm_diff<-function(){
   traindata <- subdata[1:traningSize,]
   
   lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
-  lm_model_pow2 <- lm(Visite.gain~.^2,data =traindata)
+  #lm_model_pow2 <- lm(Visite.gain~.^2,data =traindata)
   #lm_model_pow3 <- lm(Visite.gain~.^3,data =traindata)
   library(DAAG)
   library(MASS)
-  step <- stepAIC(lm_model_pow2, direction="both")
-  sink(file="report//balsamik5.txt") 
-  
-  print(step$anova) # display results
+  #step <- stepAIC(lm_model_pow2, direction="both")
+  #sink(file="report//balsamik5.txt") 
+  #lm_las <-l1ce(Visite.gain ~ ., traindata,
+   #    sweep.out = NULL, standardize = FALSE)
+  #print(dropterm( lm_model_pow1, test = "F" ))
+  #print(step$anova) # display results
  # print (summary(lm_model_pow1))
-  print (summary(lm_model_pow2))
-  sink(NULL) 
+  #print (summary(lm_model_pow1))
+  #sink(NULL) 
   #print (summary(lm_model_pow3))
-  print (anova(lm_model_pow1,lm_model_pow2,test = "Chisq"))
-  predictAndPlot(index,subdata,lm_model_pow2,traningSize,FulldataSize)
+  #print (anova(lm_model_pow1,lm_model_pow2,test = "Chisq"))
+  predictAndPlot(index,subdata,lm_model_pow1,traningSize,FulldataSize)
+  #res<-cv.lm(df=traindata, lm_model_pow2, m=5) 
+  #summary(res)
+ return (lm_model_pow1)
 }
 predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
   

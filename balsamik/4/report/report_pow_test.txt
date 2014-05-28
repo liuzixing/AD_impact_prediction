@@ -1,0 +1,1640 @@
+
+Call:
+lm(formula = Visite.gain ~ .^2, data = traindata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-980.45  -54.94    0.00   57.00 1149.34 
+
+Coefficients: (847 not defined because of singularities)
+                                                                           Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                                                              -2.097e+02  1.279e+05  -0.002  0.99869   
+TypeWeekDayWE                                                             2.512e+03  8.774e+03   0.286  0.77480   
+length20                                                                  1.287e+03  9.681e+03   0.133  0.89432   
+length30                                                                  2.670e+03  8.444e+03   0.316  0.75202   
+channelParisPremiere                                                      7.701e+03  1.344e+05   0.057  0.95433   
+channelPuissanceTNT                                                       9.443e+02  4.775e+03   0.198  0.84330   
+channelSerieClub                                                          2.583e+03  1.358e+05   0.019  0.98483   
+channelTeva                                                               5.424e+03  1.312e+05   0.041  0.96703   
+DAYPARTDAY                                                               -5.072e+01  3.706e+04  -0.001  0.99891   
+DAYPARTNIGHT                                                             -3.269e+03  3.457e+04  -0.095  0.92470   
+DAYPARTPEAK                                                              -1.721e+03  2.369e+03  -0.726  0.46791   
+MMDAYPARTACCESS19                                                        -1.731e+03  3.295e+03  -0.525  0.59956   
+MMDAYPARTDAY0309                                                         -6.478e+02  3.712e+04  -0.017  0.98609   
+MMDAYPARTDAY1011                                                          1.912e+03  3.704e+04   0.052  0.95885   
+MMDAYPARTDAY1213                                                         -3.734e+02  3.695e+04  -0.010  0.99194   
+MMDAYPARTDAY1415                                                          7.338e+02  3.775e+04   0.019  0.98450   
+MMDAYPARTDAY1617                                                                 NA         NA      NA       NA   
+MMDAYPARTNIGHT0002                                                        2.364e+03  9.696e+03   0.244  0.80743   
+MMDAYPARTNIGHT2223                                                               NA         NA      NA       NA   
+MMDAYPARTPEAK                                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1                                             -4.574e+03  3.587e+03  -1.275  0.20288   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1                      -4.255e+03  3.083e+03  -1.380  0.16806   
+creaeffet push-up                                                        -1.762e+04  1.287e+05  -0.137  0.89115   
+creaeffet sculptant                                                      -1.111e+04  1.279e+05  -0.087  0.93082   
+creaEFFET SCULPTANT LA FEMME 12'' v2                                     -4.835e+03  3.504e+03  -1.380  0.16823   
+creaEFFET SCULPTANT LA FEMME 20'' v1                                     -4.152e+03  2.941e+03  -1.412  0.15859   
+creala chaussure pour toutes les morpho'                                 -7.105e+03  1.278e+05  -0.056  0.95570   
+creala lingerie pour toutes les morpho                                   -9.052e+03  1.279e+05  -0.071  0.94358   
+creala mode pour toutes les morpho                                        6.856e+03  9.796e+04   0.070  0.94423   
+creala terrasse                                                          -7.188e+03  1.279e+05  -0.056  0.95521   
+creaversion de base                                                              NA         NA      NA       NA   
+budgetbrut                                                               -4.872e+00  5.240e+01  -0.093  0.92594   
+budgetnet                                                                 2.746e+01  2.773e+02   0.099  0.92113   
+grp                                                                       3.133e+03  2.255e+03   1.389  0.16525   
+grpref                                                                    7.207e+02  2.443e+04   0.030  0.97647   
+month2                                                                    4.694e+03  2.879e+03   1.631  0.10355   
+month3                                                                    1.041e+04  1.652e+04   0.630  0.52870   
+month4                                                                           NA         NA      NA       NA   
+dayofweek2                                                                3.454e+03  8.743e+03   0.395  0.69291   
+dayofweek3                                                                3.203e+03  8.733e+03   0.367  0.71395   
+dayofweek4                                                                3.926e+03  8.691e+03   0.452  0.65163   
+dayofweek5                                                                3.104e+03  8.839e+03   0.351  0.72562   
+dayofweek6                                                                2.116e+03  8.521e+03   0.248  0.80395   
+dayofweek7                                                                3.056e+02  1.684e+03   0.181  0.85605   
+consumption                                                              -1.575e-01  1.705e-01  -0.924  0.35613   
+festival1                                                                 3.760e+02  1.247e+03   0.301  0.76321   
+festival2                                                                -1.070e+04  4.141e+04  -0.258  0.79623   
+nthweek3                                                                  4.052e+03  1.277e+05   0.032  0.97469   
+nthweek4                                                                  1.346e+03  1.277e+05   0.011  0.99159   
+nthweek5                                                                 -1.500e+03  1.278e+05  -0.012  0.99064   
+nthweek6                                                                 -1.386e+03  1.278e+05  -0.011  0.99136   
+nthweek7                                                                 -8.361e+02  1.278e+05  -0.007  0.99478   
+nthweek9                                                                  3.884e+02  1.315e+03   0.295  0.76779   
+nthweek10                                                                -4.523e+03  1.583e+04  -0.286  0.77523   
+nthweek11                                                                -2.722e+03  1.147e+04  -0.237  0.81258   
+nthweek12                                                                -3.037e+03  1.305e+04  -0.233  0.81607   
+nthweek13                                                                 5.166e+03  6.083e+03   0.849  0.39613   
+nthweek14                                                                 2.910e+03  6.588e+03   0.442  0.65893   
+nthweek15                                                                 1.740e+03  6.105e+03   0.285  0.77578   
+nthweek16                                                                 8.840e+03  5.496e+03   1.609  0.10827   
+nthweek17                                                                        NA         NA      NA       NA   
+TypeWeekDayWE:length20                                                   -9.264e+02  9.424e+03  -0.098  0.92173   
+TypeWeekDayWE:length30                                                   -2.343e+03  7.938e+03  -0.295  0.76802   
+TypeWeekDayWE:channelParisPremiere                                       -1.098e+03  9.560e+03  -0.115  0.90863   
+TypeWeekDayWE:channelPuissanceTNT                                        -4.875e+02  8.109e+02  -0.601  0.54796   
+TypeWeekDayWE:channelSerieClub                                            1.789e+03  8.202e+02   2.181  0.02958 * 
+TypeWeekDayWE:channelTeva                                                 6.712e+02  6.353e+02   1.057  0.29120   
+TypeWeekDayWE:DAYPARTDAY                                                 -5.804e+02  3.756e+02  -1.545  0.12287   
+TypeWeekDayWE:DAYPARTNIGHT                                                2.536e+02  2.897e+02   0.876  0.38159   
+TypeWeekDayWE:DAYPARTPEAK                                                -4.457e+01  3.056e+02  -0.146  0.88409   
+TypeWeekDayWE:MMDAYPARTACCESS19                                           1.225e+02  3.752e+02   0.326  0.74428   
+TypeWeekDayWE:MMDAYPARTDAY0309                                            6.805e+02  5.417e+02   1.256  0.20960   
+TypeWeekDayWE:MMDAYPARTDAY1011                                            4.401e+02  4.755e+02   0.925  0.35511   
+TypeWeekDayWE:MMDAYPARTDAY1213                                            6.865e+02  3.765e+02   1.824  0.06876 . 
+TypeWeekDayWE:MMDAYPARTDAY1415                                            1.657e+02  3.507e+02   0.473  0.63676   
+TypeWeekDayWE:MMDAYPARTDAY1617                                                   NA         NA      NA       NA   
+TypeWeekDayWE:MMDAYPARTNIGHT0002                                          1.636e+03  9.998e+03   0.164  0.87007   
+TypeWeekDayWE:MMDAYPARTNIGHT2223                                                 NA         NA      NA       NA   
+TypeWeekDayWE:MMDAYPARTPEAK                                                      NA         NA      NA       NA   
+TypeWeekDayWE:creaCOEUR DES FEMMES 30'' v1                                1.231e+03  7.552e+02   1.630  0.10374   
+TypeWeekDayWE:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1         1.174e+03  6.865e+02   1.710  0.08791 . 
+TypeWeekDayWE:creaeffet push-up                                           1.672e+03  2.587e+03   0.646  0.51839   
+TypeWeekDayWE:creaeffet sculptant                                         1.810e+03  1.094e+03   1.655  0.09844 . 
+TypeWeekDayWE:creaEFFET SCULPTANT LA FEMME 12'' v2                        1.122e+03  8.102e+02   1.385  0.16663   
+TypeWeekDayWE:creaEFFET SCULPTANT LA FEMME 20'' v1                        1.089e+03  6.968e+02   1.562  0.11881   
+TypeWeekDayWE:creala chaussure pour toutes les morpho'                    5.199e+02  1.274e+03   0.408  0.68346   
+TypeWeekDayWE:creala lingerie pour toutes les morpho                      1.069e+03  1.222e+03   0.875  0.38198   
+TypeWeekDayWE:creala mode pour toutes les morpho                         -4.319e+03  2.742e+03  -1.576  0.11571   
+TypeWeekDayWE:creala terrasse                                             7.048e+02  1.005e+03   0.702  0.48324   
+TypeWeekDayWE:creaversion de base                                                NA         NA      NA       NA   
+TypeWeekDayWE:budgetbrut                                                 -1.383e+00  4.504e+00  -0.307  0.75895   
+TypeWeekDayWE:budgetnet                                                   7.299e+00  2.509e+01   0.291  0.77127   
+TypeWeekDayWE:grp                                                        -1.864e+02  1.836e+02  -1.015  0.31034   
+TypeWeekDayWE:grpref                                                      6.816e+02  4.424e+02   1.541  0.12393   
+TypeWeekDayWE:month2                                                     -3.071e+02  3.955e+02  -0.777  0.43773   
+TypeWeekDayWE:month3                                                      7.271e+02  1.911e+03   0.381  0.70368   
+TypeWeekDayWE:month4                                                             NA         NA      NA       NA   
+TypeWeekDayWE:dayofweek2                                                 -3.010e+03  1.182e+04  -0.255  0.79916   
+TypeWeekDayWE:dayofweek3                                                         NA         NA      NA       NA   
+TypeWeekDayWE:dayofweek4                                                         NA         NA      NA       NA   
+TypeWeekDayWE:dayofweek5                                                         NA         NA      NA       NA   
+TypeWeekDayWE:dayofweek6                                                         NA         NA      NA       NA   
+TypeWeekDayWE:dayofweek7                                                         NA         NA      NA       NA   
+TypeWeekDayWE:consumption                                                -3.440e-02  2.444e-02  -1.407  0.15991   
+TypeWeekDayWE:festival1                                                          NA         NA      NA       NA   
+TypeWeekDayWE:festival2                                                          NA         NA      NA       NA   
+TypeWeekDayWE:nthweek3                                                           NA         NA      NA       NA   
+TypeWeekDayWE:nthweek4                                                           NA         NA      NA       NA   
+TypeWeekDayWE:nthweek5                                                    3.975e+02  3.665e+02   1.085  0.27858   
+TypeWeekDayWE:nthweek6                                                    2.679e+02  2.896e+02   0.925  0.35524   
+TypeWeekDayWE:nthweek7                                                           NA         NA      NA       NA   
+TypeWeekDayWE:nthweek9                                                           NA         NA      NA       NA   
+TypeWeekDayWE:nthweek10                                                   3.497e+02  2.860e+03   0.122  0.90272   
+TypeWeekDayWE:nthweek11                                                  -1.144e+03  2.050e+03  -0.558  0.57716   
+TypeWeekDayWE:nthweek12                                                          NA         NA      NA       NA   
+TypeWeekDayWE:nthweek13                                                   8.635e+01  8.072e+02   0.107  0.91485   
+TypeWeekDayWE:nthweek14                                                   8.838e+02  1.069e+03   0.827  0.40864   
+TypeWeekDayWE:nthweek15                                                   1.312e+03  8.231e+02   1.594  0.11156   
+TypeWeekDayWE:nthweek16                                                          NA         NA      NA       NA   
+TypeWeekDayWE:nthweek17                                                          NA         NA      NA       NA   
+length20:channelParisPremiere                                            -6.956e+01  3.332e+02  -0.209  0.83472   
+length30:channelParisPremiere                                            -5.279e+02  3.654e+02  -1.445  0.14910   
+length20:channelPuissanceTNT                                             -1.380e+01  2.800e+02  -0.049  0.96071   
+length30:channelPuissanceTNT                                                     NA         NA      NA       NA   
+length20:channelSerieClub                                                        NA         NA      NA       NA   
+length30:channelSerieClub                                                        NA         NA      NA       NA   
+length20:channelTeva                                                      6.167e+01  3.708e+02   0.166  0.86799   
+length30:channelTeva                                                     -4.342e+02  3.978e+02  -1.092  0.27553   
+length20:DAYPARTDAY                                                      -2.470e+02  3.457e+02  -0.714  0.47525   
+length30:DAYPARTDAY                                                      -9.381e+01  3.950e+02  -0.238  0.81235   
+length20:DAYPARTNIGHT                                                    -2.430e+02  3.484e+02  -0.697  0.48588   
+length30:DAYPARTNIGHT                                                    -6.816e+01  4.049e+02  -0.168  0.86636   
+length20:DAYPARTPEAK                                                     -2.463e+02  3.628e+02  -0.679  0.49751   
+length30:DAYPARTPEAK                                                     -2.944e+02  4.142e+02  -0.711  0.47749   
+length20:MMDAYPARTACCESS19                                               -6.060e+02  4.111e+02  -1.474  0.14107   
+length30:MMDAYPARTACCESS19                                               -5.450e+02  4.329e+02  -1.259  0.20856   
+length20:MMDAYPARTDAY0309                                                -3.087e+01  4.163e+02  -0.074  0.94093   
+length30:MMDAYPARTDAY0309                                                -2.523e+02  4.757e+02  -0.530  0.59607   
+length20:MMDAYPARTDAY1011                                                -1.195e+02  5.317e+02  -0.225  0.82232   
+length30:MMDAYPARTDAY1011                                                -2.821e+02  5.628e+02  -0.501  0.61635   
+length20:MMDAYPARTDAY1213                                                 7.824e+01  3.819e+02   0.205  0.83774   
+length30:MMDAYPARTDAY1213                                                -6.797e+01  4.213e+02  -0.161  0.87188   
+length20:MMDAYPARTDAY1415                                                 2.285e+02  2.697e+02   0.847  0.39728   
+length30:MMDAYPARTDAY1415                                                 1.573e+02  3.445e+02   0.457  0.64820   
+length20:MMDAYPARTDAY1617                                                        NA         NA      NA       NA   
+length30:MMDAYPARTDAY1617                                                        NA         NA      NA       NA   
+length20:MMDAYPARTNIGHT0002                                               1.699e+02  7.348e+02   0.231  0.81724   
+length30:MMDAYPARTNIGHT0002                                               3.495e+02  1.632e+03   0.214  0.83052   
+length20:MMDAYPARTNIGHT2223                                                      NA         NA      NA       NA   
+length30:MMDAYPARTNIGHT2223                                                      NA         NA      NA       NA   
+length20:MMDAYPARTPEAK                                                           NA         NA      NA       NA   
+length30:MMDAYPARTPEAK                                                           NA         NA      NA       NA   
+length20:creaCOEUR DES FEMMES 30'' v1                                            NA         NA      NA       NA   
+length30:creaCOEUR DES FEMMES 30'' v1                                            NA         NA      NA       NA   
+length20:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1                     NA         NA      NA       NA   
+length30:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1                     NA         NA      NA       NA   
+length20:creaeffet push-up                                                       NA         NA      NA       NA   
+length30:creaeffet push-up                                                       NA         NA      NA       NA   
+length20:creaeffet sculptant                                                     NA         NA      NA       NA   
+length30:creaeffet sculptant                                                     NA         NA      NA       NA   
+length20:creaEFFET SCULPTANT LA FEMME 12'' v2                                    NA         NA      NA       NA   
+length30:creaEFFET SCULPTANT LA FEMME 12'' v2                                    NA         NA      NA       NA   
+length20:creaEFFET SCULPTANT LA FEMME 20'' v1                                    NA         NA      NA       NA   
+length30:creaEFFET SCULPTANT LA FEMME 20'' v1                                    NA         NA      NA       NA   
+length20:creala chaussure pour toutes les morpho'                                NA         NA      NA       NA   
+length30:creala chaussure pour toutes les morpho'                                NA         NA      NA       NA   
+length20:creala lingerie pour toutes les morpho                                  NA         NA      NA       NA   
+length30:creala lingerie pour toutes les morpho                                  NA         NA      NA       NA   
+length20:creala mode pour toutes les morpho                                      NA         NA      NA       NA   
+length30:creala mode pour toutes les morpho                                      NA         NA      NA       NA   
+length20:creala terrasse                                                         NA         NA      NA       NA   
+length30:creala terrasse                                                         NA         NA      NA       NA   
+length20:creaversion de base                                                     NA         NA      NA       NA   
+length30:creaversion de base                                                     NA         NA      NA       NA   
+length20:budgetbrut                                                       9.102e-01  5.466e+00   0.167  0.86781   
+length30:budgetbrut                                                       3.473e-01  4.492e+00   0.077  0.93839   
+length20:budgetnet                                                       -3.370e+00  2.562e+01  -0.132  0.89539   
+length30:budgetnet                                                        2.669e+00  2.061e+01   0.129  0.89702   
+length20:grp                                                              1.634e+02  1.936e+03   0.084  0.93278   
+length30:grp                                                              9.902e+01  2.301e+03   0.043  0.96569   
+length20:grpref                                                          -3.480e+03  9.537e+03  -0.365  0.71531   
+length30:grpref                                                          -9.808e+03  1.077e+04  -0.911  0.36282   
+length20:month2                                                           1.773e+02  2.328e+02   0.761  0.44669   
+length30:month2                                                                  NA         NA      NA       NA   
+length20:month3                                                          -1.791e+03  1.835e+03  -0.976  0.32939   
+length30:month3                                                                  NA         NA      NA       NA   
+length20:month4                                                                  NA         NA      NA       NA   
+length30:month4                                                                  NA         NA      NA       NA   
+length20:dayofweek2                                                      -7.648e+02  9.418e+03  -0.081  0.93531   
+length30:dayofweek2                                                      -2.214e+03  7.923e+03  -0.279  0.78005   
+length20:dayofweek3                                                      -7.277e+02  9.420e+03  -0.077  0.93845   
+length30:dayofweek3                                                      -2.108e+03  7.922e+03  -0.266  0.79029   
+length20:dayofweek4                                                      -9.641e+02  9.421e+03  -0.102  0.91854   
+length30:dayofweek4                                                      -2.321e+03  7.923e+03  -0.293  0.76962   
+length20:dayofweek5                                                      -7.303e+02  9.419e+03  -0.078  0.93823   
+length30:dayofweek5                                                      -2.076e+03  7.917e+03  -0.262  0.79325   
+length20:dayofweek6                                                      -8.140e+02  9.420e+03  -0.086  0.93117   
+length30:dayofweek6                                                      -2.274e+03  7.919e+03  -0.287  0.77412   
+length20:dayofweek7                                                       4.857e+01  2.501e+02   0.194  0.84608   
+length30:dayofweek7                                                       1.639e+02  2.874e+02   0.570  0.56873   
+length20:consumption                                                     -5.083e-03  3.338e-02  -0.152  0.87903   
+length30:consumption                                                     -2.244e-03  4.273e-02  -0.053  0.95814   
+length20:festival1                                                       -1.639e+03  1.129e+03  -1.452  0.14700   
+length30:festival1                                                               NA         NA      NA       NA   
+length20:festival2                                                        2.692e+02  1.586e+03   0.170  0.86527   
+length30:festival2                                                               NA         NA      NA       NA   
+length20:nthweek3                                                         9.555e+01  2.823e+02   0.338  0.73515   
+length30:nthweek3                                                                NA         NA      NA       NA   
+length20:nthweek4                                                        -1.647e+01  3.248e+02  -0.051  0.95959   
+length30:nthweek4                                                                NA         NA      NA       NA   
+length20:nthweek5                                                        -3.185e+01  3.770e+02  -0.084  0.93269   
+length30:nthweek5                                                                NA         NA      NA       NA   
+length20:nthweek6                                                         5.411e+01  2.142e+02   0.253  0.80066   
+length30:nthweek6                                                                NA         NA      NA       NA   
+length20:nthweek7                                                                NA         NA      NA       NA   
+length30:nthweek7                                                                NA         NA      NA       NA   
+length20:nthweek9                                                        -1.889e+03  1.280e+04  -0.148  0.88276   
+length30:nthweek9                                                                NA         NA      NA       NA   
+length20:nthweek10                                                        1.552e+03  1.655e+03   0.938  0.34865   
+length30:nthweek10                                                               NA         NA      NA       NA   
+length20:nthweek11                                                        1.545e+03  1.723e+03   0.897  0.37035   
+length30:nthweek11                                                               NA         NA      NA       NA   
+length20:nthweek12                                                        1.726e+03  1.513e+03   1.141  0.25449   
+length30:nthweek12                                                               NA         NA      NA       NA   
+length20:nthweek13                                                       -2.239e+02  3.478e+02  -0.644  0.51992   
+length30:nthweek13                                                               NA         NA      NA       NA   
+length20:nthweek14                                                       -2.477e+02  4.764e+02  -0.520  0.60333   
+length30:nthweek14                                                               NA         NA      NA       NA   
+length20:nthweek15                                                       -6.338e+01  4.094e+02  -0.155  0.87703   
+length30:nthweek15                                                               NA         NA      NA       NA   
+length20:nthweek16                                                        1.186e+01  2.947e+02   0.040  0.96792   
+length30:nthweek16                                                               NA         NA      NA       NA   
+length20:nthweek17                                                               NA         NA      NA       NA   
+length30:nthweek17                                                               NA         NA      NA       NA   
+channelParisPremiere:DAYPARTDAY                                           1.577e+03  5.571e+02   2.831  0.00481 **
+channelPuissanceTNT:DAYPARTDAY                                            5.599e+02  4.296e+02   1.303  0.19299   
+channelSerieClub:DAYPARTDAY                                               1.008e+03  5.994e+02   1.682  0.09312 . 
+channelTeva:DAYPARTDAY                                                    1.312e+03  6.017e+02   2.180  0.02968 * 
+channelParisPremiere:DAYPARTNIGHT                                        -2.816e+01  8.479e+02  -0.033  0.97351   
+channelPuissanceTNT:DAYPARTNIGHT                                                 NA         NA      NA       NA   
+channelSerieClub:DAYPARTNIGHT                                             1.438e+02  9.774e+02   0.147  0.88306   
+channelTeva:DAYPARTNIGHT                                                 -1.831e+02  9.121e+02  -0.201  0.84095   
+channelParisPremiere:DAYPARTPEAK                                          1.401e+03  8.633e+02   1.622  0.10532   
+channelPuissanceTNT:DAYPARTPEAK                                          -8.345e+02  9.014e+02  -0.926  0.35499   
+channelSerieClub:DAYPARTPEAK                                              1.648e+03  1.066e+03   1.545  0.12282   
+channelTeva:DAYPARTPEAK                                                   1.254e+03  9.211e+02   1.362  0.17389   
+channelParisPremiere:MMDAYPARTACCESS19                                   -3.120e+02  5.608e+02  -0.556  0.57818   
+channelPuissanceTNT:MMDAYPARTACCESS19                                    -2.512e+02  6.756e+02  -0.372  0.71012   
+channelSerieClub:MMDAYPARTACCESS19                                       -4.121e+02  7.075e+02  -0.582  0.56049   
+channelTeva:MMDAYPARTACCESS19                                            -4.293e+02  6.420e+02  -0.669  0.50396   
+channelParisPremiere:MMDAYPARTDAY0309                                    -1.381e+03  1.205e+03  -1.146  0.25221   
+channelPuissanceTNT:MMDAYPARTDAY0309                                             NA         NA      NA       NA   
+channelSerieClub:MMDAYPARTDAY0309                                        -9.381e+02  1.215e+03  -0.772  0.44051   
+channelTeva:MMDAYPARTDAY0309                                             -1.334e+03  1.180e+03  -1.131  0.25873   
+channelParisPremiere:MMDAYPARTDAY1011                                    -1.489e+03  4.882e+02  -3.049  0.00241 **
+channelPuissanceTNT:MMDAYPARTDAY1011                                      7.427e+01  6.441e+02   0.115  0.90824   
+channelSerieClub:MMDAYPARTDAY1011                                        -1.032e+03  4.273e+02  -2.414  0.01609 * 
+channelTeva:MMDAYPARTDAY1011                                             -1.387e+03  4.753e+02  -2.918  0.00367 **
+channelParisPremiere:MMDAYPARTDAY1213                                    -1.392e+03  4.733e+02  -2.941  0.00341 **
+channelPuissanceTNT:MMDAYPARTDAY1213                                     -1.738e+02  6.040e+02  -0.288  0.77371   
+channelSerieClub:MMDAYPARTDAY1213                                        -8.443e+02  4.357e+02  -1.938  0.05315 . 
+channelTeva:MMDAYPARTDAY1213                                             -1.336e+03  4.908e+02  -2.722  0.00668 **
+channelParisPremiere:MMDAYPARTDAY1415                                    -7.934e+02  4.566e+02  -1.737  0.08286 . 
+channelPuissanceTNT:MMDAYPARTDAY1415                                     -1.484e+02  3.559e+02  -0.417  0.67685   
+channelSerieClub:MMDAYPARTDAY1415                                        -2.815e+02  3.751e+02  -0.750  0.45330   
+channelTeva:MMDAYPARTDAY1415                                             -7.049e+02  4.632e+02  -1.522  0.12865   
+channelParisPremiere:MMDAYPARTDAY1617                                            NA         NA      NA       NA   
+channelPuissanceTNT:MMDAYPARTDAY1617                                             NA         NA      NA       NA   
+channelSerieClub:MMDAYPARTDAY1617                                                NA         NA      NA       NA   
+channelTeva:MMDAYPARTDAY1617                                                     NA         NA      NA       NA   
+channelParisPremiere:MMDAYPARTNIGHT0002                                  -1.698e+03  7.128e+03  -0.238  0.81178   
+channelPuissanceTNT:MMDAYPARTNIGHT0002                                           NA         NA      NA       NA   
+channelSerieClub:MMDAYPARTNIGHT0002                                              NA         NA      NA       NA   
+channelTeva:MMDAYPARTNIGHT0002                                                   NA         NA      NA       NA   
+channelParisPremiere:MMDAYPARTNIGHT2223                                          NA         NA      NA       NA   
+channelPuissanceTNT:MMDAYPARTNIGHT2223                                           NA         NA      NA       NA   
+channelSerieClub:MMDAYPARTNIGHT2223                                              NA         NA      NA       NA   
+channelTeva:MMDAYPARTNIGHT2223                                                   NA         NA      NA       NA   
+channelParisPremiere:MMDAYPARTPEAK                                               NA         NA      NA       NA   
+channelPuissanceTNT:MMDAYPARTPEAK                                                NA         NA      NA       NA   
+channelSerieClub:MMDAYPARTPEAK                                                   NA         NA      NA       NA   
+channelTeva:MMDAYPARTPEAK                                                        NA         NA      NA       NA   
+channelParisPremiere:creaCOEUR DES FEMMES 30'' v1                                NA         NA      NA       NA   
+channelPuissanceTNT:creaCOEUR DES FEMMES 30'' v1                                 NA         NA      NA       NA   
+channelSerieClub:creaCOEUR DES FEMMES 30'' v1                                    NA         NA      NA       NA   
+channelTeva:creaCOEUR DES FEMMES 30'' v1                                         NA         NA      NA       NA   
+channelParisPremiere:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1 -2.737e+02  3.122e+02  -0.877  0.38107   
+channelPuissanceTNT:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1          NA         NA      NA       NA   
+channelSerieClub:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1             NA         NA      NA       NA   
+channelTeva:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1          -3.492e+02  3.302e+02  -1.058  0.29071   
+channelParisPremiere:creaeffet push-up                                           NA         NA      NA       NA   
+channelPuissanceTNT:creaeffet push-up                                            NA         NA      NA       NA   
+channelSerieClub:creaeffet push-up                                               NA         NA      NA       NA   
+channelTeva:creaeffet push-up                                                    NA         NA      NA       NA   
+channelParisPremiere:creaeffet sculptant                                         NA         NA      NA       NA   
+channelPuissanceTNT:creaeffet sculptant                                   6.412e+01  2.718e+02   0.236  0.81357   
+channelSerieClub:creaeffet sculptant                                             NA         NA      NA       NA   
+channelTeva:creaeffet sculptant                                                  NA         NA      NA       NA   
+channelParisPremiere:creaEFFET SCULPTANT LA FEMME 12'' v2                        NA         NA      NA       NA   
+channelPuissanceTNT:creaEFFET SCULPTANT LA FEMME 12'' v2                         NA         NA      NA       NA   
+channelSerieClub:creaEFFET SCULPTANT LA FEMME 12'' v2                            NA         NA      NA       NA   
+channelTeva:creaEFFET SCULPTANT LA FEMME 12'' v2                                 NA         NA      NA       NA   
+channelParisPremiere:creaEFFET SCULPTANT LA FEMME 20'' v1                -2.242e+02  3.143e+02  -0.714  0.47580   
+channelPuissanceTNT:creaEFFET SCULPTANT LA FEMME 20'' v1                         NA         NA      NA       NA   
+channelSerieClub:creaEFFET SCULPTANT LA FEMME 20'' v1                            NA         NA      NA       NA   
+channelTeva:creaEFFET SCULPTANT LA FEMME 20'' v1                         -2.733e+02  3.510e+02  -0.779  0.43651   
+channelParisPremiere:creala chaussure pour toutes les morpho'                    NA         NA      NA       NA   
+channelPuissanceTNT:creala chaussure pour toutes les morpho'              2.067e+02  2.095e+02   0.987  0.32408   
+channelSerieClub:creala chaussure pour toutes les morpho'                        NA         NA      NA       NA   
+channelTeva:creala chaussure pour toutes les morpho'                             NA         NA      NA       NA   
+channelParisPremiere:creala lingerie pour toutes les morpho                      NA         NA      NA       NA   
+channelPuissanceTNT:creala lingerie pour toutes les morpho                       NA         NA      NA       NA   
+channelSerieClub:creala lingerie pour toutes les morpho                          NA         NA      NA       NA   
+channelTeva:creala lingerie pour toutes les morpho                               NA         NA      NA       NA   
+channelParisPremiere:creala mode pour toutes les morpho                          NA         NA      NA       NA   
+channelPuissanceTNT:creala mode pour toutes les morpho                           NA         NA      NA       NA   
+channelSerieClub:creala mode pour toutes les morpho                              NA         NA      NA       NA   
+channelTeva:creala mode pour toutes les morpho                                   NA         NA      NA       NA   
+channelParisPremiere:creala terrasse                                             NA         NA      NA       NA   
+channelPuissanceTNT:creala terrasse                                              NA         NA      NA       NA   
+channelSerieClub:creala terrasse                                                 NA         NA      NA       NA   
+channelTeva:creala terrasse                                                      NA         NA      NA       NA   
+channelParisPremiere:creaversion de base                                         NA         NA      NA       NA   
+channelPuissanceTNT:creaversion de base                                          NA         NA      NA       NA   
+channelSerieClub:creaversion de base                                             NA         NA      NA       NA   
+channelTeva:creaversion de base                                                  NA         NA      NA       NA   
+channelParisPremiere:budgetbrut                                           4.378e-02  4.024e-01   0.109  0.91339   
+channelPuissanceTNT:budgetbrut                                            2.294e-01  1.202e-01   1.909  0.05683 . 
+channelSerieClub:budgetbrut                                               4.764e-01  9.235e-01   0.516  0.60612   
+channelTeva:budgetbrut                                                           NA         NA      NA       NA   
+channelParisPremiere:budgetnet                                                   NA         NA      NA       NA   
+channelPuissanceTNT:budgetnet                                                    NA         NA      NA       NA   
+channelSerieClub:budgetnet                                                       NA         NA      NA       NA   
+channelTeva:budgetnet                                                            NA         NA      NA       NA   
+channelParisPremiere:grp                                                 -4.280e+02  9.516e+02  -0.450  0.65307   
+channelPuissanceTNT:grp                                                  -2.901e+02  2.500e+02  -1.160  0.24635   
+channelSerieClub:grp                                                     -2.523e+02  8.413e+02  -0.300  0.76434   
+channelTeva:grp                                                           3.652e+01  1.233e+03   0.030  0.97639   
+channelParisPremiere:grpref                                               5.777e+02  2.361e+03   0.245  0.80675   
+channelPuissanceTNT:grpref                                               -1.378e+01  5.258e+02  -0.026  0.97910   
+channelSerieClub:grpref                                                  -3.024e+02  4.290e+03  -0.070  0.94383   
+channelTeva:grpref                                                        8.021e+02  2.614e+03   0.307  0.75905   
+channelParisPremiere:month2                                              -3.676e+01  4.080e+02  -0.090  0.92825   
+channelPuissanceTNT:month2                                                       NA         NA      NA       NA   
+channelSerieClub:month2                                                  -5.262e+01  3.320e+02  -0.159  0.87412   
+channelTeva:month2                                                        3.743e+02  3.822e+02   0.979  0.32790   
+channelParisPremiere:month3                                                      NA         NA      NA       NA   
+channelPuissanceTNT:month3                                                       NA         NA      NA       NA   
+channelSerieClub:month3                                                          NA         NA      NA       NA   
+channelTeva:month3                                                               NA         NA      NA       NA   
+channelParisPremiere:month4                                                      NA         NA      NA       NA   
+channelPuissanceTNT:month4                                                       NA         NA      NA       NA   
+channelSerieClub:month4                                                          NA         NA      NA       NA   
+channelTeva:month4                                                               NA         NA      NA       NA   
+channelParisPremiere:dayofweek2                                          -1.810e+03  9.624e+03  -0.188  0.85091   
+channelPuissanceTNT:dayofweek2                                           -5.312e+01  4.316e+02  -0.123  0.90210   
+channelSerieClub:dayofweek2                                               2.555e+02  2.289e+02   1.116  0.26497   
+channelTeva:dayofweek2                                                    7.278e+00  2.351e+02   0.031  0.97532   
+channelParisPremiere:dayofweek3                                          -1.798e+03  9.635e+03  -0.187  0.85202   
+channelPuissanceTNT:dayofweek3                                            1.021e+02  2.952e+02   0.346  0.72954   
+channelSerieClub:dayofweek3                                               3.491e+02  2.395e+02   1.458  0.14550   
+channelTeva:dayofweek3                                                    3.429e+01  2.147e+02   0.160  0.87315   
+channelParisPremiere:dayofweek4                                          -1.660e+03  9.637e+03  -0.172  0.86327   
+channelPuissanceTNT:dayofweek4                                            1.159e+02  2.834e+02   0.409  0.68271   
+channelSerieClub:dayofweek4                                               3.454e+02  2.402e+02   1.438  0.15102   
+channelTeva:dayofweek4                                                    1.240e+02  2.352e+02   0.527  0.59814   
+channelParisPremiere:dayofweek5                                          -1.779e+03  9.638e+03  -0.185  0.85365   
+channelPuissanceTNT:dayofweek5                                           -2.350e+02  3.160e+02  -0.744  0.45729   
+channelSerieClub:dayofweek5                                               2.285e+02  2.200e+02   1.039  0.29937   
+channelTeva:dayofweek5                                                   -1.043e+01  2.258e+02  -0.046  0.96316   
+channelParisPremiere:dayofweek6                                          -1.858e+03  9.633e+03  -0.193  0.84711   
+channelPuissanceTNT:dayofweek6                                                   NA         NA      NA       NA   
+channelSerieClub:dayofweek6                                                      NA         NA      NA       NA   
+channelTeva:dayofweek6                                                           NA         NA      NA       NA   
+channelParisPremiere:dayofweek7                                          -4.941e+02  4.530e+02  -1.091  0.27581   
+channelPuissanceTNT:dayofweek7                                           -2.023e+01  3.909e+02  -0.052  0.95875   
+channelSerieClub:dayofweek7                                              -8.436e+02  5.300e+02  -1.592  0.11205   
+channelTeva:dayofweek7                                                   -5.144e+02  4.758e+02  -1.081  0.28017   
+channelParisPremiere:consumption                                          2.706e-02  3.604e-02   0.751  0.45314   
+channelPuissanceTNT:consumption                                          -3.030e-02  8.766e-02  -0.346  0.72972   
+channelSerieClub:consumption                                              7.791e-02  4.897e-02   1.591  0.11217   
+channelTeva:consumption                                                   2.863e-02  4.002e-02   0.715  0.47462   
+channelParisPremiere:festival1                                                   NA         NA      NA       NA   
+channelPuissanceTNT:festival1                                            -6.559e+02  1.251e+03  -0.524  0.60034   
+channelSerieClub:festival1                                                       NA         NA      NA       NA   
+channelTeva:festival1                                                            NA         NA      NA       NA   
+channelParisPremiere:festival2                                                   NA         NA      NA       NA   
+channelPuissanceTNT:festival2                                             7.600e+01  7.602e+02   0.100  0.92041   
+channelSerieClub:festival2                                                       NA         NA      NA       NA   
+channelTeva:festival2                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek3                                            -8.446e+03  1.343e+05  -0.063  0.94987   
+channelPuissanceTNT:nthweek3                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek3                                                -9.010e+03  1.358e+05  -0.066  0.94711   
+channelTeva:nthweek3                                                     -7.906e+03  1.311e+05  -0.060  0.95195   
+channelParisPremiere:nthweek4                                            -8.032e+03  1.343e+05  -0.060  0.95232   
+channelPuissanceTNT:nthweek4                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek4                                                -8.625e+03  1.358e+05  -0.064  0.94937   
+channelTeva:nthweek4                                                     -7.611e+03  1.311e+05  -0.058  0.95374   
+channelParisPremiere:nthweek5                                            -7.851e+03  1.343e+05  -0.058  0.95339   
+channelPuissanceTNT:nthweek5                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek5                                                -9.132e+03  1.358e+05  -0.067  0.94640   
+channelTeva:nthweek5                                                     -7.788e+03  1.311e+05  -0.059  0.95267   
+channelParisPremiere:nthweek6                                            -7.842e+03  1.343e+05  -0.058  0.95345   
+channelPuissanceTNT:nthweek6                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek6                                                -8.486e+03  1.358e+05  -0.062  0.95019   
+channelTeva:nthweek6                                                     -7.742e+03  1.311e+05  -0.059  0.95295   
+channelParisPremiere:nthweek7                                            -7.723e+03  1.343e+05  -0.058  0.95415   
+channelPuissanceTNT:nthweek7                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek7                                                -8.279e+03  1.358e+05  -0.061  0.95140   
+channelTeva:nthweek7                                                     -7.666e+03  1.311e+05  -0.058  0.95341   
+channelParisPremiere:nthweek9                                                    NA         NA      NA       NA   
+channelPuissanceTNT:nthweek9                                                     NA         NA      NA       NA   
+channelSerieClub:nthweek9                                                        NA         NA      NA       NA   
+channelTeva:nthweek9                                                             NA         NA      NA       NA   
+channelParisPremiere:nthweek10                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek10                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek10                                                       NA         NA      NA       NA   
+channelTeva:nthweek10                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek11                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek11                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek11                                                       NA         NA      NA       NA   
+channelTeva:nthweek11                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek12                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek12                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek12                                                       NA         NA      NA       NA   
+channelTeva:nthweek12                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek13                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek13                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek13                                                       NA         NA      NA       NA   
+channelTeva:nthweek13                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek14                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek14                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek14                                                       NA         NA      NA       NA   
+channelTeva:nthweek14                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek15                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek15                                             2.914e+02  3.865e+02   0.754  0.45116   
+channelSerieClub:nthweek15                                                       NA         NA      NA       NA   
+channelTeva:nthweek15                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek16                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek16                                             1.604e+02  2.898e+02   0.554  0.58014   
+channelSerieClub:nthweek16                                                       NA         NA      NA       NA   
+channelTeva:nthweek16                                                            NA         NA      NA       NA   
+channelParisPremiere:nthweek17                                                   NA         NA      NA       NA   
+channelPuissanceTNT:nthweek17                                                    NA         NA      NA       NA   
+channelSerieClub:nthweek17                                                       NA         NA      NA       NA   
+channelTeva:nthweek17                                                            NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTACCESS19                                                     NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTACCESS19                                                   NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTACCESS19                                                    NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTDAY0309                                                      NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTDAY0309                                                    NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTDAY0309                                                     NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTDAY1011                                                      NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTDAY1011                                                    NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTDAY1011                                                     NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTDAY1213                                                      NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTDAY1213                                                    NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTDAY1213                                                     NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTDAY1415                                                      NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTDAY1415                                                    NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTDAY1415                                                     NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTDAY1617                                                      NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTDAY1617                                                    NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTDAY1617                                                     NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTNIGHT0002                                                    NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTNIGHT0002                                                  NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTNIGHT0002                                                   NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTNIGHT2223                                                    NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTNIGHT2223                                                  NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTNIGHT2223                                                   NA         NA      NA       NA   
+DAYPARTDAY:MMDAYPARTPEAK                                                         NA         NA      NA       NA   
+DAYPARTNIGHT:MMDAYPARTPEAK                                                       NA         NA      NA       NA   
+DAYPARTPEAK:MMDAYPARTPEAK                                                        NA         NA      NA       NA   
+DAYPARTDAY:creaCOEUR DES FEMMES 30'' v1                                   3.118e+02  4.958e+02   0.629  0.52969   
+DAYPARTNIGHT:creaCOEUR DES FEMMES 30'' v1                                -6.517e+01  5.894e+02  -0.111  0.91201   
+DAYPARTPEAK:creaCOEUR DES FEMMES 30'' v1                                  2.833e+02  6.036e+02   0.469  0.63899   
+DAYPARTDAY:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1           -1.132e+02  4.072e+02  -0.278  0.78105   
+DAYPARTNIGHT:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1          8.660e+01  4.438e+02   0.195  0.84535   
+DAYPARTPEAK:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1           2.961e+02  4.929e+02   0.601  0.54829   
+DAYPARTDAY:creaeffet push-up                                             -1.383e+03  3.714e+04  -0.037  0.97032   
+DAYPARTNIGHT:creaeffet push-up                                            3.295e+02  3.501e+04   0.009  0.99249   
+DAYPARTPEAK:creaeffet push-up                                            -1.541e+03  1.174e+04  -0.131  0.89566   
+DAYPARTDAY:creaeffet sculptant                                            1.104e+02  3.702e+04   0.003  0.99762   
+DAYPARTNIGHT:creaeffet sculptant                                          2.015e+03  3.466e+04   0.058  0.95365   
+DAYPARTPEAK:creaeffet sculptant                                                  NA         NA      NA       NA   
+DAYPARTDAY:creaEFFET SCULPTANT LA FEMME 12'' v2                          -2.449e+02  5.401e+02  -0.453  0.65043   
+DAYPARTNIGHT:creaEFFET SCULPTANT LA FEMME 12'' v2                         3.353e+02  5.573e+02   0.602  0.54759   
+DAYPARTPEAK:creaEFFET SCULPTANT LA FEMME 12'' v2                          4.817e+02  5.986e+02   0.805  0.42129   
+DAYPARTDAY:creaEFFET SCULPTANT LA FEMME 20'' v1                           5.820e+02  4.024e+02   1.446  0.14867   
+DAYPARTNIGHT:creaEFFET SCULPTANT LA FEMME 20'' v1                         8.062e+02  4.481e+02   1.799  0.07257 . 
+DAYPARTPEAK:creaEFFET SCULPTANT LA FEMME 20'' v1                          5.892e+02  5.011e+02   1.176  0.24016   
+DAYPARTDAY:creala chaussure pour toutes les morpho'                      -2.681e+02  3.701e+04  -0.007  0.99422   
+DAYPARTNIGHT:creala chaussure pour toutes les morpho'                     3.297e+03  3.451e+04   0.096  0.92393   
+DAYPARTPEAK:creala chaussure pour toutes les morpho'                      2.093e+03  1.267e+03   1.651  0.09923 . 
+DAYPARTDAY:creala lingerie pour toutes les morpho                        -5.682e+01  3.701e+04  -0.002  0.99878   
+DAYPARTNIGHT:creala lingerie pour toutes les morpho                       3.720e+03  3.451e+04   0.108  0.91418   
+DAYPARTPEAK:creala lingerie pour toutes les morpho                        2.471e+03  1.264e+03   1.954  0.05115 . 
+DAYPARTDAY:creala mode pour toutes les morpho                                    NA         NA      NA       NA   
+DAYPARTNIGHT:creala mode pour toutes les morpho                                  NA         NA      NA       NA   
+DAYPARTPEAK:creala mode pour toutes les morpho                                   NA         NA      NA       NA   
+DAYPARTDAY:creala terrasse                                               -9.080e+01  3.703e+04  -0.002  0.99804   
+DAYPARTNIGHT:creala terrasse                                                     NA         NA      NA       NA   
+DAYPARTPEAK:creala terrasse                                                      NA         NA      NA       NA   
+DAYPARTDAY:creaversion de base                                                   NA         NA      NA       NA   
+DAYPARTNIGHT:creaversion de base                                                 NA         NA      NA       NA   
+DAYPARTPEAK:creaversion de base                                                  NA         NA      NA       NA   
+DAYPARTDAY:budgetbrut                                                     1.243e+01  6.795e+00   1.830  0.06781 . 
+DAYPARTNIGHT:budgetbrut                                                  -2.109e+00  6.199e+00  -0.340  0.73385   
+DAYPARTPEAK:budgetbrut                                                   -5.401e-01  5.789e+00  -0.093  0.92570   
+DAYPARTDAY:budgetnet                                                     -6.905e+01  3.788e+01  -1.823  0.06890 . 
+DAYPARTNIGHT:budgetnet                                                    1.206e+01  3.457e+01   0.349  0.72732   
+DAYPARTPEAK:budgetnet                                                     3.476e+00  3.229e+01   0.108  0.91431   
+DAYPARTDAY:grp                                                            1.144e+01  1.535e+02   0.075  0.94062   
+DAYPARTNIGHT:grp                                                          8.893e+01  1.657e+02   0.537  0.59173   
+DAYPARTPEAK:grp                                                           1.062e+02  1.849e+02   0.575  0.56586   
+DAYPARTDAY:grpref                                                         4.345e+02  4.085e+02   1.064  0.28798   
+DAYPARTNIGHT:grpref                                                      -5.599e+02  4.299e+02  -1.302  0.19335   
+DAYPARTPEAK:grpref                                                       -3.534e+02  4.489e+02  -0.787  0.43154   
+DAYPARTDAY:month2                                                        -7.133e+02  3.840e+02  -1.858  0.06372 . 
+DAYPARTNIGHT:month2                                                      -4.546e+02  3.603e+02  -1.262  0.20754   
+DAYPARTPEAK:month2                                                       -2.643e+02  3.835e+02  -0.689  0.49108   
+DAYPARTDAY:month3                                                        -3.558e+03  1.306e+04  -0.272  0.78541   
+DAYPARTNIGHT:month3                                                              NA         NA      NA       NA   
+DAYPARTPEAK:month3                                                       -6.102e+03  1.354e+04  -0.451  0.65230   
+DAYPARTDAY:month4                                                                NA         NA      NA       NA   
+DAYPARTNIGHT:month4                                                              NA         NA      NA       NA   
+DAYPARTPEAK:month4                                                               NA         NA      NA       NA   
+DAYPARTDAY:dayofweek2                                                    -4.539e+02  2.071e+02  -2.192  0.02878 * 
+DAYPARTNIGHT:dayofweek2                                                  -4.033e+02  2.672e+02  -1.509  0.13176   
+DAYPARTPEAK:dayofweek2                                                   -5.996e+02  2.219e+02  -2.702  0.00711 **
+DAYPARTDAY:dayofweek3                                                    -2.540e+01  2.118e+02  -0.120  0.90459   
+DAYPARTNIGHT:dayofweek3                                                  -4.765e+01  2.575e+02  -0.185  0.85325   
+DAYPARTPEAK:dayofweek3                                                   -1.255e+02  2.433e+02  -0.516  0.60610   
+DAYPARTDAY:dayofweek4                                                    -7.840e+01  2.177e+02  -0.360  0.71893   
+DAYPARTNIGHT:dayofweek4                                                  -1.923e+02  2.661e+02  -0.723  0.47012   
+DAYPARTPEAK:dayofweek4                                                   -2.481e+02  2.457e+02  -1.010  0.31302   
+DAYPARTDAY:dayofweek5                                                    -1.739e+02  1.961e+02  -0.887  0.37570   
+DAYPARTNIGHT:dayofweek5                                                  -3.925e+02  3.215e+02  -1.221  0.22260   
+DAYPARTPEAK:dayofweek5                                                   -2.499e+02  2.480e+02  -1.008  0.31400   
+DAYPARTDAY:dayofweek6                                                            NA         NA      NA       NA   
+DAYPARTNIGHT:dayofweek6                                                          NA         NA      NA       NA   
+DAYPARTPEAK:dayofweek6                                                           NA         NA      NA       NA   
+DAYPARTDAY:dayofweek7                                                     1.242e+02  2.747e+02   0.452  0.65152   
+DAYPARTNIGHT:dayofweek7                                                  -4.388e+02  2.195e+02  -1.999  0.04612 * 
+DAYPARTPEAK:dayofweek7                                                   -2.780e+02  2.203e+02  -1.262  0.20762   
+DAYPARTDAY:consumption                                                   -6.613e-03  2.681e-02  -0.247  0.80530   
+DAYPARTNIGHT:consumption                                                  3.429e-02  3.296e-02   1.040  0.29865   
+DAYPARTPEAK:consumption                                                   4.876e-03  2.847e-02   0.171  0.86409   
+DAYPARTDAY:festival1                                                      9.257e+02  9.058e+02   1.022  0.30729   
+DAYPARTNIGHT:festival1                                                    2.489e+03  1.353e+03   1.839  0.06646 . 
+DAYPARTPEAK:festival1                                                            NA         NA      NA       NA   
+DAYPARTDAY:festival2                                                      4.219e+01  6.827e+02   0.062  0.95075   
+DAYPARTNIGHT:festival2                                                           NA         NA      NA       NA   
+DAYPARTPEAK:festival2                                                    -8.253e+02  3.017e+03  -0.274  0.78455   
+DAYPARTDAY:nthweek3                                                       4.473e+02  3.701e+04   0.012  0.99036   
+DAYPARTNIGHT:nthweek3                                                     1.210e+03  3.448e+04   0.035  0.97201   
+DAYPARTPEAK:nthweek3                                                      2.132e+02  4.368e+02   0.488  0.62571   
+DAYPARTDAY:nthweek4                                                       1.850e+02  3.701e+04   0.005  0.99601   
+DAYPARTNIGHT:nthweek4                                                     1.194e+03  3.448e+04   0.035  0.97238   
+DAYPARTPEAK:nthweek4                                                      2.553e+02  4.816e+02   0.530  0.59624   
+DAYPARTDAY:nthweek5                                                       8.413e+02  3.702e+04   0.023  0.98188   
+DAYPARTNIGHT:nthweek5                                                     1.449e+03  3.448e+04   0.042  0.96648   
+DAYPARTPEAK:nthweek5                                                      5.261e+02  5.968e+02   0.882  0.37838   
+DAYPARTDAY:nthweek6                                                       4.478e+02  3.702e+04   0.012  0.99035   
+DAYPARTNIGHT:nthweek6                                                     1.206e+03  3.448e+04   0.035  0.97211   
+DAYPARTPEAK:nthweek6                                                     -7.681e+01  6.540e+02  -0.117  0.90655   
+DAYPARTDAY:nthweek7                                                       4.842e+02  3.702e+04   0.013  0.98957   
+DAYPARTNIGHT:nthweek7                                                     1.390e+03  3.448e+04   0.040  0.96785   
+DAYPARTPEAK:nthweek7                                                      1.208e+02  6.909e+02   0.175  0.86128   
+DAYPARTDAY:nthweek9                                                              NA         NA      NA       NA   
+DAYPARTNIGHT:nthweek9                                                            NA         NA      NA       NA   
+DAYPARTPEAK:nthweek9                                                             NA         NA      NA       NA   
+DAYPARTDAY:nthweek10                                                      3.902e+03  1.303e+04   0.300  0.76465   
+DAYPARTNIGHT:nthweek10                                                           NA         NA      NA       NA   
+DAYPARTPEAK:nthweek10                                                     4.126e+03  1.359e+04   0.304  0.76145   
+DAYPARTDAY:nthweek11                                                      3.699e+03  6.220e+03   0.595  0.55223   
+DAYPARTNIGHT:nthweek11                                                   -3.014e+02  5.200e+03  -0.058  0.95381   
+DAYPARTPEAK:nthweek11                                                     4.466e+03  6.856e+03   0.651  0.51507   
+DAYPARTDAY:nthweek12                                                      4.246e+03  1.310e+04   0.324  0.74598   
+DAYPARTNIGHT:nthweek12                                                           NA         NA      NA       NA   
+DAYPARTPEAK:nthweek12                                                     5.431e+03  1.341e+04   0.405  0.68568   
+DAYPARTDAY:nthweek13                                                      3.789e+02  5.320e+02   0.712  0.47654   
+DAYPARTNIGHT:nthweek13                                                   -1.235e+03  1.267e+03  -0.974  0.33029   
+DAYPARTPEAK:nthweek13                                                    -9.253e+02  9.980e+02  -0.927  0.35427   
+DAYPARTDAY:nthweek14                                                      1.301e+02  5.133e+02   0.254  0.79994   
+DAYPARTNIGHT:nthweek14                                                   -4.724e+02  1.325e+03  -0.357  0.72149   
+DAYPARTPEAK:nthweek14                                                    -9.165e+02  9.478e+02  -0.967  0.33400   
+DAYPARTDAY:nthweek15                                                      1.368e+02  4.627e+02   0.296  0.76764   
+DAYPARTNIGHT:nthweek15                                                   -9.684e+02  1.221e+03  -0.793  0.42800   
+DAYPARTPEAK:nthweek15                                                    -1.176e+03  7.429e+02  -1.583  0.11391   
+DAYPARTDAY:nthweek16                                                     -1.683e+02  3.813e+02  -0.441  0.65909   
+DAYPARTNIGHT:nthweek16                                                   -1.288e+03  1.120e+03  -1.150  0.25065   
+DAYPARTPEAK:nthweek16                                                    -6.372e+02  6.314e+02  -1.009  0.31338   
+DAYPARTDAY:nthweek17                                                             NA         NA      NA       NA   
+DAYPARTNIGHT:nthweek17                                                           NA         NA      NA       NA   
+DAYPARTPEAK:nthweek17                                                            NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaCOEUR DES FEMMES 30'' v1                           -1.212e+02  5.107e+02  -0.237  0.81245   
+MMDAYPARTDAY0309:creaCOEUR DES FEMMES 30'' v1                            -1.607e+02  4.748e+02  -0.339  0.73509   
+MMDAYPARTDAY1011:creaCOEUR DES FEMMES 30'' v1                            -5.451e+02  4.314e+02  -1.264  0.20688   
+MMDAYPARTDAY1213:creaCOEUR DES FEMMES 30'' v1                            -4.858e+02  3.975e+02  -1.222  0.22221   
+MMDAYPARTDAY1415:creaCOEUR DES FEMMES 30'' v1                            -8.065e+01  3.320e+02  -0.243  0.80814   
+MMDAYPARTDAY1617:creaCOEUR DES FEMMES 30'' v1                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaCOEUR DES FEMMES 30'' v1                                  NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaCOEUR DES FEMMES 30'' v1                                  NA         NA      NA       NA   
+MMDAYPARTPEAK:creaCOEUR DES FEMMES 30'' v1                                       NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1    -3.757e+02  3.537e+02  -1.062  0.28867   
+MMDAYPARTDAY0309:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      4.882e+01  3.392e+02   0.144  0.88561   
+MMDAYPARTDAY1011:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1     -8.585e+01  3.252e+02  -0.264  0.79185   
+MMDAYPARTDAY1213:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      2.478e+01  2.810e+02   0.088  0.92978   
+MMDAYPARTDAY1415:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      3.232e+02  2.022e+02   1.599  0.11044   
+MMDAYPARTDAY1617:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1             NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1    1.590e+03  5.701e+03   0.279  0.78041   
+MMDAYPARTNIGHT2223:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1           NA         NA      NA       NA   
+MMDAYPARTPEAK:creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1                NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaeffet push-up                                      -4.635e+03  9.684e+03  -0.479  0.63242   
+MMDAYPARTDAY0309:creaeffet push-up                                        1.690e+03  3.917e+04   0.043  0.96561   
+MMDAYPARTDAY1011:creaeffet push-up                                       -1.136e+03  3.735e+04  -0.030  0.97574   
+MMDAYPARTDAY1213:creaeffet push-up                                       -8.227e+02  3.701e+04  -0.022  0.98227   
+MMDAYPARTDAY1415:creaeffet push-up                                        1.094e+03  3.800e+04   0.029  0.97705   
+MMDAYPARTDAY1617:creaeffet push-up                                               NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaeffet push-up                                             NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaeffet push-up                                             NA         NA      NA       NA   
+MMDAYPARTPEAK:creaeffet push-up                                                  NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaeffet sculptant                                    -2.076e+02  1.635e+03  -0.127  0.89896   
+MMDAYPARTDAY0309:creaeffet sculptant                                      6.985e+02  3.708e+04   0.019  0.98498   
+MMDAYPARTDAY1011:creaeffet sculptant                                     -1.683e+03  3.700e+04  -0.045  0.96374   
+MMDAYPARTDAY1213:creaeffet sculptant                                     -7.568e+02  3.693e+04  -0.020  0.98366   
+MMDAYPARTDAY1415:creaeffet sculptant                                     -3.640e+01  3.773e+04  -0.001  0.99923   
+MMDAYPARTDAY1617:creaeffet sculptant                                             NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaeffet sculptant                                           NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaeffet sculptant                                           NA         NA      NA       NA   
+MMDAYPARTPEAK:creaeffet sculptant                                                NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaEFFET SCULPTANT LA FEMME 12'' v2                   -1.728e+02  5.220e+02  -0.331  0.74065   
+MMDAYPARTDAY0309:creaEFFET SCULPTANT LA FEMME 12'' v2                     4.272e+02  6.291e+02   0.679  0.49738   
+MMDAYPARTDAY1011:creaEFFET SCULPTANT LA FEMME 12'' v2                     2.360e+01  6.256e+02   0.038  0.96993   
+MMDAYPARTDAY1213:creaEFFET SCULPTANT LA FEMME 12'' v2                     3.497e+02  4.747e+02   0.737  0.46165   
+MMDAYPARTDAY1415:creaEFFET SCULPTANT LA FEMME 12'' v2                     6.724e+02  3.554e+02   1.892  0.05905 . 
+MMDAYPARTDAY1617:creaEFFET SCULPTANT LA FEMME 12'' v2                            NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaEFFET SCULPTANT LA FEMME 12'' v2                          NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaEFFET SCULPTANT LA FEMME 12'' v2                          NA         NA      NA       NA   
+MMDAYPARTPEAK:creaEFFET SCULPTANT LA FEMME 12'' v2                               NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaEFFET SCULPTANT LA FEMME 20'' v1                    5.242e+02  3.524e+02   1.488  0.13745   
+MMDAYPARTDAY0309:creaEFFET SCULPTANT LA FEMME 20'' v1                     8.769e+01  3.439e+02   0.255  0.79883   
+MMDAYPARTDAY1011:creaEFFET SCULPTANT LA FEMME 20'' v1                    -9.361e+01  3.309e+02  -0.283  0.77736   
+MMDAYPARTDAY1213:creaEFFET SCULPTANT LA FEMME 20'' v1                     9.759e+00  2.904e+02   0.034  0.97321   
+MMDAYPARTDAY1415:creaEFFET SCULPTANT LA FEMME 20'' v1                     3.251e+02  2.159e+02   1.506  0.13258   
+MMDAYPARTDAY1617:creaEFFET SCULPTANT LA FEMME 20'' v1                            NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaEFFET SCULPTANT LA FEMME 20'' v1                          NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaEFFET SCULPTANT LA FEMME 20'' v1                          NA         NA      NA       NA   
+MMDAYPARTPEAK:creaEFFET SCULPTANT LA FEMME 20'' v1                               NA         NA      NA       NA   
+MMDAYPARTACCESS19:creala chaussure pour toutes les morpho'               -2.179e+02  1.589e+03  -0.137  0.89097   
+MMDAYPARTDAY0309:creala chaussure pour toutes les morpho'                -8.644e+01  3.707e+04  -0.002  0.99814   
+MMDAYPARTDAY1011:creala chaussure pour toutes les morpho'                -1.473e+03  3.700e+04  -0.040  0.96826   
+MMDAYPARTDAY1213:creala chaussure pour toutes les morpho'                -1.487e+02  3.693e+04  -0.004  0.99679   
+MMDAYPARTDAY1415:creala chaussure pour toutes les morpho'                 2.498e+02  3.773e+04   0.007  0.99472   
+MMDAYPARTDAY1617:creala chaussure pour toutes les morpho'                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creala chaussure pour toutes les morpho'                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creala chaussure pour toutes les morpho'                      NA         NA      NA       NA   
+MMDAYPARTPEAK:creala chaussure pour toutes les morpho'                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:creala lingerie pour toutes les morpho                  7.622e+01  1.584e+03   0.048  0.96164   
+MMDAYPARTDAY0309:creala lingerie pour toutes les morpho                  -9.300e+02  3.708e+04  -0.025  0.98000   
+MMDAYPARTDAY1011:creala lingerie pour toutes les morpho                  -1.754e+03  3.700e+04  -0.047  0.96221   
+MMDAYPARTDAY1213:creala lingerie pour toutes les morpho                  -4.153e+02  3.693e+04  -0.011  0.99103   
+MMDAYPARTDAY1415:creala lingerie pour toutes les morpho                  -3.686e+01  3.772e+04  -0.001  0.99922   
+MMDAYPARTDAY1617:creala lingerie pour toutes les morpho                          NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creala lingerie pour toutes les morpho                        NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creala lingerie pour toutes les morpho                        NA         NA      NA       NA   
+MMDAYPARTPEAK:creala lingerie pour toutes les morpho                             NA         NA      NA       NA   
+MMDAYPARTACCESS19:creala mode pour toutes les morpho                             NA         NA      NA       NA   
+MMDAYPARTDAY0309:creala mode pour toutes les morpho                              NA         NA      NA       NA   
+MMDAYPARTDAY1011:creala mode pour toutes les morpho                              NA         NA      NA       NA   
+MMDAYPARTDAY1213:creala mode pour toutes les morpho                       1.290e+03  3.772e+04   0.034  0.97272   
+MMDAYPARTDAY1415:creala mode pour toutes les morpho                       1.620e+03  3.886e+04   0.042  0.96675   
+MMDAYPARTDAY1617:creala mode pour toutes les morpho                              NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creala mode pour toutes les morpho                            NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creala mode pour toutes les morpho                            NA         NA      NA       NA   
+MMDAYPARTPEAK:creala mode pour toutes les morpho                                 NA         NA      NA       NA   
+MMDAYPARTACCESS19:creala terrasse                                        -2.012e+02  1.583e+03  -0.127  0.89891   
+MMDAYPARTDAY0309:creala terrasse                                          1.414e+02  3.707e+04   0.004  0.99696   
+MMDAYPARTDAY1011:creala terrasse                                         -1.292e+03  3.700e+04  -0.035  0.97215   
+MMDAYPARTDAY1213:creala terrasse                                         -2.480e+02  3.693e+04  -0.007  0.99465   
+MMDAYPARTDAY1415:creala terrasse                                          4.292e+01  3.772e+04   0.001  0.99909   
+MMDAYPARTDAY1617:creala terrasse                                                 NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creala terrasse                                               NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creala terrasse                                               NA         NA      NA       NA   
+MMDAYPARTPEAK:creala terrasse                                                    NA         NA      NA       NA   
+MMDAYPARTACCESS19:creaversion de base                                            NA         NA      NA       NA   
+MMDAYPARTDAY0309:creaversion de base                                             NA         NA      NA       NA   
+MMDAYPARTDAY1011:creaversion de base                                             NA         NA      NA       NA   
+MMDAYPARTDAY1213:creaversion de base                                             NA         NA      NA       NA   
+MMDAYPARTDAY1415:creaversion de base                                             NA         NA      NA       NA   
+MMDAYPARTDAY1617:creaversion de base                                             NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:creaversion de base                                           NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:creaversion de base                                           NA         NA      NA       NA   
+MMDAYPARTPEAK:creaversion de base                                                NA         NA      NA       NA   
+MMDAYPARTACCESS19:budgetbrut                                             -5.712e+00  5.790e+00  -0.987  0.32427   
+MMDAYPARTDAY0309:budgetbrut                                              -2.152e+01  3.300e+01  -0.652  0.51461   
+MMDAYPARTDAY1011:budgetbrut                                              -1.227e+01  5.052e+00  -2.430  0.01544 * 
+MMDAYPARTDAY1213:budgetbrut                                              -1.399e+01  4.892e+00  -2.859  0.00441 **
+MMDAYPARTDAY1415:budgetbrut                                              -8.226e+00  5.383e+00  -1.528  0.12705   
+MMDAYPARTDAY1617:budgetbrut                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:budgetbrut                                            -7.475e-01  3.057e+00  -0.245  0.80693   
+MMDAYPARTNIGHT2223:budgetbrut                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:budgetbrut                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:budgetnet                                               3.226e+01  3.229e+01   0.999  0.31815   
+MMDAYPARTDAY0309:budgetnet                                                1.144e+02  1.641e+02   0.697  0.48613   
+MMDAYPARTDAY1011:budgetnet                                                6.881e+01  2.806e+01   2.452  0.01452 * 
+MMDAYPARTDAY1213:budgetnet                                                7.818e+01  2.720e+01   2.874  0.00421 **
+MMDAYPARTDAY1415:budgetnet                                                4.556e+01  2.996e+01   1.521  0.12885   
+MMDAYPARTDAY1617:budgetnet                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:budgetnet                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:budgetnet                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:budgetnet                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:grp                                                     2.040e+01  1.456e+02   0.140  0.88865   
+MMDAYPARTDAY0309:grp                                                      1.037e+03  1.696e+03   0.611  0.54118   
+MMDAYPARTDAY1011:grp                                                     -5.012e+01  2.342e+02  -0.214  0.83066   
+MMDAYPARTDAY1213:grp                                                     -6.670e+01  1.350e+02  -0.494  0.62159   
+MMDAYPARTDAY1415:grp                                                     -1.682e+02  1.014e+02  -1.659  0.09770 . 
+MMDAYPARTDAY1617:grp                                                             NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:grp                                                           NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:grp                                                           NA         NA      NA       NA   
+MMDAYPARTPEAK:grp                                                                NA         NA      NA       NA   
+MMDAYPARTACCESS19:grpref                                                 -5.585e+02  3.570e+02  -1.564  0.11828   
+MMDAYPARTDAY0309:grpref                                                  -4.981e+02  5.921e+03  -0.084  0.93299   
+MMDAYPARTDAY1011:grpref                                                  -4.733e+02  5.686e+02  -0.832  0.40560   
+MMDAYPARTDAY1213:grpref                                                  -5.703e+02  3.479e+02  -1.639  0.10169   
+MMDAYPARTDAY1415:grpref                                                  -1.007e+02  2.729e+02  -0.369  0.71223   
+MMDAYPARTDAY1617:grpref                                                          NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:grpref                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:grpref                                                        NA         NA      NA       NA   
+MMDAYPARTPEAK:grpref                                                             NA         NA      NA       NA   
+MMDAYPARTACCESS19:month2                                                  2.871e+02  4.481e+02   0.641  0.52202   
+MMDAYPARTDAY0309:month2                                                   4.348e+02  3.333e+02   1.305  0.19258   
+MMDAYPARTDAY1011:month2                                                   5.790e+02  3.400e+02   1.703  0.08917 . 
+MMDAYPARTDAY1213:month2                                                   4.202e+02  3.063e+02   1.372  0.17065   
+MMDAYPARTDAY1415:month2                                                  -8.949e+01  2.426e+02  -0.369  0.71234   
+MMDAYPARTDAY1617:month2                                                          NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:month2                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:month2                                                        NA         NA      NA       NA   
+MMDAYPARTPEAK:month2                                                             NA         NA      NA       NA   
+MMDAYPARTACCESS19:month3                                                 -2.625e+02  7.152e+03  -0.037  0.97074   
+MMDAYPARTDAY0309:month3                                                          NA         NA      NA       NA   
+MMDAYPARTDAY1011:month3                                                   9.529e+02  1.183e+03   0.806  0.42079   
+MMDAYPARTDAY1213:month3                                                   2.014e+03  4.480e+03   0.449  0.65330   
+MMDAYPARTDAY1415:month3                                                   8.877e+02  1.049e+03   0.846  0.39777   
+MMDAYPARTDAY1617:month3                                                          NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:month3                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:month3                                                        NA         NA      NA       NA   
+MMDAYPARTPEAK:month3                                                             NA         NA      NA       NA   
+MMDAYPARTACCESS19:month4                                                         NA         NA      NA       NA   
+MMDAYPARTDAY0309:month4                                                          NA         NA      NA       NA   
+MMDAYPARTDAY1011:month4                                                          NA         NA      NA       NA   
+MMDAYPARTDAY1213:month4                                                          NA         NA      NA       NA   
+MMDAYPARTDAY1415:month4                                                          NA         NA      NA       NA   
+MMDAYPARTDAY1617:month4                                                          NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:month4                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:month4                                                        NA         NA      NA       NA   
+MMDAYPARTPEAK:month4                                                             NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek2                                             -4.175e+02  2.072e+02  -2.015  0.04444 * 
+MMDAYPARTDAY0309:dayofweek2                                               7.183e+01  2.015e+02   0.356  0.72161   
+MMDAYPARTDAY1011:dayofweek2                                               7.505e+01  1.912e+02   0.392  0.69487   
+MMDAYPARTDAY1213:dayofweek2                                               5.104e+01  1.511e+02   0.338  0.73563   
+MMDAYPARTDAY1415:dayofweek2                                               6.393e+01  1.355e+02   0.472  0.63716   
+MMDAYPARTDAY1617:dayofweek2                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek2                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek2                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek2                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek3                                              4.957e+01  2.566e+02   0.193  0.84688   
+MMDAYPARTDAY0309:dayofweek3                                               1.535e+02  2.285e+02   0.672  0.50193   
+MMDAYPARTDAY1011:dayofweek3                                               3.515e+02  2.082e+02   1.688  0.09202 . 
+MMDAYPARTDAY1213:dayofweek3                                               1.471e+02  1.689e+02   0.871  0.38405   
+MMDAYPARTDAY1415:dayofweek3                                               9.166e+01  1.381e+02   0.664  0.50700   
+MMDAYPARTDAY1617:dayofweek3                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek3                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek3                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek3                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek4                                             -3.021e+02  2.546e+02  -1.187  0.23586   
+MMDAYPARTDAY0309:dayofweek4                                               1.917e+02  2.104e+02   0.911  0.36250   
+MMDAYPARTDAY1011:dayofweek4                                               3.094e+02  2.024e+02   1.529  0.12693   
+MMDAYPARTDAY1213:dayofweek4                                               6.916e+01  1.802e+02   0.384  0.70134   
+MMDAYPARTDAY1415:dayofweek4                                               1.146e+02  1.441e+02   0.795  0.42670   
+MMDAYPARTDAY1617:dayofweek4                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek4                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek4                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek4                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek5                                             -3.065e+02  2.115e+02  -1.449  0.14780   
+MMDAYPARTDAY0309:dayofweek5                                               1.151e+02  2.105e+02   0.547  0.58463   
+MMDAYPARTDAY1011:dayofweek5                                               2.851e+02  2.032e+02   1.403  0.16121   
+MMDAYPARTDAY1213:dayofweek5                                               7.495e+01  1.652e+02   0.454  0.65019   
+MMDAYPARTDAY1415:dayofweek5                                              -3.843e+01  1.373e+02  -0.280  0.77963   
+MMDAYPARTDAY1617:dayofweek5                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek5                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek5                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek5                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek6                                                     NA         NA      NA       NA   
+MMDAYPARTDAY0309:dayofweek6                                                      NA         NA      NA       NA   
+MMDAYPARTDAY1011:dayofweek6                                                      NA         NA      NA       NA   
+MMDAYPARTDAY1213:dayofweek6                                                      NA         NA      NA       NA   
+MMDAYPARTDAY1415:dayofweek6                                                      NA         NA      NA       NA   
+MMDAYPARTDAY1617:dayofweek6                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek6                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek6                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek6                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:dayofweek7                                             -4.641e+02  2.514e+02  -1.846  0.06542 . 
+MMDAYPARTDAY0309:dayofweek7                                              -1.967e+02  2.810e+02  -0.700  0.48417   
+MMDAYPARTDAY1011:dayofweek7                                              -2.661e+02  2.627e+02  -1.013  0.31150   
+MMDAYPARTDAY1213:dayofweek7                                              -3.680e+02  2.575e+02  -1.429  0.15350   
+MMDAYPARTDAY1415:dayofweek7                                              -1.165e+02  2.277e+02  -0.512  0.60918   
+MMDAYPARTDAY1617:dayofweek7                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:dayofweek7                                                    NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:dayofweek7                                                    NA         NA      NA       NA   
+MMDAYPARTPEAK:dayofweek7                                                         NA         NA      NA       NA   
+MMDAYPARTACCESS19:consumption                                             4.637e-02  4.167e-02   1.113  0.26630   
+MMDAYPARTDAY0309:consumption                                              1.681e-02  3.402e-02   0.494  0.62151   
+MMDAYPARTDAY1011:consumption                                             -1.462e-02  3.153e-02  -0.464  0.64317   
+MMDAYPARTDAY1213:consumption                                              1.033e-02  2.491e-02   0.415  0.67865   
+MMDAYPARTDAY1415:consumption                                             -1.533e-02  2.304e-02  -0.666  0.50597   
+MMDAYPARTDAY1617:consumption                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:consumption                                                   NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:consumption                                                   NA         NA      NA       NA   
+MMDAYPARTPEAK:consumption                                                        NA         NA      NA       NA   
+MMDAYPARTACCESS19:festival1                                               1.312e+03  1.031e+03   1.273  0.20349   
+MMDAYPARTDAY0309:festival1                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:festival1                                                9.513e+01  8.342e+02   0.114  0.90925   
+MMDAYPARTDAY1213:festival1                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1415:festival1                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1617:festival1                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:festival1                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:festival1                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:festival1                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:festival2                                                      NA         NA      NA       NA   
+MMDAYPARTDAY0309:festival2                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:festival2                                               -1.122e+03  5.610e+03  -0.200  0.84154   
+MMDAYPARTDAY1213:festival2                                               -1.470e+03  5.603e+03  -0.262  0.79309   
+MMDAYPARTDAY1415:festival2                                               -7.523e+02  2.495e+03  -0.302  0.76310   
+MMDAYPARTDAY1617:festival2                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:festival2                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:festival2                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:festival2                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek3                                               -8.641e+02  9.436e+02  -0.916  0.36020   
+MMDAYPARTDAY0309:nthweek3                                                -1.215e+02  3.705e+04  -0.003  0.99738   
+MMDAYPARTDAY1011:nthweek3                                                -2.115e+02  3.699e+04  -0.006  0.99544   
+MMDAYPARTDAY1213:nthweek3                                                -8.257e+01  3.692e+04  -0.002  0.99822   
+MMDAYPARTDAY1415:nthweek3                                                -7.323e+01  3.772e+04  -0.002  0.99845   
+MMDAYPARTDAY1617:nthweek3                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek3                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek3                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek3                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek4                                               -1.113e+03  9.509e+02  -1.170  0.24236   
+MMDAYPARTDAY0309:nthweek4                                                -1.381e+01  3.705e+04   0.000  0.99970   
+MMDAYPARTDAY1011:nthweek4                                                 9.268e+01  3.699e+04   0.003  0.99800   
+MMDAYPARTDAY1213:nthweek4                                                 1.007e+02  3.692e+04   0.003  0.99783   
+MMDAYPARTDAY1415:nthweek4                                                 4.091e+02  3.772e+04   0.011  0.99135   
+MMDAYPARTDAY1617:nthweek4                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek4                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek4                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek4                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek5                                               -1.137e+03  1.037e+03  -1.097  0.27320   
+MMDAYPARTDAY0309:nthweek5                                                -3.781e+02  3.705e+04  -0.010  0.99186   
+MMDAYPARTDAY1011:nthweek5                                                -5.217e+02  3.702e+04  -0.014  0.98876   
+MMDAYPARTDAY1213:nthweek5                                                -3.271e+02  3.693e+04  -0.009  0.99294   
+MMDAYPARTDAY1415:nthweek5                                                 2.118e+02  3.772e+04   0.006  0.99552   
+MMDAYPARTDAY1617:nthweek5                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek5                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek5                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek5                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek6                                               -1.245e+03  1.047e+03  -1.190  0.23467   
+MMDAYPARTDAY0309:nthweek6                                                -3.937e+02  3.705e+04  -0.011  0.99153   
+MMDAYPARTDAY1011:nthweek6                                                -6.082e+02  3.702e+04  -0.016  0.98690   
+MMDAYPARTDAY1213:nthweek6                                                -2.940e+02  3.693e+04  -0.008  0.99365   
+MMDAYPARTDAY1415:nthweek6                                                 3.049e+02  3.772e+04   0.008  0.99355   
+MMDAYPARTDAY1617:nthweek6                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek6                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek6                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek6                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek7                                               -1.248e+03  1.087e+03  -1.148  0.25144   
+MMDAYPARTDAY0309:nthweek7                                                -1.130e+02  3.705e+04  -0.003  0.99757   
+MMDAYPARTDAY1011:nthweek7                                                -3.720e+02  3.702e+04  -0.010  0.99199   
+MMDAYPARTDAY1213:nthweek7                                                -1.335e+02  3.693e+04  -0.004  0.99712   
+MMDAYPARTDAY1415:nthweek7                                                 3.029e+02  3.772e+04   0.008  0.99360   
+MMDAYPARTDAY1617:nthweek7                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek7                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek7                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek7                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek9                                                       NA         NA      NA       NA   
+MMDAYPARTDAY0309:nthweek9                                                        NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek9                                                        NA         NA      NA       NA   
+MMDAYPARTDAY1213:nthweek9                                                        NA         NA      NA       NA   
+MMDAYPARTDAY1415:nthweek9                                                        NA         NA      NA       NA   
+MMDAYPARTDAY1617:nthweek9                                                        NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek9                                                      NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek9                                                      NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek9                                                           NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek10                                               2.415e+02  7.263e+03   0.033  0.97349   
+MMDAYPARTDAY0309:nthweek10                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek10                                               -1.717e+02  1.079e+03  -0.159  0.87360   
+MMDAYPARTDAY1213:nthweek10                                               -2.016e+03  4.429e+03  -0.455  0.64908   
+MMDAYPARTDAY1415:nthweek10                                               -7.320e+02  1.073e+03  -0.682  0.49523   
+MMDAYPARTDAY1617:nthweek10                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek10                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek10                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek10                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek11                                                      NA         NA      NA       NA   
+MMDAYPARTDAY0309:nthweek11                                               -1.164e+03  7.617e+03  -0.153  0.87865   
+MMDAYPARTDAY1011:nthweek11                                                3.860e+02  1.193e+03   0.323  0.74646   
+MMDAYPARTDAY1213:nthweek11                                               -1.553e+03  4.349e+03  -0.357  0.72120   
+MMDAYPARTDAY1415:nthweek11                                               -4.206e+02  1.056e+03  -0.398  0.69055   
+MMDAYPARTDAY1617:nthweek11                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek11                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek11                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek11                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek12                                                      NA         NA      NA       NA   
+MMDAYPARTDAY0309:nthweek12                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek12                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1213:nthweek12                                               -1.977e+03  4.146e+03  -0.477  0.63372   
+MMDAYPARTDAY1415:nthweek12                                               -4.080e+02  8.778e+02  -0.465  0.64230   
+MMDAYPARTDAY1617:nthweek12                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek12                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek12                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek12                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek13                                              -1.795e+02  7.458e+02  -0.241  0.80991   
+MMDAYPARTDAY0309:nthweek13                                               -9.609e+02  1.799e+03  -0.534  0.59348   
+MMDAYPARTDAY1011:nthweek13                                                6.669e+02  8.463e+02   0.788  0.43098   
+MMDAYPARTDAY1213:nthweek13                                                2.154e+02  7.790e+02   0.277  0.78221   
+MMDAYPARTDAY1415:nthweek13                                                3.630e+02  4.279e+02   0.848  0.39658   
+MMDAYPARTDAY1617:nthweek13                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek13                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek13                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek13                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek14                                              -1.902e+02  6.306e+02  -0.302  0.76308   
+MMDAYPARTDAY0309:nthweek14                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek14                                                7.804e-01  8.708e+02   0.001  0.99929   
+MMDAYPARTDAY1213:nthweek14                                               -1.288e+02  8.416e+02  -0.153  0.87844   
+MMDAYPARTDAY1415:nthweek14                                                5.061e+01  5.177e+02   0.098  0.92217   
+MMDAYPARTDAY1617:nthweek14                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek14                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek14                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek14                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek15                                              -4.071e+02  6.043e+02  -0.674  0.50085   
+MMDAYPARTDAY0309:nthweek15                                               -8.172e+01  9.156e+02  -0.089  0.92891   
+MMDAYPARTDAY1011:nthweek15                                                1.186e+02  8.271e+02   0.143  0.88607   
+MMDAYPARTDAY1213:nthweek15                                               -2.285e+02  7.671e+02  -0.298  0.76588   
+MMDAYPARTDAY1415:nthweek15                                                2.293e+02  4.276e+02   0.536  0.59193   
+MMDAYPARTDAY1617:nthweek15                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek15                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek15                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek15                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek16                                                      NA         NA      NA       NA   
+MMDAYPARTDAY0309:nthweek16                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek16                                                7.621e+02  6.988e+02   1.091  0.27594   
+MMDAYPARTDAY1213:nthweek16                                                6.423e+02  6.203e+02   1.036  0.30086   
+MMDAYPARTDAY1415:nthweek16                                                3.438e+02  3.326e+02   1.034  0.30168   
+MMDAYPARTDAY1617:nthweek16                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek16                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek16                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek16                                                          NA         NA      NA       NA   
+MMDAYPARTACCESS19:nthweek17                                                      NA         NA      NA       NA   
+MMDAYPARTDAY0309:nthweek17                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1011:nthweek17                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1213:nthweek17                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1415:nthweek17                                                       NA         NA      NA       NA   
+MMDAYPARTDAY1617:nthweek17                                                       NA         NA      NA       NA   
+MMDAYPARTNIGHT0002:nthweek17                                                     NA         NA      NA       NA   
+MMDAYPARTNIGHT2223:nthweek17                                                     NA         NA      NA       NA   
+MMDAYPARTPEAK:nthweek17                                                          NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:budgetbrut                                  -5.488e-01  1.238e+00  -0.443  0.65773   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:budgetbrut           -1.209e-01  3.710e+00  -0.033  0.97402   
+creaeffet push-up:budgetbrut                                             -3.524e-02  3.742e+00  -0.009  0.99249   
+creaeffet sculptant:budgetbrut                                           -2.513e-01  2.964e+00  -0.085  0.93247   
+creaEFFET SCULPTANT LA FEMME 12'' v2:budgetbrut                           3.230e-01  2.209e+00   0.146  0.88381   
+creaEFFET SCULPTANT LA FEMME 20'' v1:budgetbrut                          -1.492e+00  3.780e+00  -0.395  0.69325   
+creala chaussure pour toutes les morpho':budgetbrut                      -8.662e-02  3.722e+00  -0.023  0.98144   
+creala lingerie pour toutes les morpho:budgetbrut                        -9.150e-02  3.722e+00  -0.025  0.98040   
+creala mode pour toutes les morpho:budgetbrut                             3.484e-02  2.871e+00   0.012  0.99032   
+creala terrasse:budgetbrut                                               -3.197e-01  2.966e+00  -0.108  0.91421   
+creaversion de base:budgetbrut                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:budgetnet                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:budgetnet             4.332e-01  2.066e+01   0.021  0.98328   
+creaeffet push-up:budgetnet                                                      NA         NA      NA       NA   
+creaeffet sculptant:budgetnet                                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:budgetnet                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:budgetnet                            8.455e+00  2.105e+01   0.402  0.68813   
+creala chaussure pour toutes les morpho':budgetnet                               NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:budgetnet                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:budgetnet                                     NA         NA      NA       NA   
+creala terrasse:budgetnet                                                        NA         NA      NA       NA   
+creaversion de base:budgetnet                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:grp                                         -2.684e+02  1.616e+03  -0.166  0.86812   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:grp                  -2.480e+02  1.176e+02  -2.108  0.03550 * 
+creaeffet push-up:grp                                                    -2.021e+03  2.255e+03  -0.896  0.37042   
+creaeffet sculptant:grp                                                  -1.725e+03  5.533e+02  -3.118  0.00192 **
+creaEFFET SCULPTANT LA FEMME 12'' v2:grp                                 -2.518e+02  1.938e+03  -0.130  0.89667   
+creaEFFET SCULPTANT LA FEMME 20'' v1:grp                                 -2.301e+02  1.227e+02  -1.875  0.06130 . 
+creala chaussure pour toutes les morpho':grp                             -1.762e+03  2.035e+03  -0.866  0.38711   
+creala lingerie pour toutes les morpho:grp                               -1.580e+03  2.038e+03  -0.775  0.43841   
+creala mode pour toutes les morpho:grp                                   -2.932e+03  1.426e+03  -2.056  0.04025 * 
+creala terrasse:grp                                                      -1.756e+03  5.571e+02  -3.152  0.00171 **
+creaversion de base:grp                                                          NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:grpref                                       7.091e+03  7.433e+03   0.954  0.34055   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:grpref                5.440e+02  3.740e+02   1.454  0.14638   
+creaeffet push-up:grpref                                                 -1.496e+03  2.480e+04  -0.060  0.95192   
+creaeffet sculptant:grpref                                                3.895e+02  2.243e+04   0.017  0.98615   
+creaEFFET SCULPTANT LA FEMME 12'' v2:grpref                              -2.878e+03  9.543e+03  -0.302  0.76310   
+creaEFFET SCULPTANT LA FEMME 20'' v1:grpref                               1.974e+02  4.031e+02   0.490  0.62454   
+creala chaussure pour toutes les morpho':grpref                          -2.313e+03  2.438e+04  -0.095  0.92446   
+creala lingerie pour toutes les morpho:grpref                            -2.745e+03  2.439e+04  -0.113  0.91043   
+creala mode pour toutes les morpho:grpref                                 1.020e+03  2.324e+04   0.044  0.96501   
+creala terrasse:grpref                                                    6.762e+02  2.243e+04   0.030  0.97596   
+creaversion de base:grpref                                                       NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:month2                                       7.427e+01  3.124e+02   0.238  0.81217   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:month2               -1.334e+02  1.954e+02  -0.682  0.49523   
+creaeffet push-up:month2                                                         NA         NA      NA       NA   
+creaeffet sculptant:month2                                                       NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:month2                                      NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:month2                                      NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':month2                                  NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:month2                                    NA         NA      NA       NA   
+creala mode pour toutes les morpho:month2                                        NA         NA      NA       NA   
+creala terrasse:month2                                                           NA         NA      NA       NA   
+creaversion de base:month2                                                       NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:month3                                              NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:month3                       NA         NA      NA       NA   
+creaeffet push-up:month3                                                         NA         NA      NA       NA   
+creaeffet sculptant:month3                                               -8.924e+02  8.299e+02  -1.075  0.28274   
+creaEFFET SCULPTANT LA FEMME 12'' v2:month3                                      NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:month3                                      NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':month3                                  NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:month3                                    NA         NA      NA       NA   
+creala mode pour toutes les morpho:month3                                        NA         NA      NA       NA   
+creala terrasse:month3                                                           NA         NA      NA       NA   
+creaversion de base:month3                                                       NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:month4                                              NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:month4                       NA         NA      NA       NA   
+creaeffet push-up:month4                                                         NA         NA      NA       NA   
+creaeffet sculptant:month4                                                       NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:month4                                      NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:month4                                      NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':month4                                  NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:month4                                    NA         NA      NA       NA   
+creala mode pour toutes les morpho:month4                                        NA         NA      NA       NA   
+creala terrasse:month4                                                           NA         NA      NA       NA   
+creaversion de base:month4                                                       NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek2                                   2.634e+02  2.504e+02   1.052  0.29324   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek2            1.134e+02  1.853e+02   0.612  0.54077   
+creaeffet push-up:dayofweek2                                             -1.597e+03  7.347e+03  -0.217  0.82805   
+creaeffet sculptant:dayofweek2                                           -3.582e+02  6.340e+02  -0.565  0.57237   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek2                           1.767e+02  4.007e+02   0.441  0.65940   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek2                           2.712e+02  1.962e+02   1.382  0.16744   
+creala chaussure pour toutes les morpho':dayofweek2                      -2.741e+02  7.282e+02  -0.376  0.70677   
+creala lingerie pour toutes les morpho:dayofweek2                        -2.846e+02  7.665e+02  -0.371  0.71053   
+creala mode pour toutes les morpho:dayofweek2                                    NA         NA      NA       NA   
+creala terrasse:dayofweek2                                               -5.622e+02  6.552e+02  -0.858  0.39123   
+creaversion de base:dayofweek2                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek3                                   4.783e+01  2.810e+02   0.170  0.86492   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek3            2.200e+02  2.015e+02   1.091  0.27554   
+creaeffet push-up:dayofweek3                                             -4.252e+02  9.233e+02  -0.461  0.64530   
+creaeffet sculptant:dayofweek3                                           -3.252e+02  6.388e+02  -0.509  0.61090   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek3                           2.071e+02  3.187e+02   0.650  0.51610   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek3                           3.541e+02  2.081e+02   1.702  0.08936 . 
+creala chaussure pour toutes les morpho':dayofweek3                      -2.260e+02  7.319e+02  -0.309  0.75764   
+creala lingerie pour toutes les morpho:dayofweek3                        -1.167e+02  7.395e+02  -0.158  0.87468   
+creala mode pour toutes les morpho:dayofweek3                                    NA         NA      NA       NA   
+creala terrasse:dayofweek3                                               -2.367e+02  6.476e+02  -0.365  0.71488   
+creaversion de base:dayofweek3                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek4                                   5.806e+01  2.746e+02   0.211  0.83261   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek4           -7.458e+01  1.998e+02  -0.373  0.70901   
+creaeffet push-up:dayofweek4                                             -3.411e+02  1.110e+03  -0.307  0.75864   
+creaeffet sculptant:dayofweek4                                           -4.701e+02  6.008e+02  -0.782  0.43428   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek4                           1.975e+02  3.501e+02   0.564  0.57303   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek4                           3.041e+02  2.014e+02   1.510  0.13172   
+creala chaussure pour toutes les morpho':dayofweek4                      -4.374e+02  6.771e+02  -0.646  0.51854   
+creala lingerie pour toutes les morpho:dayofweek4                        -4.593e+02  6.803e+02  -0.675  0.49985   
+creala mode pour toutes les morpho:dayofweek4                                    NA         NA      NA       NA   
+creala terrasse:dayofweek4                                               -3.771e+02  5.873e+02  -0.642  0.52113   
+creaversion de base:dayofweek4                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek5                                   6.453e+01  2.590e+02   0.249  0.80336   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek5            2.101e+02  1.869e+02   1.124  0.26150   
+creaeffet push-up:dayofweek5                                              3.924e+01  8.127e+02   0.048  0.96150   
+creaeffet sculptant:dayofweek5                                           -4.850e+01  6.451e+02  -0.075  0.94010   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek5                           2.622e+02  3.178e+02   0.825  0.40968   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek5                           2.833e+02  1.976e+02   1.433  0.15231   
+creala chaussure pour toutes les morpho':dayofweek5                       4.782e+01  7.174e+02   0.067  0.94688   
+creala lingerie pour toutes les morpho:dayofweek5                         2.400e+01  7.616e+02   0.032  0.97488   
+creala mode pour toutes les morpho:dayofweek5                                    NA         NA      NA       NA   
+creala terrasse:dayofweek5                                               -1.172e+02  6.150e+02  -0.190  0.84899   
+creaversion de base:dayofweek5                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek6                                          NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek6                   NA         NA      NA       NA   
+creaeffet push-up:dayofweek6                                                     NA         NA      NA       NA   
+creaeffet sculptant:dayofweek6                                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek6                                  NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek6                                  NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':dayofweek6                              NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:dayofweek6                                NA         NA      NA       NA   
+creala mode pour toutes les morpho:dayofweek6                                    NA         NA      NA       NA   
+creala terrasse:dayofweek6                                                       NA         NA      NA       NA   
+creaversion de base:dayofweek6                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:dayofweek7                                  -5.380e+02  4.172e+02  -1.290  0.19773   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:dayofweek7           -3.975e+02  3.689e+02  -1.077  0.28178   
+creaeffet push-up:dayofweek7                                             -4.070e+02  1.943e+03  -0.209  0.83417   
+creaeffet sculptant:dayofweek7                                           -8.162e+02  6.866e+02  -1.189  0.23506   
+creaEFFET SCULPTANT LA FEMME 12'' v2:dayofweek7                          -3.287e+02  4.048e+02  -0.812  0.41722   
+creaEFFET SCULPTANT LA FEMME 20'' v1:dayofweek7                          -2.737e+02  3.646e+02  -0.751  0.45315   
+creala chaussure pour toutes les morpho':dayofweek7                       1.229e+02  7.321e+02   0.168  0.86673   
+creala lingerie pour toutes les morpho:dayofweek7                        -3.071e+02  7.126e+02  -0.431  0.66668   
+creala mode pour toutes les morpho:dayofweek7                                    NA         NA      NA       NA   
+creala terrasse:dayofweek7                                                       NA         NA      NA       NA   
+creaversion de base:dayofweek7                                                   NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:consumption                                  6.799e-02  4.908e-02   1.385  0.16652   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:consumption           6.042e-02  4.124e-02   1.465  0.14354   
+creaeffet push-up:consumption                                             4.654e-01  3.601e-01   1.292  0.19678   
+creaeffet sculptant:consumption                                           3.335e-01  1.962e-01   1.700  0.08971 . 
+creaEFFET SCULPTANT LA FEMME 12'' v2:consumption                          6.566e-02  5.024e-02   1.307  0.19180   
+creaEFFET SCULPTANT LA FEMME 20'' v1:consumption                          4.762e-02  4.119e-02   1.156  0.24822   
+creala chaussure pour toutes les morpho':consumption                      2.619e-01  1.966e-01   1.332  0.18329   
+creala lingerie pour toutes les morpho:consumption                        3.004e-01  2.046e-01   1.468  0.14260   
+creala mode pour toutes les morpho:consumption                                   NA         NA      NA       NA   
+creala terrasse:consumption                                               2.642e-01  2.023e-01   1.306  0.19218   
+creaversion de base:consumption                                                  NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:festival1                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:festival1                    NA         NA      NA       NA   
+creaeffet push-up:festival1                                                      NA         NA      NA       NA   
+creaeffet sculptant:festival1                                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:festival1                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:festival1                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':festival1                       -1.413e+03  6.900e+02  -2.048  0.04102 * 
+creala lingerie pour toutes les morpho:festival1                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:festival1                                     NA         NA      NA       NA   
+creala terrasse:festival1                                                        NA         NA      NA       NA   
+creaversion de base:festival1                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:festival2                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:festival2                    NA         NA      NA       NA   
+creaeffet push-up:festival2                                                      NA         NA      NA       NA   
+creaeffet sculptant:festival2                                            -3.127e+02  7.635e+02  -0.410  0.68232   
+creaEFFET SCULPTANT LA FEMME 12'' v2:festival2                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:festival2                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':festival2                       -3.177e+01  8.872e+02  -0.036  0.97145   
+creala lingerie pour toutes les morpho:festival2                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:festival2                                     NA         NA      NA       NA   
+creala terrasse:festival2                                                        NA         NA      NA       NA   
+creaversion de base:festival2                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek3                                    -5.504e+01  1.071e+03  -0.051  0.95905   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek3              4.331e+01  8.054e+02   0.054  0.95714   
+creaeffet push-up:nthweek3                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek3                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek3                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek3                                    NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek3                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek3                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek3                                      NA         NA      NA       NA   
+creala terrasse:nthweek3                                                         NA         NA      NA       NA   
+creaversion de base:nthweek3                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek4                                    -3.391e+02  1.095e+03  -0.310  0.75696   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek4              2.085e+02  8.062e+02   0.259  0.79607   
+creaeffet push-up:nthweek4                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek4                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek4                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek4                                    NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek4                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek4                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek4                                      NA         NA      NA       NA   
+creala terrasse:nthweek4                                                         NA         NA      NA       NA   
+creaversion de base:nthweek4                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek5                                    -1.011e+03  1.185e+03  -0.853  0.39404   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek5             -4.242e+02  8.917e+02  -0.476  0.63452   
+creaeffet push-up:nthweek5                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek5                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek5                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek5                            -6.936e+02  3.624e+02  -1.914  0.05618 . 
+creala chaussure pour toutes les morpho':nthweek5                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek5                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek5                                      NA         NA      NA       NA   
+creala terrasse:nthweek5                                                         NA         NA      NA       NA   
+creaversion de base:nthweek5                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek6                                            NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek6              2.413e+02  8.493e+02   0.284  0.77641   
+creaeffet push-up:nthweek6                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek6                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek6                            -5.725e+01  2.686e+02  -0.213  0.83128   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek6                            -9.747e+01  2.096e+02  -0.465  0.64209   
+creala chaussure pour toutes les morpho':nthweek6                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek6                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek6                                      NA         NA      NA       NA   
+creala terrasse:nthweek6                                                         NA         NA      NA       NA   
+creaversion de base:nthweek6                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek7                                            NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek7              3.266e+02  8.290e+02   0.394  0.69377   
+creaeffet push-up:nthweek7                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek7                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek7                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek7                                    NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek7                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek7                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek7                                      NA         NA      NA       NA   
+creala terrasse:nthweek7                                                         NA         NA      NA       NA   
+creaversion de base:nthweek7                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek9                                            NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek9                     NA         NA      NA       NA   
+creaeffet push-up:nthweek9                                                       NA         NA      NA       NA   
+creaeffet sculptant:nthweek9                                                     NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek9                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek9                                    NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek9                                NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek9                                  NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek9                                      NA         NA      NA       NA   
+creala terrasse:nthweek9                                                         NA         NA      NA       NA   
+creaversion de base:nthweek9                                                     NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek10                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek10                    NA         NA      NA       NA   
+creaeffet push-up:nthweek10                                              -3.798e+02  3.810e+03  -0.100  0.92061   
+creaeffet sculptant:nthweek10                                             7.103e+02  5.246e+02   1.354  0.17629   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek10                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek10                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek10                               NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek10                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek10                                     NA         NA      NA       NA   
+creala terrasse:nthweek10                                                        NA         NA      NA       NA   
+creaversion de base:nthweek10                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek11                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek11                    NA         NA      NA       NA   
+creaeffet push-up:nthweek11                                              -1.318e+03  8.748e+03  -0.151  0.88029   
+creaeffet sculptant:nthweek11                                             7.121e+02  5.154e+02   1.382  0.16763   
+creaEFFET SCULPTANT LA[1] 1
+[1] 1
+:nthweek11                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek11                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek11                               NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek11                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek11                                     NA         NA      NA       NA   
+creala terrasse:nthweek11                                                        NA         NA      NA       NA   
+creaversion de base:nthweek11                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek12                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek12                    NA         NA      NA       NA   
+creaeffet push-up:nthweek12                                              -2.150e+03  9.599e+03  -0.224  0.82284   
+creaeffet sculptant:nthweek12                                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek12                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek12                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek12                               NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek12                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek12                                     NA         NA      NA       NA   
+creala terrasse:nthweek12                                                        NA         NA      NA       NA   
+creaversion de base:nthweek12                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek13                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek13                    NA         NA      NA       NA   
+creaeffet push-up:nthweek13                                                      NA         NA      NA       NA   
+creaeffet sculptant:nthweek13                                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek13                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek13                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek13                        4.805e+01  3.136e+02   0.153  0.87828   
+creala lingerie pour toutes les morpho:nthweek13                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek13                                     NA         NA      NA       NA   
+creala terrasse:nthweek13                                                        NA         NA      NA       NA   
+creaversion de base:nthweek13                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek14                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek14                    NA         NA      NA       NA   
+creaeffet push-up:nthweek14                                                      NA         NA      NA       NA   
+creaeffet sculptant:nthweek14                                             4.572e+01  4.514e+02   0.101  0.91937   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek14                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek14                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek14                       -5.847e+00  2.875e+02  -0.020  0.98378   
+creala lingerie pour toutes les morpho:nthweek14                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek14                                     NA         NA      NA       NA   
+creala terrasse:nthweek14                                                        NA         NA      NA       NA   
+creaversion de base:nthweek14                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek15                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek15                    NA         NA      NA       NA   
+creaeffet push-up:nthweek15                                                      NA         NA      NA       NA   
+creaeffet sculptant:nthweek15                                            -1.205e+02  4.210e+02  -0.286  0.77477   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek15                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek15                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek15                       -2.483e+00  2.417e+02  -0.010  0.99181   
+creala lingerie pour toutes les morpho:nthweek15                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek15                                     NA         NA      NA       NA   
+creala terrasse:nthweek15                                                        NA         NA      NA       NA   
+creaversion de base:nthweek15                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek16                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek16                    NA         NA      NA       NA   
+creaeffet push-up:nthweek16                                                      NA         NA      NA       NA   
+creaeffet sculptant:nthweek16                                            -9.331e+01  3.043e+02  -0.307  0.75926   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek16                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek16                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek16                       -4.368e+01  2.306e+02  -0.189  0.84984   
+creala lingerie pour toutes les morpho:nthweek16                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek16                                     NA         NA      NA       NA   
+creala terrasse:nthweek16                                                        NA         NA      NA       NA   
+creaversion de base:nthweek16                                                    NA         NA      NA       NA   
+creaCOEUR DES FEMMES 30'' v1:nthweek17                                           NA         NA      NA       NA   
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1:nthweek17                    NA         NA      NA       NA   
+creaeffet push-up:nthweek17                                                      NA         NA      NA       NA   
+creaeffet sculptant:nthweek17                                                    NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 12'' v2:nthweek17                                   NA         NA      NA       NA   
+creaEFFET SCULPTANT LA FEMME 20'' v1:nthweek17                                   NA         NA      NA       NA   
+creala chaussure pour toutes les morpho':nthweek17                               NA         NA      NA       NA   
+creala lingerie pour toutes les morpho:nthweek17                                 NA         NA      NA       NA   
+creala mode pour toutes les morpho:nthweek17                                     NA         NA      NA       NA   
+creala terrasse:nthweek17                                                        NA         NA      NA       NA   
+creaversion de base:nthweek17                                                    NA         NA      NA       NA   
+budgetbrut:budgetnet                                                      1.427e-05  6.945e-06   2.055  0.04038 * 
+budgetbrut:grp                                                           -3.688e+00  1.163e+01  -0.317  0.75132   
+budgetbrut:grpref                                                         1.181e+00  1.984e+01   0.060  0.95255   
+budgetbrut:month2                                                        -7.301e-01  4.727e+00  -0.154  0.87731   
+budgetbrut:month3                                                         1.646e-01  2.295e-01   0.717  0.47365   
+budgetbrut:month4                                                                NA         NA      NA       NA   
+budgetbrut:dayofweek2                                                     4.054e-01  1.849e+00   0.219  0.82652   
+budgetbrut:dayofweek3                                                    -1.099e-01  1.682e+00  -0.065  0.94792   
+budgetbrut:dayofweek4                                                    -1.874e+00  1.941e+00  -0.965  0.33479   
+budgetbrut:dayofweek5                                                    -4.335e-01  1.844e+00  -0.235  0.81418   
+budgetbrut:dayofweek6                                                            NA         NA      NA       NA   
+budgetbrut:dayofweek7                                                     3.419e-01  3.973e+00   0.086  0.93144   
+budgetbrut:consumption                                                    2.970e-05  3.139e-04   0.095  0.92467   
+budgetbrut:festival1                                                             NA         NA      NA       NA   
+budgetbrut:festival2                                                     -2.929e-02  3.674e-01  -0.080  0.93649   
+budgetbrut:nthweek3                                                       4.111e+00  4.610e+01   0.089  0.92898   
+budgetbrut:nthweek4                                                       3.512e+00  4.616e+01   0.076  0.93938   
+budgetbrut:nthweek5                                                       3.163e+00  4.644e+01   0.068  0.94573   
+budgetbrut:nthweek6                                                       5.841e+00  4.645e+01   0.126  0.89999   
+budgetbrut:nthweek7                                                       5.627e+00  4.651e+01   0.121  0.90374   
+budgetbrut:nthweek9                                                              NA         NA      NA       NA   
+budgetbrut:nthweek10                                                     -7.277e-02  1.806e-01  -0.403  0.68713   
+budgetbrut:nthweek11                                                     -8.922e-02  2.309e-01  -0.386  0.69939   
+budgetbrut:nthweek12                                                             NA         NA      NA       NA   
+budgetbrut:nthweek13                                                      9.878e-02  1.412e-01   0.699  0.48463   
+budgetbrut:nthweek14                                                      1.026e-01  1.363e-01   0.753  0.45177   
+budgetbrut:nthweek15                                                      1.296e-01  1.373e-01   0.944  0.34563   
+budgetbrut:nthweek16                                                      9.906e-02  1.311e-01   0.756  0.45020   
+budgetbrut:nthweek17                                                             NA         NA      NA       NA   
+budgetnet:grp                                                             2.040e+01  6.462e+01   0.316  0.75233   
+budgetnet:grpref                                                         -6.565e+00  1.102e+02  -0.060  0.95254   
+budgetnet:month2                                                          3.525e+00  2.628e+01   0.134  0.89334   
+budgetnet:month3                                                                 NA         NA      NA       NA   
+budgetnet:month4                                                                 NA         NA      NA       NA   
+budgetnet:dayofweek2                                                     -2.055e+00  1.029e+01  -0.200  0.84170   
+budgetnet:dayofweek3                                                      5.579e-01  9.362e+00   0.060  0.95250   
+budgetnet:dayofweek4                                                      1.031e+01  1.080e+01   0.955  0.34024   
+budgetnet:dayofweek5                                                      2.245e+00  1.026e+01   0.219  0.82685   
+budgetnet:dayofweek6                                                             NA         NA      NA       NA   
+budgetnet:dayofweek7                                                     -1.631e+00  2.212e+01  -0.074  0.94124   
+budgetnet:consumption                                                    -1.841e-04  1.747e-03  -0.105  0.91611   
+budgetnet:festival1                                                              NA         NA      NA       NA   
+budgetnet:festival2                                                              NA         NA      NA       NA   
+budgetnet:nthweek3                                                       -2.414e+01  2.398e+02  -0.101  0.91984   
+budgetnet:nthweek4                                                       -2.072e+01  2.402e+02  -0.086  0.93129   
+budgetnet:nthweek5                                                       -1.856e+01  2.418e+02  -0.077  0.93884   
+budgetnet:nthweek6                                                       -3.293e+01  2.419e+02  -0.136  0.89178   
+budgetnet:nthweek7                                                       -3.205e+01  2.422e+02  -0.132  0.89481   
+budgetnet:nthweek9                                                               NA         NA      NA       NA   
+budgetnet:nthweek10                                                              NA         NA      NA       NA   
+budgetnet:nthweek11                                                              NA         NA      NA       NA   
+budgetnet:nthweek12                                                              NA         NA      NA       NA   
+budgetnet:nthweek13                                                              NA         NA      NA       NA   
+budgetnet:nthweek14                                                              NA         NA      NA       NA   
+budgetnet:nthweek15                                                              NA         NA      NA       NA   
+budgetnet:nthweek16                                                              NA         NA      NA       NA   
+budgetnet:nthweek17                                                              NA         NA      NA       NA   
+grp:grpref                                                                2.946e+01  3.593e+01   0.820  0.41267   
+grp:month2                                                               -4.844e+02  2.127e+02  -2.278  0.02314 * 
+grp:month3                                                                2.538e+02  2.505e+02   1.013  0.31128   
+grp:month4                                                                       NA         NA      NA       NA   
+grp:dayofweek2                                                           -1.549e+02  8.883e+01  -1.744  0.08174 . 
+grp:dayofweek3                                                            6.126e+01  8.720e+01   0.703  0.48266   
+grp:dayofweek4                                                           -4.744e+01  8.638e+01  -0.549  0.58313   
+grp:dayofweek5                                                           -5.090e+01  9.049e+01  -0.563  0.57398   
+grp:dayofweek6                                                                   NA         NA      NA       NA   
+grp:dayofweek7                                                           -3.780e+01  1.559e+02  -0.242  0.80850   
+grp:consumption                                                          -2.279e-02  1.264e-02  -1.804  0.07185 . 
+grp:festival1                                                                    NA         NA      NA       NA   
+grp:festival2                                                            -2.101e+02  5.641e+02  -0.373  0.70966   
+grp:nthweek3                                                             -1.250e+03  4.236e+02  -2.952  0.00329 **
+grp:nthweek4                                                             -1.174e+03  4.193e+02  -2.800  0.00530 **
+grp:nthweek5                                                             -7.902e+02  5.010e+02  -1.577  0.11534   
+grp:nthweek6                                                             -9.697e+02  5.078e+02  -1.909  0.05673 . 
+grp:nthweek7                                                             -7.849e+02  5.243e+02  -1.497  0.13496   
+grp:nthweek9                                                                     NA         NA      NA       NA   
+grp:nthweek10                                                            -3.450e+02  2.144e+02  -1.609  0.10822   
+grp:nthweek11                                                            -3.175e+02  2.165e+02  -1.466  0.14312   
+grp:nthweek12                                                                    NA         NA      NA       NA   
+grp:nthweek13                                                            -1.822e+02  2.011e+02  -0.906  0.36534   
+grp:nthweek14                                                            -4.575e+01  1.943e+02  -0.235  0.81396   
+grp:nthweek15                                                            -4.429e+01  2.075e+02  -0.213  0.83110   
+grp:nthweek16                                                             9.177e+01  1.752e+02   0.524  0.60056   
+grp:nthweek17                                                                    NA         NA      NA       NA   
+grpref:month2                                                             1.177e+03  5.318e+02   2.213  0.02727 * 
+grpref:month3                                                            -8.303e+02  1.048e+03  -0.792  0.42867   
+grpref:month4                                                                    NA         NA      NA       NA   
+grpref:dayofweek2                                                         2.004e+02  2.696e+02   0.743  0.45757   
+grpref:dayofweek3                                                         1.513e+02  2.695e+02   0.561  0.57475   
+grpref:dayofweek4                                                         3.242e+02  2.620e+02   1.237  0.21648   
+grpref:dayofweek5                                                         4.282e+02  2.452e+02   1.747  0.08124 . 
+grpref:dayofweek6                                                                NA         NA      NA       NA   
+grpref:dayofweek7                                                        -3.163e+02  3.781e+02  -0.837  0.40319   
+grpref:consumption                                                        3.870e-02  2.964e-02   1.306  0.19221   
+grpref:festival1                                                                 NA         NA      NA       NA   
+grpref:festival2                                                          8.957e+02  1.769e+03   0.506  0.61276   
+grpref:nthweek3                                                           1.928e+02  2.244e+04   0.009  0.99315   
+grpref:nthweek4                                                           5.164e+01  2.244e+04   0.002  0.99816   
+grpref:nthweek5                                                          -7.591e+02  2.245e+04  -0.034  0.97304   
+grpref:nthweek6                                                          -1.030e+03  2.245e+04  -0.046  0.96342   
+grpref:nthweek7                                                          -1.294e+03  2.245e+04  -0.058  0.95406   
+grpref:nthweek9                                                                  NA         NA      NA       NA   
+grpref:nthweek10                                                          1.102e+03  8.707e+02   1.266  0.20598   
+grpref:nthweek11                                                          1.041e+03  9.898e+02   1.052  0.29345   
+grpref:nthweek12                                                                 NA         NA      NA       NA   
+grpref:nthweek13                                                          1.335e+02  8.014e+02   0.167  0.86779   
+grpref:nthweek14                                                         -3.283e+02  7.458e+02  -0.440  0.65995   
+grpref:nthweek15                                                         -4.221e+02  8.580e+02  -0.492  0.62297   
+grpref:nthweek16                                                         -5.488e+02  7.255e+02  -0.756  0.44969   
+grpref:nthweek17                                                                 NA         NA      NA       NA   
+month2:dayofweek2                                                        -2.874e+02  2.333e+02  -1.232  0.21857   
+month3:dayofweek2                                                         6.231e+02  6.617e+02   0.942  0.34677   
+month4:dayofweek2                                                                NA         NA      NA       NA   
+month2:dayofweek3                                                         5.679e+01  2.447e+02   0.232  0.81651   
+month3:dayofweek3                                                         3.447e+02  8.024e+02   0.430  0.66768   
+month4:dayofweek3                                                                NA         NA      NA       NA   
+month2:dayofweek4                                                        -2.527e+02  2.456e+02  -1.029  0.30392   
+month3:dayofweek4                                                         4.912e+02  6.477e+02   0.758  0.44854   
+month4:dayofweek4                                                                NA         NA      NA       NA   
+month2:dayofweek5                                                        -1.043e+02  2.520e+02  -0.414  0.67905   
+month3:dayofweek5                                                        -1.045e+02  5.296e+02  -0.197  0.84370   
+month4:dayofweek5                                                                NA         NA      NA       NA   
+month2:dayofweek6                                                                NA         NA      NA       NA   
+month3:dayofweek6                                                                NA         NA      NA       NA   
+month4:dayofweek6                                                                NA         NA      NA       NA   
+month2:dayofweek7                                                         4.085e+02  2.458e+02   1.662  0.09712 . 
+month3:dayofweek7                                                         1.488e+03  5.999e+03   0.248  0.80417   
+month4:dayofweek7                                                                NA         NA      NA       NA   
+month2:consumption                                                       -5.834e-02  3.898e-02  -1.497  0.13505   
+month3:consumption                                                       -1.454e-01  1.627e-01  -0.893  0.37202   
+month4:consumption                                                               NA         NA      NA       NA   
+month2:festival1                                                                 NA         NA      NA       NA   
+month3:festival1                                                                 NA         NA      NA       NA   
+month4:festival1                                                                 NA         NA      NA       NA   
+month2:festival2                                                                 NA         NA      NA       NA   
+month3:festival2                                                                 NA         NA      NA       NA   
+month4:festival2                                                                 NA         NA      NA       NA   
+month2:nthweek3                                                                  NA         NA      NA       NA   
+month3:nthweek3                                                                  NA         NA      NA       NA   
+month4:nthweek3                                                                  NA         NA      NA       NA   
+month2:nthweek4                                                                  NA         NA      NA       NA   
+month3:nthweek4                                                                  NA         NA      NA       NA   
+month4:nthweek4                                                                  NA         NA      NA       NA   
+month2:nthweek5                                                                  NA         NA      NA       NA   
+month3:nthweek5                                                                  NA         NA      NA       NA   
+month4:nthweek5                                                                  NA         NA      NA       NA   
+month2:nthweek6                                                                  NA         NA      NA       NA   
+month3:nthweek6                                                                  NA         NA      NA       NA   
+month4:nthweek6                                                                  NA         NA      NA       NA   
+month2:nthweek7                                                                  NA         NA      NA       NA   
+month3:nthweek7                                                                  NA         NA      NA       NA   
+month4:nthweek7                                                                  NA         NA      NA       NA   
+month2:nthweek9                                                                  NA         NA      NA       NA   
+month3:nthweek9                                                                  NA         NA      NA       NA   
+month4:nthweek9                                                                  NA         NA      NA       NA   
+month2:nthweek10                                                                 NA         NA      NA       NA   
+month3:nthweek10                                                                 NA         NA      NA       NA   
+month4:nthweek10                                                                 NA         NA      NA       NA   
+month2:nthweek11                                                                 NA         NA      NA       NA   
+month3:nthweek11                                                                 NA         NA      NA       NA   
+month4:nthweek11                                                                 NA         NA      NA       NA   
+month2:nthweek12                                                                 NA         NA      NA       NA   
+month3:nthweek12                                                                 NA         NA      NA       NA   
+month4:nthweek12                                                                 NA         NA      NA       NA   
+month2:nthweek13                                                                 NA         NA      NA       NA   
+month3:nthweek13                                                                 NA         NA      NA       NA   
+month4:nthweek13                                                                 NA         NA      NA       NA   
+month2:nthweek14                                                                 NA         NA      NA       NA   
+month3:nthweek14                                                                 NA         NA      NA       NA   
+month4:nthweek14                                                                 NA         NA      NA       NA   
+month2:nthweek15                                                                 NA         NA      NA       NA   
+month3:nthweek15                                                                 NA         NA      NA       NA   
+month4:nthweek15                                                                 NA         NA      NA       NA   
+month2:nthweek16                                                                 NA         NA      NA       NA   
+month3:nthweek16                                                                 NA         NA      NA       NA   
+month4:nthweek16                                                                 NA         NA      NA       NA   
+month2:nthweek17                                                                 NA         NA      NA       NA   
+month3:nthweek17                                                                 NA         NA      NA       NA   
+month4:nthweek17                                                                 NA         NA      NA       NA   
+dayofweek2:consumption                                                   -1.451e-02  2.311e-02  -0.628  0.53035   
+dayofweek3:consumption                                                   -2.075e-02  2.430e-02  -0.854  0.39356   
+dayofweek4:consumption                                                   -2.663e-02  2.220e-02  -1.199  0.23089   
+dayofweek5:consumption                                                   -1.595e-02  2.549e-02  -0.625  0.53191   
+dayofweek6:consumption                                                           NA         NA      NA       NA   
+dayofweek7:consumption                                                    1.034e-02  2.380e-02   0.434  0.66420   
+dayofweek2:festival1                                                             NA         NA      NA       NA   
+dayofweek3:festival1                                                             NA         NA      NA       NA   
+dayofweek4:festival1                                                             NA         NA      NA       NA   
+dayofweek5:festival1                                                             NA         NA      NA       NA   
+dayofweek6:festival1                                                             NA         NA      NA       NA   
+dayofweek7:festival1                                                             NA         NA      NA       NA   
+dayofweek2:festival2                                                             NA         NA      NA       NA   
+dayofweek3:festival2                                                             NA         NA      NA       NA   
+dayofweek4:festival2                                                             NA         NA      NA       NA   
+dayofweek5:festival2                                                             NA         NA      NA       NA   
+dayofweek6:festival2                                                             NA         NA      NA       NA   
+dayofweek7:festival2                                                             NA         NA      NA       NA   
+dayofweek2:nthweek3                                                      -1.477e+02  1.056e+02  -1.399  0.16251   
+dayofweek3:nthweek3                                                      -8.177e+01  1.198e+02  -0.682  0.49525   
+dayofweek4:nthweek3                                                      -7.928e+01  1.144e+02  -0.693  0.48873   
+dayofweek5:nthweek3                                                       5.648e+01  1.089e+02   0.519  0.60424   
+dayofweek6:nthweek3                                                              NA         NA      NA       NA   
+dayofweek7:nthweek3                                                              NA         NA      NA       NA   
+dayofweek2:nthweek4                                                              NA         NA      NA       NA   
+dayofweek3:nthweek4                                                              NA         NA      NA       NA   
+dayofweek4:nthweek4                                                              NA         NA      NA       NA   
+dayofweek5:nthweek4                                                              NA         NA      NA       NA   
+dayofweek6:nthweek4                                                              NA         NA      NA       NA   
+dayofweek7:nthweek4                                                      -3.064e+02  2.820e+02  -1.087  0.27771   
+dayofweek2:nthweek5                                                       1.125e+02  1.858e+02   0.606  0.54500   
+dayofweek3:nthweek5                                                      -2.055e+02  1.864e+02  -1.103  0.27070   
+dayofweek4:nthweek5                                                       1.042e+02  2.034e+02   0.512  0.60877   
+dayofweek5:nthweek5                                                      -8.370e+01  1.981e+02  -0.423  0.67277   
+dayofweek6:nthweek5                                                              NA         NA      NA       NA   
+dayofweek7:nthweek5                                                      -3.684e+02  2.490e+02  -1.480  0.13947   
+dayofweek2:nthweek6                                                       6.710e+01  1.728e+02   0.388  0.69789   
+dayofweek3:nthweek6                                                      -1.685e+02  1.797e+02  -0.938  0.34880   
+dayofweek4:nthweek6                                                       1.938e+02  1.725e+02   1.123  0.26184   
+dayofweek5:nthweek6                                                       9.349e+01  1.891e+02   0.494  0.62118   
+dayofweek6:nthweek6                                                              NA         NA      NA       NA   
+dayofweek7:nthweek6                                                      -3.111e+02  1.643e+02  -1.894  0.05878 . 
+dayofweek2:nthweek7                                                              NA         NA      NA       NA   
+dayofweek3:nthweek7                                                              NA         NA      NA       NA   
+dayofweek4:nthweek7                                                              NA         NA      NA       NA   
+dayofweek5:nthweek7                                                              NA         NA      NA       NA   
+dayofweek6:nthweek7                                                              NA         NA      NA       NA   
+dayofweek7:nthweek7                                                              NA         NA      NA       NA   
+dayofweek2:nthweek9                                                              NA         NA      NA       NA   
+dayofweek3:nthweek9                                                              NA         NA      NA       NA   
+dayofweek4:nthweek9                                                              NA         NA      NA       NA   
+dayofweek5:nthweek9                                                              NA         NA      NA       NA   
+dayofweek6:nthweek9                                                              NA         NA      NA       NA   
+dayofweek7:nthweek9                                                              NA         NA      NA       NA   
+dayofweek2:nthweek10                                                     -5.999e+02  6.043e+02  -0.993  0.32127   
+dayofweek3:nthweek10                                                     -2.139e+02  7.696e+02  -0.278  0.78114   
+dayofweek4:nthweek10                                                     -3.869e+02  6.299e+02  -0.614  0.53933   
+dayofweek5:nthweek10                                                     -7.425e+01  4.972e+02  -0.149  0.88134   
+dayofweek6:nthweek10                                                             NA         NA      NA       NA   
+dayofweek7:nthweek10                                                     -2.355e+03  7.723e+03  -0.305  0.76049   
+dayofweek2:nthweek11                                                     -3.333e+02  5.888e+02  -0.566  0.57159   
+dayofweek3:nthweek11                                                     -1.108e+02  8.369e+02  -0.132  0.89468   
+dayofweek4:nthweek11                                                     -1.982e+02  6.267e+02  -0.316  0.75196   
+dayofweek5:nthweek11                                                     -1.113e+02  5.298e+02  -0.210  0.83376   
+dayofweek6:nthweek11                                                             NA         NA      NA       NA   
+dayofweek7:nthweek11                                                     -8.186e+02  5.851e+03  -0.140  0.88877   
+dayofweek2:nthweek12                                                             NA         NA      NA       NA   
+dayofweek3:nthweek12                                                             NA         NA      NA       NA   
+dayofweek4:nthweek12                                                             NA         NA      NA       NA   
+dayofweek5:nthweek12                                                             NA         NA      NA       NA   
+dayofweek6:nthweek12                                                             NA         NA      NA       NA   
+dayofweek7:nthweek12                                                             NA         NA      NA       NA   
+dayofweek2:nthweek13                                                             NA         NA      NA       NA   
+dayofweek3:nthweek13                                                     -9.318e+01  3.514e+02  -0.265  0.79100   
+dayofweek4:nthweek13                                                      1.761e+02  2.798e+02   0.629  0.52930   
+dayofweek5:nthweek13                                                     -5.671e+01  2.821e+02  -0.201  0.84076   
+dayofweek6:nthweek13                                                             NA         NA      NA       NA   
+dayofweek7:nthweek13                                                      2.329e+02  4.093e+02   0.569  0.56961   
+dayofweek2:nthweek14                                                      1.740e+02  4.214e+02   0.413  0.67992   
+dayofweek3:nthweek14                                                     -1.143e+02  3.907e+02  -0.293  0.76992   
+dayofweek4:nthweek14                                                      6.361e+01  3.446e+02   0.185  0.85363   
+dayofweek5:nthweek14                                                     -1.485e+02  2.837e+02  -0.524  0.60076   
+dayofweek6:nthweek14                                                             NA         NA      NA       NA   
+dayofweek7:nthweek14                                                     -1.946e+02  5.355e+02  -0.363  0.71648   
+dayofweek2:nthweek15                                                      4.537e+02  4.053e+02   1.119  0.26343   
+dayofweek3:nthweek15                                                      3.879e+01  3.048e+02   0.127  0.89877   
+dayofweek4:nthweek15                                                      2.247e+02  2.837e+02   0.792  0.42866   
+dayofweek5:nthweek15                                                             NA         NA      NA       NA   
+dayofweek6:nthweek15                                                             NA         NA      NA       NA   
+dayofweek7:nthweek15                                                     -4.929e+02  3.826e+02  -1.288  0.19812   
+dayofweek2:nthweek16                                                             NA         NA      NA       NA   
+dayofweek3:nthweek16                                                      5.835e+00  2.290e+02   0.025  0.97968   
+dayofweek4:nthweek16                                                             NA         NA      NA       NA   
+dayofweek5:nthweek16                                                             NA         NA      NA       NA   
+dayofweek6:nthweek16                                                             NA         NA      NA       NA   
+dayofweek7:nthweek16                                                             NA         NA      NA       NA   
+dayofweek2:nthweek17                                                             NA         NA      NA       NA   
+dayofweek3:nthweek17                                                             NA         NA      NA       NA   
+dayofweek4:nthweek17                                                             NA         NA      NA       NA   
+dayofweek5:nthweek17                                                             NA         NA      NA       NA   
+dayofweek6:nthweek17                                                             NA         NA      NA       NA   
+dayofweek7:nthweek17                                                             NA         NA      NA       NA   
+consumption:festival1                                                            NA         NA      NA       NA   
+consumption:festival2                                                     2.027e-01  8.024e-01   0.253  0.80064   
+consumption:nthweek3                                                      8.033e-02  1.558e-01   0.516  0.60639   
+consumption:nthweek4                                                      1.120e-01  1.568e-01   0.715  0.47512   
+consumption:nthweek5                                                      1.541e-01  1.594e-01   0.967  0.33401   
+consumption:nthweek6                                                      1.477e-01  1.601e-01   0.922  0.35678   
+consumption:nthweek7                                                      1.342e-01  1.604e-01   0.837  0.40309   
+consumption:nthweek9                                                             NA         NA      NA       NA   
+consumption:nthweek10                                                     2.933e-02  1.454e-01   0.202  0.84026   
+consumption:nthweek11                                                    -5.075e-03  1.756e-01  -0.029  0.97696   
+consumption:nthweek12                                                            NA         NA      NA       NA   
+consumption:nthweek13                                                    -1.054e-01  1.144e-01  -0.921  0.35720   
+consumption:nthweek14                                                    -5.002e-02  1.234e-01  -0.405  0.68534   
+consumption:nthweek15                                                    -3.588e-02  1.151e-01  -0.312  0.75546   
+consumption:nthweek16                                                    -1.647e-01  1.047e-01  -1.572  0.11651   
+consumption:nthweek17                                                            NA         NA      NA       NA   
+festival1:nthweek3                                                               NA         NA      NA       NA   
+festival2:nthweek3                                                               NA         NA      NA       NA   
+festival1:nthweek4                                                               NA         NA      NA       NA   
+festival2:nthweek4                                                               NA         NA      NA       NA   
+festival1:nthweek5                                                               NA         NA      NA       NA   
+festival2:nthweek5                                                               NA         NA      NA       NA   
+festival1:nthweek6                                                               NA         NA      NA       NA   
+festival2:nthweek6                                                               NA         NA      NA       NA   
+festival1:nthweek7                                                               NA         NA      NA       NA   
+festival2:nthweek7                                                               NA         NA      NA       NA   
+festival1:nthweek9                                                               NA         NA      NA       NA   
+festival2:nthweek9                                                               NA         NA      NA       NA   
+festival1:nthweek10                                                              NA         NA      NA       NA   
+festival2:nthweek10                                                              NA         NA      NA       NA   
+festival1:nthweek11                                                              NA         NA      NA       NA   
+festival2:nthweek11                                                              NA         NA      NA       NA   
+festival1:nthweek12                                                              NA         NA      NA       NA   
+festival2:nthweek12                                                              NA         NA      NA       NA   
+festival1:nthweek13                                                              NA         NA      NA       NA   
+festival2:nthweek13                                                              NA         NA      NA       NA   
+festival1:nthweek14                                                              NA         NA      NA       NA   
+festival2:nthweek14                                                              NA         NA      NA       NA   
+festival1:nthweek15                                                              NA         NA      NA       NA   
+festival2:nthweek15                                                              NA         NA      NA       NA   
+festival1:nthweek16                                                              NA         NA      NA       NA   
+festival2:nthweek16                                                              NA         NA      NA       NA   
+festival1:nthweek17                                                              NA         NA      NA       NA   
+festival2:nthweek17                                                              NA         NA      NA       NA   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 224.6 on 551 degrees of freedom
+Multiple R-squared:  0.9387,	Adjusted R-squared:  0.8528 
+F-statistic: 10.93 on 772 and 551 DF,  p-value: < 2.2e-16
+
+[1] 0.6122639

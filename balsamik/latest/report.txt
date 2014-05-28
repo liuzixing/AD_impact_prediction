@@ -1,0 +1,1947 @@
+
+Call:
+lm(formula = Visite.gain ~ ., data = traindata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1600.0   -63.6     0.0    61.6  1782.0 
+
+Coefficients: (113 not defined because of singularities)
+                                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                           427.649    739.840    0.58  0.56332    
+TypeWeekDayWE                                         -81.780    508.816   -0.16  0.87233    
+length20                                              -17.132     47.297   -0.36  0.71723    
+length30                                              -14.975     48.829   -0.31  0.75912    
+channelParisPremiere                                 -301.599    857.292   -0.35  0.72503    
+channelPuissanceTNT                                   -15.038    861.576   -0.02  0.98608    
+channelSerieClub                                      201.429    835.736    0.24  0.80957    
+channelTeva                                          -317.571    733.378   -0.43  0.66505    
+DAYPARTDAY                                             53.254    208.134    0.26  0.79808    
+DAYPARTNIGHT                                           54.308    496.912    0.11  0.91298    
+DAYPARTPEAK                                           145.293    460.368    0.32  0.75234    
+MMDAYPARTACCESS19                                     -96.386    214.258   -0.45  0.65287    
+MMDAYPARTDAY0309                                    -1004.283    392.569   -2.56  0.01060 *  
+MMDAYPARTDAY1011                                    -1043.004    401.675   -2.60  0.00949 ** 
+MMDAYPARTDAY1213                                    -1014.511    249.698   -4.06  5.1e-05 ***
+MMDAYPARTDAY1415                                     -835.898    173.116   -4.83  1.5e-06 ***
+MMDAYPARTDAY1617                                           NA         NA      NA       NA    
+MMDAYPARTNIGHT0002                                      6.687    224.454    0.03  0.97624    
+MMDAYPARTNIGHT2223                                         NA         NA      NA       NA    
+MMDAYPARTPEAK                                              NA         NA      NA       NA    
+ChaineEcranWDM60845WE                                 193.990    351.180    0.55  0.58075    
+ChaineEcranWDM60905WE                                 427.024    282.972    1.51  0.13146    
+ChaineEcranWDM60950WD                                 951.165    729.805    1.30  0.19264    
+ChaineEcranWDM60950WE                                 468.821    306.624    1.53  0.12645    
+ChaineEcranWDM61015WD                                 942.229    717.467    1.31  0.18927    
+ChaineEcranWDM61040WD                                 844.684    739.073    1.14  0.25324    
+ChaineEcranWDM61040WE                                 570.336    599.194    0.95  0.34131    
+ChaineEcranWDM61105WE                                 572.394    596.644    0.96  0.33751    
+ChaineEcranWDM61120WD                                 909.113    719.718    1.26  0.20670    
+ChaineEcranWDM61120WE                                 496.299    644.779    0.77  0.44157    
+ChaineEcranWDM61150WE                                 604.833    618.985    0.98  0.32864    
+ChaineEcranWDM61205WD                                 834.708    720.165    1.16  0.24659    
+ChaineEcranWDM61205WE                                -107.678    588.826   -0.18  0.85492    
+ChaineEcranWDM61230WD                                 436.372    658.100    0.66  0.50737    
+ChaineEcranWDM61240WD                                 437.687    659.643    0.66  0.50708    
+ChaineEcranWDM61240WE                                -233.649    589.010   -0.40  0.69165    
+ChaineEcranWDM61242WE                                -562.470    624.429   -0.90  0.36783    
+ChaineEcranWDM61250WD                                 461.518    662.634    0.70  0.48621    
+ChaineEcranWDM61250WE                                 115.349    606.450    0.19  0.84917    
+ChaineEcranWDM61305WD                                 222.280    665.882    0.33  0.73856    
+ChaineEcranWDM61310WE                                -124.813    735.342   -0.17  0.86524    
+ChaineEcranWDM61340WD                                 322.477    661.317    0.49  0.62587    
+ChaineEcranWDM61340WE                                -595.379    641.372   -0.93  0.35339    
+ChaineEcranWDM61350WE                                -415.413    598.933   -0.69  0.48803    
+ChaineEcranWDM61410WD                                 566.529    640.056    0.89  0.37621    
+ChaineEcranWDM61410WE                                -271.315    523.499   -0.52  0.60433    
+ChaineEcranWDM61420WE                                -272.995    510.883   -0.53  0.59316    
+ChaineEcranWDM61440WD                                 669.572    640.299    1.05  0.29584    
+ChaineEcranWDM61440WE                                 351.479    507.634    0.69  0.48879    
+ChaineEcranWDM61450WE                                 -67.422    526.594   -0.13  0.89814    
+ChaineEcranWDM61510WE                                 185.491    503.280    0.37  0.71250    
+ChaineEcranWDM61515WD                                 547.537    642.638    0.85  0.39432    
+ChaineEcranWDM61530WD                                 524.431    639.623    0.82  0.41238    
+ChaineEcranWDM61550WE                                 -37.235    510.958   -0.07  0.94192    
+ChaineEcranWDM61610WD                                 613.188    619.074    0.99  0.32207    
+ChaineEcranWDM61610WE                                -170.339    507.391   -0.34  0.73713    
+ChaineEcranWDM61620WE                                -485.402    547.926   -0.89  0.37580    
+ChaineEcranWDM61640WD                                 892.642    618.247    1.44  0.14897    
+ChaineEcranWDM61640WE                                  33.593    483.548    0.07  0.94462    
+ChaineEcranWDM61650WE                                  80.215    495.093    0.16  0.87131    
+ChaineEcranWDM61710WD                                 152.938    625.065    0.24  0.80674    
+ChaineEcranWDM61710WE                                -192.233    489.774   -0.39  0.69474    
+ChaineEcranWDM61730WE                                -545.539    540.448   -1.01  0.31291    
+ChaineEcranWDM61740WE                                -756.894    501.297   -1.51  0.13126    
+ChaineEcranWDM61800WE                                -796.999    488.377   -1.63  0.10287    
+ChaineEcranWDM61805WD                                -336.285    626.667   -0.54  0.59160    
+ChaineEcranWDM61810WE                               -1146.172    494.044   -2.32  0.02046 *  
+ChaineEcranWDM61830WD                                -461.981    609.492   -0.76  0.44857    
+ChaineEcranWDM61830WE                                -169.214    533.329   -0.32  0.75107    
+ChaineEcranWDM61900WD                                -523.837    610.170   -0.86  0.39073    
+ChaineEcranWDM61900WE                                -626.191    554.672   -1.13  0.25908    
+ChaineEcranWDM61910WE                                -869.675    537.515   -1.62  0.10585    
+ChaineEcranWDM61930WD                                -598.896    657.313   -0.91  0.36235    
+ChaineEcranWDM61930WE                               -1071.091    583.989   -1.83  0.06681 .  
+ChaineEcranWDM61940WD                                -588.238    658.896   -0.89  0.37211    
+ChaineEcranWDM61945WD                                -664.137    673.306   -0.99  0.32408    
+ChaineEcranWDM61945WE                               -1200.402    581.224   -2.07  0.03904 *  
+ChaineEcranWDM62005WD                               -2078.951    822.785   -2.53  0.01160 *  
+ChaineEcranWDM62005WE                               -1591.572    762.611   -2.09  0.03703 *  
+ChaineEcranWDM62010WD                               -2049.912    817.713   -2.51  0.01227 *  
+ChaineEcranWDM62025WD                               -2600.987    738.136   -3.52  0.00044 ***
+ChaineEcranWDM62025WE                               -2488.963    662.097   -3.76  0.00018 ***
+ChaineEcranWDM62035WE                               -2346.124    701.318   -3.35  0.00084 ***
+ChaineEcranWDM62040WD                               -2151.527    737.350   -2.92  0.00357 ** 
+ChaineEcranWDM62045WD                               -2391.765    732.819   -3.26  0.00112 ** 
+ChaineEcranWDM62045WE                               -2145.515    672.375   -3.19  0.00144 ** 
+ChaineEcranWDM62050WD                               -1212.494    743.832   -1.63  0.10327    
+ChaineEcranWDM62050WE                               -2154.464    665.083   -3.24  0.00122 ** 
+ChaineEcranWDM62130WD                               -1201.642    798.413   -1.51  0.13250    
+ChaineEcranWDM62130WE                               -1959.640    714.160   -2.74  0.00613 ** 
+ChaineEcranWDM62140WD                               -1936.184    779.451   -2.48  0.01308 *  
+ChaineEcranWDM62140WE                               -2905.440    748.500   -3.88  0.00011 ***
+ChaineEcranWDM62160WD                               -1046.451    780.311   -1.34  0.18007    
+ChaineEcranWDM62160WE                               -1175.723    717.439   -1.64  0.10144    
+ChaineEcranWDM62170WD                                -502.788    806.104   -0.62  0.53289    
+ChaineEcranWDM62170WE                               -1101.877    740.686   -1.49  0.13703    
+ChaineEcranWDM62180WD                                -230.400    786.245   -0.29  0.76953    
+ChaineEcranWDM62180WE                               -1179.070    733.441   -1.61  0.10811    
+ChaineEcranWDM62190WD                                  51.273    823.934    0.06  0.95039    
+ChaineEcranWDM62240WE                               -1141.391    772.106   -1.48  0.13951    
+ChaineEcranWDM62250WE                               -1080.859    764.649   -1.41  0.15768    
+ChaineEcranWDM62280WD                                 158.207    791.201    0.20  0.84154    
+ChaineEcranWDM62280WE                                -867.771    769.864   -1.13  0.25982    
+ChaineEcranWDM62360WD                                  78.057    941.735    0.08  0.93395    
+ChaineEcranWDM62360WE                                -880.288    779.636   -1.13  0.25901    
+ChaineEcranWDM62370WD                                 584.755    826.819    0.71  0.47952    
+ChaineEcranWDM62370WE                                -370.641    886.621   -0.42  0.67597    
+ChaineEcranWDM62380WD                                 -33.159    925.518   -0.04  0.97142    
+ChaineEcranWDM62530WD                                 356.283    852.028    0.42  0.67588    
+ChaineEcranWDParisPremiere0721WD                      990.730    772.783    1.28  0.20000    
+ChaineEcranWDParisPremiere0741WE                      585.573    837.945    0.70  0.48476    
+ChaineEcranWDParisPremiere0751WD                     1035.372    770.632    1.34  0.17927    
+ChaineEcranWDParisPremiere0751WE                      618.731    834.808    0.74  0.45869    
+ChaineEcranWDParisPremiere1111WE                      983.081    859.142    1.14  0.25267    
+ChaineEcranWDParisPremiere1121WE                      940.673    837.657    1.12  0.26160    
+ChaineEcranWDParisPremiere1131WE                     1002.786    840.212    1.19  0.23284    
+ChaineEcranWDParisPremiere1221WE                      899.369    808.487    1.11  0.26612    
+ChaineEcranWDParisPremiere1231WD                     1113.087    826.705    1.35  0.17834    
+ChaineEcranWDParisPremiere1241WD                     1142.122    804.257    1.42  0.15576    
+ChaineEcranWDParisPremiere1301WE                      834.039    837.546    1.00  0.31948    
+ChaineEcranWDParisPremiere1321WE                      644.539    817.068    0.79  0.43031    
+ChaineEcranWDParisPremiere1340WD                     1234.390    823.105    1.50  0.13388    
+ChaineEcranWDParisPremiere1341WD                     1182.736    831.628    1.42  0.15515    
+ChaineEcranWDParisPremiere1401WE                      734.300    753.929    0.97  0.33021    
+ChaineEcranWDParisPremiere1411WD                     1209.794    744.019    1.63  0.10413    
+ChaineEcranWDParisPremiere1411WE                      763.239    754.557    1.01  0.31191    
+ChaineEcranWDParisPremiere1421WD                     1112.924    745.131    1.49  0.13546    
+ChaineEcranWDParisPremiere1511WD                     1098.440    690.791    1.59  0.11199    
+ChaineEcranWDParisPremiere1511WE                      693.017    751.424    0.92  0.35652    
+ChaineEcranWDParisPremiere1611WD                     1005.119    690.938    1.45  0.14593    
+ChaineEcranWDParisPremiere1611WE                      679.224    763.149    0.89  0.37357    
+ChaineEcranWDParisPremiere1721WD                      424.430    654.392    0.65  0.51669    
+ChaineEcranWDParisPremiere1801WE                      -25.515    759.860   -0.03  0.97322    
+ChaineEcranWDParisPremiere1821WD                      359.821    613.139    0.59  0.55738    
+ChaineEcranWDParisPremiere1831WE                     -422.848    758.503   -0.56  0.57727    
+ChaineEcranWDParisPremiere1841WD                      195.812    549.324    0.36  0.72154    
+ChaineEcranWDParisPremiere1851WE                     -360.924    789.452   -0.46  0.64760    
+ChaineEcranWDParisPremiere1920WD                      149.936    552.745    0.27  0.78623    
+ChaineEcranWDParisPremiere1921WD                       53.149    548.291    0.10  0.92279    
+ChaineEcranWDParisPremiere1931WE                     -170.631    848.838   -0.20  0.84071    
+ChaineEcranWDParisPremiere1941WE                     -252.599    848.368   -0.30  0.76593    
+ChaineEcranWDParisPremiere1951WD                      104.275    555.824    0.19  0.85121    
+ChaineEcranWDParisPremiere1951WE                     -170.875    624.008   -0.27  0.78424    
+ChaineEcranWDParisPremiere2021WD                     -139.178    484.973   -0.29  0.77416    
+ChaineEcranWDParisPremiere2021WE                     -254.931    584.835   -0.44  0.66296    
+ChaineEcranWDParisPremiere2050WD                      -24.655    563.427   -0.04  0.96510    
+ChaineEcranWDParisPremiere2050WE                     -468.943    623.113   -0.75  0.45180    
+ChaineEcranWDParisPremiere2051WD                       55.489    535.044    0.10  0.91741    
+ChaineEcranWDParisPremiere2051WE                     -160.905    584.499   -0.28  0.78313    
+ChaineEcranWDParisPremiere2121WD                      134.396    471.351    0.29  0.77558    
+ChaineEcranWDParisPremiere2141WE                     -171.101    561.971   -0.30  0.76081    
+ChaineEcranWDParisPremiere2150WD                       36.318    347.846    0.10  0.91686    
+ChaineEcranWDParisPremiere2151WE                      -85.276    591.360   -0.14  0.88536    
+ChaineEcranWDParisPremiere2201WD                       87.926    529.154    0.17  0.86805    
+ChaineEcranWDParisPremiere2211WD                      137.733    301.327    0.46  0.64766    
+ChaineEcranWDParisPremiere2211WE                       -1.259    656.633    0.00  0.99847    
+ChaineEcranWDParisPremiere2221WD                       52.142    277.731    0.19  0.85110    
+ChaineEcranWDParisPremiere2221WE                       81.067    656.501    0.12  0.90174    
+ChaineEcranWDParisPremiere2231WD                       88.857    279.479    0.32  0.75057    
+ChaineEcranWDParisPremiere2241WD                       58.722    243.464    0.24  0.80943    
+ChaineEcranWDParisPremiere2251WD                      217.270    227.850    0.95  0.34044    
+ChaineEcranWDParisPremiere2251WE                      -85.072    613.056   -0.14  0.88965    
+ChaineEcranWDParisPremiere2311WD                       42.139    283.966    0.15  0.88205    
+ChaineEcranWDParisPremiere2321WD                      125.720    373.930    0.34  0.73675    
+ChaineEcranWDParisPremiere2321WE                     -111.810    707.283   -0.16  0.87441    
+ChaineEcranWDParisPremiere2351WD                           NA         NA      NA       NA    
+ChaineEcranWDPuissanceTNT0739WD                       878.086    776.125    1.13  0.25805    
+ChaineEcranWDPuissanceTNT0809WD                       879.399    736.648    1.19  0.23273    
+ChaineEcranWDPuissanceTNT0809WE                       600.617    834.608    0.72  0.47184    
+ChaineEcranWDPuissanceTNT0839WD                       891.015    731.765    1.22  0.22353    
+ChaineEcranWDPuissanceTNT0839WE                       528.224    838.360    0.63  0.52873    
+ChaineEcranWDPuissanceTNT0900WD                       991.406    759.169    1.31  0.19176    
+ChaineEcranWDPuissanceTNT0930WD                       985.303    716.356    1.38  0.16917    
+ChaineEcranWDPuissanceTNT1030WD                       880.461    703.955    1.25  0.21120    
+ChaineEcranWDPuissanceTNT1100WD                       953.544    686.732    1.39  0.16516    
+ChaineEcranWDPuissanceTNT1100WE                       551.875    888.391    0.62  0.53454    
+ChaineEcranWDPuissanceTNT1130WD                       948.046    681.143    1.39  0.16415    
+ChaineEcranWDPuissanceTNT1130WE                       619.856    857.756    0.72  0.46999    
+ChaineEcranWDPuissanceTNT1150WD                       975.022    691.830    1.41  0.15891    
+ChaineEcranWDPuissanceTNT1200WE                       588.587    832.819    0.71  0.47982    
+ChaineEcranWDPuissanceTNT1220WD                       929.147    668.661    1.39  0.16484    
+ChaineEcranWDPuissanceTNT1230WD                       937.321    657.354    1.43  0.15408    
+ChaineEcranWDPuissanceTNT1230WE                       579.281    832.442    0.70  0.48660    
+ChaineEcranWDPuissanceTNT1250WD                       846.122    655.607    1.29  0.19702    
+ChaineEcranWDPuissanceTNT1320WD                       809.538    656.067    1.23  0.21740    
+ChaineEcranWDPuissanceTNT1320WE                       413.786    856.629    0.48  0.62913    
+ChaineEcranWDPuissanceTNT1340WE                       501.749    838.605    0.60  0.54971    
+ChaineEcranWDPuissanceTNT1350WD                       865.903    635.458    1.36  0.17317    
+ChaineEcranWDPuissanceTNT1350WE                       463.859    780.141    0.59  0.55220    
+ChaineEcranWDPuissanceTNT1420WD                       833.020    632.426    1.32  0.18795    
+ChaineEcranWDPuissanceTNT1420WE                       447.379    780.636    0.57  0.56665    
+ChaineEcranWDPuissanceTNT1429WE                       673.056    784.824    0.86  0.39124    
+ChaineEcranWDPuissanceTNT1440WE                       378.900    776.860    0.49  0.62580    
+ChaineEcranWDPuissanceTNT1500WD                       748.280    623.776    1.20  0.23046    
+ChaineEcranWDPuissanceTNT1500WE                       341.728    749.440    0.46  0.64846    
+ChaineEcranWDPuissanceTNT1530WD                       781.299    623.670    1.25  0.21047    
+ChaineEcranWDPuissanceTNT1540WE                       357.787    756.245    0.47  0.63619    
+ChaineEcranWDPuissanceTNT1610WD                       745.715    608.810    1.22  0.22079    
+ChaineEcranWDPuissanceTNT1700WE                       372.437    737.066    0.51  0.61341    
+ChaineEcranWDPuissanceTNT1710WD                       -87.025    606.127   -0.14  0.88585    
+ChaineEcranWDPuissanceTNT1710WE                      -409.356    755.495   -0.54  0.58800    
+ChaineEcranWDPuissanceTNT1800WD                      -148.114    614.619   -0.24  0.80959    
+ChaineEcranWDPuissanceTNT1800WE                      -356.099    755.356   -0.47  0.63739    
+ChaineEcranWDPuissanceTNT1820WD                      -131.766    642.581   -0.21  0.83755    
+ChaineEcranWDPuissanceTNT1820WE                      -664.138    730.684   -0.91  0.36352    
+ChaineEcranWDPuissanceTNT1850WD                      -124.212    651.800   -0.19  0.84889    
+ChaineEcranWDPuissanceTNT1850WE                      -663.020    746.585   -0.89  0.37463    
+ChaineEcranWDPuissanceTNT1910WD                      -153.143    622.013   -0.25  0.80555    
+ChaineEcranWDPuissanceTNT1910WE                      -620.022    681.121   -0.91  0.36279    
+ChaineEcranWDPuissanceTNT1930WE                      -600.426    661.448   -0.91  0.36414    
+ChaineEcranWDPuissanceTNT2000WD                      -327.305    629.701   -0.52  0.60328    
+ChaineEcranWDPuissanceTNT2000WE                      -751.594    596.564   -1.26  0.20789    
+ChaineEcranWDPuissanceTNT2020WD                      -662.917    485.592   -1.37  0.17238    
+ChaineEcranWDPuissanceTNT2040WD                      -292.602    481.956   -0.61  0.54386    
+ChaineEcranWDPuissanceTNT2050WD                      -162.537    480.110   -0.34  0.73500    
+ChaineEcranWDPuissanceTNT2060WD                      -468.729    448.325   -1.05  0.29593    
+ChaineEcranWDPuissanceTNT2060WE                      -652.853    591.534   -1.10  0.26989    
+ChaineEcranWDPuissanceTNT2140WD                      -445.731    335.435   -1.33  0.18408    
+ChaineEcranWDPuissanceTNT2140WE                      -869.784    537.763   -1.62  0.10597    
+ChaineEcranWDPuissanceTNT2160WD                      -359.221    362.092   -0.99  0.32130    
+ChaineEcranWDPuissanceTNT2160WE                      -910.874    565.829   -1.61  0.10762    
+ChaineEcranWDPuissanceTNT2180WD                      -439.368    372.819   -1.18  0.23876    
+ChaineEcranWDPuissanceTNT2360WD                            NA         NA      NA       NA    
+ChaineEcranWDSerieClub0851WD                          732.644    705.314    1.04  0.29907    
+ChaineEcranWDSerieClub0911WE                         -849.149    585.880   -1.45  0.14742    
+ChaineEcranWDSerieClub0921WD                          685.982    708.866    0.97  0.33332    
+ChaineEcranWDSerieClub0951WD                          744.764    704.254    1.06  0.29042    
+ChaineEcranWDSerieClub0951WE                         -865.899    576.005   -1.50  0.13295    
+ChaineEcranWDSerieClub1001WD                          700.542    690.132    1.02  0.31021    
+ChaineEcranWDSerieClub1001WE                         -823.315    509.697   -1.62  0.10643    
+ChaineEcranWDSerieClub1011WD                          829.066    647.440    1.28  0.20053    
+ChaineEcranWDSerieClub1011WE                         -833.992    534.067   -1.56  0.11857    
+ChaineEcranWDSerieClub1041WD                          753.073    646.911    1.16  0.24454    
+ChaineEcranWDSerieClub1041WE                         -782.888    543.595   -1.44  0.14999    
+ChaineEcranWDSerieClub1141WE                         -878.321    539.480   -1.63  0.10369    
+ChaineEcranWDSerieClub1211WD                          779.486    633.731    1.23  0.21887    
+ChaineEcranWDSerieClub1251WD                          837.303    619.339    1.35  0.17657    
+ChaineEcranWDSerieClub1301WE                         -859.108    550.546   -1.56  0.11883    
+ChaineEcranWDSerieClub1321WE                         -872.052    544.606   -1.60  0.10950    
+ChaineEcranWDSerieClub1341WD                          905.518    614.031    1.47  0.14047    
+ChaineEcranWDSerieClub1401WD                          840.871    597.597    1.41  0.15958    
+ChaineEcranWDSerieClub1401WE                         -880.840    597.370   -1.47  0.14052    
+ChaineEcranWDSerieClub1451WD                          819.195    574.689    1.43  0.15420    
+ChaineEcranWDSerieClub1451WE                        -1242.371    597.059   -2.08  0.03760 *  
+ChaineEcranWDSerieClub1521WD                          725.546    569.802    1.27  0.20307    
+ChaineEcranWDSerieClub1531WE                        -1452.936    667.401   -2.18  0.02961 *  
+ChaineEcranWDSerieClub1541WE                        -1383.589    697.683   -1.98  0.04751 *  
+ChaineEcranWDSerieClub1551WE                        -1325.057    690.955   -1.92  0.05531 .  
+ChaineEcranWDSerieClub1601WD                          760.377    571.967    1.33  0.18389    
+ChaineEcranWDSerieClub1611WD                          732.979    554.791    1.32  0.18661    
+ChaineEcranWDSerieClub1621WE                        -1276.624    741.344   -1.72  0.08524 .  
+ChaineEcranWDSerieClub1651WE                        -1209.004    737.055   -1.64  0.10112    
+ChaineEcranWDSerieClub1701WD                          749.390    553.608    1.35  0.17603    
+ChaineEcranWDSerieClub1741WD                          -12.104    549.038   -0.02  0.98241    
+ChaineEcranWDSerieClub1751WE                        -1886.544    707.169   -2.67  0.00771 ** 
+ChaineEcranWDSerieClub1811WE                        -2216.894    719.023   -3.08  0.00208 ** 
+ChaineEcranWDSerieClub1821WD                         -129.180    547.141   -0.24  0.81338    
+ChaineEcranWDSerieClub1841WE                        -1689.330    690.231   -2.45  0.01448 *  
+ChaineEcranWDSerieClub1921WD                         -136.276    562.998   -0.24  0.80877    
+ChaineEcranWDSerieClub1921WE                        -1698.450    706.077   -2.41  0.01626 *  
+ChaineEcranWDSerieClub1941WD                          -53.421    524.912   -0.10  0.91895    
+ChaineEcranWDSerieClub1951WE                        -1796.144    717.214   -2.50  0.01236 *  
+ChaineEcranWDSerieClub2031WD                         -146.491    350.338   -0.42  0.67590    
+ChaineEcranWDSerieClub2031WE                         -417.712    533.876   -0.78  0.43408    
+ChaineEcranWDSerieClub2051WD                         -105.260    360.281   -0.29  0.77020    
+ChaineEcranWDSerieClub2051WE                         -459.918    528.686   -0.87  0.38446    
+ChaineEcranWDSerieClub2121WE                         -524.284    457.687   -1.15  0.25216    
+ChaineEcranWDSerieClub2131WD                         -231.739    224.111   -1.03  0.30126    
+ChaineEcranWDSerieClub2141WD                         -226.026    222.121   -1.02  0.30902    
+ChaineEcranWDSerieClub2211WE                         -504.938    459.475   -1.10  0.27194    
+ChaineEcranWDSerieClub2221WE                         -358.926    355.414   -1.01  0.31269    
+ChaineEcranWDSerieClub2231WD                           -8.548    179.195   -0.05  0.96196    
+ChaineEcranWDSerieClub2241WE                         -359.862    345.604   -1.04  0.29790    
+ChaineEcranWDSerieClub2251WD                               NA         NA      NA       NA    
+ChaineEcranWDTeva0721WD                              1068.528    676.157    1.58  0.11422    
+ChaineEcranWDTeva0721WE                              1050.847    750.142    1.40  0.16143    
+ChaineEcranWDTeva0741WE                               769.438    727.519    1.06  0.29038    
+ChaineEcranWDTeva0901WD                              1194.307    663.718    1.80  0.07213 .  
+ChaineEcranWDTeva0931WD                              1429.246    656.750    2.18  0.02967 *  
+ChaineEcranWDTeva0931WE                               871.001    696.668    1.25  0.21138    
+ChaineEcranWDTeva1001WD                              1391.993    646.234    2.15  0.03138 *  
+ChaineEcranWDTeva1001WE                              1122.451    696.405    1.61  0.10719    
+ChaineEcranWDTeva1011WE                              1119.700    708.049    1.58  0.11397    
+ChaineEcranWDTeva1021WE                              1063.493    715.508    1.49  0.13737    
+ChaineEcranWDTeva1051WD                              1367.702    644.721    2.12  0.03403 *  
+ChaineEcranWDTeva1051WE                              1247.844    711.133    1.75  0.07948 .  
+ChaineEcranWDTeva1101WE                              1108.155    708.370    1.56  0.11791    
+ChaineEcranWDTeva1111WE                              1101.621    742.332    1.48  0.13799    
+ChaineEcranWDTeva1121WE                              1218.723    701.801    1.74  0.08264 .  
+ChaineEcranWDTeva1131WD                              1292.592    620.718    2.08  0.03745 *  
+ChaineEcranWDTeva1131WE                               972.447    704.614    1.38  0.16773    
+ChaineEcranWDTeva1151WE                              1059.070    726.266    1.46  0.14496    
+ChaineEcranWDTeva1211WD                              1220.165    622.895    1.96  0.05029 .  
+ChaineEcranWDTeva1211WE                              1130.789    665.810    1.70  0.08962 .  
+ChaineEcranWDTeva1221WE                              1123.488    633.762    1.77  0.07645 .  
+ChaineEcranWDTeva1231WD                              1293.258    565.002    2.29  0.02220 *  
+ChaineEcranWDTeva1231WE                              1064.200    640.889    1.66  0.09699 .  
+ChaineEcranWDTeva1241WE                               903.168    628.893    1.44  0.15115    
+ChaineEcranWDTeva1251WD                              1459.648    568.148    2.57  0.01028 *  
+ChaineEcranWDTeva1251WE                              1092.967    629.231    1.74  0.08257 .  
+ChaineEcranWDTeva1301WD                              1366.911    560.839    2.44  0.01490 *  
+ChaineEcranWDTeva1310WD                              1424.739    609.779    2.34  0.01958 *  
+ChaineEcranWDTeva1311WD                              1487.807    584.061    2.55  0.01094 *  
+ChaineEcranWDTeva1321WD                              1380.722    559.260    2.47  0.01365 *  
+ChaineEcranWDTeva1331WE                              1040.864    661.611    1.57  0.11585    
+ChaineEcranWDTeva1341WD                              1368.049    551.392    2.48  0.01319 *  
+ChaineEcranWDTeva1341WE                              1196.293    641.357    1.87  0.06231 .  
+ChaineEcranWDTeva1351WE                              1041.934    611.905    1.70  0.08879 .  
+ChaineEcranWDTeva1401WE                               870.919    618.059    1.41  0.15898    
+ChaineEcranWDTeva1411WD                              1145.892    553.025    2.07  0.03841 *  
+ChaineEcranWDTeva1411WE                               903.206    603.410    1.50  0.13462    
+ChaineEcranWDTeva1421WD                              1227.403    547.148    2.24  0.02500 *  
+ChaineEcranWDTeva1441WE                              1083.542    610.757    1.77  0.07622 .  
+ChaineEcranWDTeva1451WD                              1192.120    562.506    2.12  0.03421 *  
+ChaineEcranWDTeva1451WE                               872.146    613.458    1.42  0.15530    
+ChaineEcranWDTeva1501WE                               997.922    598.789    1.67  0.09578 .  
+ChaineEcranWDTeva1511WD                              1164.665    539.209    2.16  0.03091 *  
+ChaineEcranWDTeva1511WE                               806.009    591.523    1.36  0.17319    
+ChaineEcranWDTeva1521WE                               770.783    593.596    1.30  0.19429    
+ChaineEcranWDTeva1531WE                               946.899    593.845    1.59  0.11100    
+ChaineEcranWDTeva1541WE                               856.011    576.444    1.48  0.13773    
+ChaineEcranWDTeva1551WE                               744.381    612.591    1.22  0.22448    
+ChaineEcranWDTeva1611WD                              1200.552    523.959    2.29  0.02206 *  
+ChaineEcranWDTeva1611WE                               733.843    581.133    1.26  0.20684    
+ChaineEcranWDTeva1641WD                              1265.888    526.487    2.40  0.01630 *  
+ChaineEcranWDTeva1651WE                               733.331    587.935    1.25  0.21246    
+ChaineEcranWDTeva1721WE                               -51.183    578.218   -0.09  0.92948    
+ChaineEcranWDTeva1731WD                               448.423    524.109    0.86  0.39234    
+ChaineEcranWDTeva1741WD                               411.661    520.053    0.79  0.42872    
+ChaineEcranWDTeva1741WE                               142.672    581.799    0.25  0.80631    
+ChaineEcranWDTeva1801WD                               187.287    499.955    0.37  0.70800    
+ChaineEcranWDTeva1801WE                              -127.638    557.200   -0.23  0.81884    
+ChaineEcranWDTeva1811WE                                84.104    545.892    0.15  0.87758    
+ChaineEcranWDTeva1831WD                               218.259    529.128    0.41  0.68003    
+ChaineEcranWDTeva1831WE                               -37.200    534.267   -0.07  0.94450    
+ChaineEcranWDTeva1841WD                               102.202    471.731    0.22  0.82850    
+ChaineEcranWDTeva1851WD                               389.637    423.472    0.92  0.35765    
+ChaineEcranWDTeva1851WE                                52.693    504.343    0.10  0.91680    
+ChaineEcranWDTeva1921WE                               139.110    496.293    0.28  0.77928    
+ChaineEcranWDTeva1931WD                               141.647    438.278    0.32  0.74659    
+ChaineEcranWDTeva1931WE                               174.457    497.857    0.35  0.72607    
+ChaineEcranWDTeva1941WD                               357.580    387.985    0.92  0.35685    
+ChaineEcranWDTeva2021WE                                15.584    402.462    0.04  0.96912    
+ChaineEcranWDTeva2031WE                                23.346    442.848    0.05  0.95796    
+ChaineEcranWDTeva2051WD                               309.047    371.279    0.83  0.40531    
+ChaineEcranWDTeva2051WE                                21.869    385.834    0.06  0.95481    
+ChaineEcranWDTeva2131WE                               371.962    330.256    1.13  0.26020    
+ChaineEcranWDTeva2141WD                               334.144    249.687    1.34  0.18099    
+ChaineEcranWDTeva2141WE                               182.379    254.186    0.72  0.47316    
+ChaineEcranWDTeva2151WD                               315.905    219.317    1.44  0.14993    
+ChaineEcranWDTeva2151WE                               340.655    206.635    1.65  0.09941 .  
+ChaineEcranWDTeva2221WD                               241.343    245.062    0.98  0.32485    
+ChaineEcranWDTeva2221WE                               217.008    206.906    1.05  0.29440    
+ChaineEcranWDTeva2251WD                               133.490    212.331    0.63  0.52964    
+ChaineEcranWDTeva2251WE                                    NA         NA      NA       NA    
+ChaineEcranWDTeva2321WD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6ACCESSWE                                  NA         NA      NA       NA    
+ChaineDaypartWDM6DAYWD                                 28.637    248.637    0.12  0.90832    
+ChaineDaypartWDM6DAYWE                                     NA         NA      NA       NA    
+ChaineDaypartWDM6NIGHTWD                            -1045.359    222.799   -4.69  2.9e-06 ***
+ChaineDaypartWDM6NIGHTWE                              -93.675    252.514   -0.37  0.71071    
+ChaineDaypartWDM6PEAKWD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6PEAKWE                                    NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereACCESSWD                  151.163    408.076    0.37  0.71111    
+ChaineDaypartWDParisPremiereACCESSWE                  279.880    484.286    0.58  0.56339    
+ChaineDaypartWDParisPremiereDAYWD                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereDAYWE                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereNIGHTWD                   187.441    374.322    0.50  0.61661    
+ChaineDaypartWDParisPremiereNIGHTWE                     7.282    369.487    0.02  0.98428    
+ChaineDaypartWDParisPremierePEAKWD                         NA         NA      NA       NA    
+ChaineDaypartWDParisPremierePEAKWE                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTACCESSWD                   141.016    332.402    0.42  0.67145    
+ChaineDaypartWDPuissanceTNTACCESSWE                        NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWD                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWE                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWD                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWE                    228.007    350.219    0.65  0.51511    
+ChaineDaypartWDPuissanceTNTPEAKWD                          NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTPEAKWE                          NA         NA      NA       NA    
+ChaineDaypartWDSerieClubACCESSWD                      100.874    240.645    0.42  0.67513    
+ChaineDaypartWDSerieClubACCESSWE                     1461.017    697.495    2.09  0.03635 *  
+ChaineDaypartWDSerieClubDAYWD                              NA         NA      NA       NA    
+ChaineDaypartWDSerieClubDAYWE                        1629.660    739.153    2.20  0.02760 *  
+ChaineDaypartWDSerieClubNIGHTWD                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubNIGHTWE                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWD                             NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWE                             NA         NA      NA       NA    
+ChaineDaypartWDTevaACCESSWD                           214.305    370.441    0.58  0.56299    
+ChaineDaypartWDTevaACCESSWE                                NA         NA      NA       NA    
+ChaineDaypartWDTevaDAYWD                              -48.395    470.205   -0.10  0.91804    
+ChaineDaypartWDTevaDAYWE                                   NA         NA      NA       NA    
+ChaineDaypartWDTevaNIGHTWD                            220.679    214.374    1.03  0.30343    
+ChaineDaypartWDTevaNIGHTWE                                 NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWD                                  NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS18WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WD                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY0309WD                           43.438    538.917    0.08  0.93577    
+ChaineMMDaypartWDM6DAY0309WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1213WD                          157.927    250.299    0.63  0.52815    
+ChaineMMDaypartWDM6DAY1213WE                          497.242    356.855    1.39  0.16368    
+ChaineMMDaypartWDM6DAY1415WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1415WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWD                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS18WD             -269.862    336.684   -0.80  0.42294    
+ChaineMMDaypartWDParisPremiereACCESS18WE              250.553    325.772    0.77  0.44194    
+ChaineMMDaypartWDParisPremiereACCESS19WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS19WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1011WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1213WD               -18.235    502.714   -0.04  0.97107    
+ChaineMMDaypartWDParisPremiereDAY1213WE                 4.341    349.530    0.01  0.99009    
+ChaineMMDaypartWDParisPremiereDAY1415WD               -29.534    389.417   -0.08  0.93955    
+ChaineMMDaypartWDParisPremiereDAY1415WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT0002WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WE                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWD                       NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWE                       NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WE                90.227    374.857    0.24  0.80982    
+ChaineMMDaypartWDPuissanceTNTACCESS19WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS19WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1011WD                128.029    430.380    0.30  0.76614    
+ChaineMMDaypartWDPuissanceTNTDAY1011WE                 61.572    543.989    0.11  0.90990    
+ChaineMMDaypartWDPuissanceTNTDAY1213WD                110.992    245.963    0.45  0.65186    
+ChaineMMDaypartWDPuissanceTNTDAY1213WE                 73.988    388.500    0.19  0.84898    
+ChaineMMDaypartWDPuissanceTNTDAY1415WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1415WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWD                        NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WE                 -102.855    262.310   -0.39  0.69502    
+ChaineMMDaypartWDSerieClubACCESS19WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS19WE                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY0309WD                   150.838    554.138    0.27  0.78550    
+ChaineMMDaypartWDSerieClubDAY0309WE                  -196.642    641.355   -0.31  0.75918    
+ChaineMMDaypartWDSerieClubDAY1011WD                   146.356    485.482    0.30  0.76310    
+ChaineMMDaypartWDSerieClubDAY1011WE                  -171.549    584.962   -0.29  0.76936    
+ChaineMMDaypartWDSerieClubDAY1213WD                    58.616    324.618    0.18  0.85673    
+ChaineMMDaypartWDSerieClubDAY1213WE                  -192.875    479.871   -0.40  0.68778    
+ChaineMMDaypartWDSerieClubDAY1415WD                     0.692    200.391    0.00  0.99724    
+ChaineMMDaypartWDSerieClubDAY1415WE                   191.328    280.984    0.68  0.49601    
+ChaineMMDaypartWDSerieClubDAY1617WD                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY1617WE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WD                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WE                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWD                           NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1011WD                        123.491    492.729    0.25  0.80213    
+ChaineMMDaypartWDTevaDAY1011WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1213WD                         98.825    291.029    0.34  0.73422    
+ChaineMMDaypartWDTevaDAY1213WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1415WD                         99.912    215.935    0.46  0.64364    
+ChaineMMDaypartWDTevaDAY1415WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WD                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWD                                NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWE                                NA         NA      NA       NA    
+creaCOEUR DES FEMMES 20'' v2                          306.490    116.341    2.63  0.00850 ** 
+creaCOEUR DES FEMMES 30'' v1                          454.251    116.611    3.90  0.00010 ***
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1   321.681    111.484    2.89  0.00396 ** 
+creaeffet push-up                                    -165.845    123.850   -1.34  0.18072    
+creaeffet sculptant                                   -67.085    110.973   -0.60  0.54558    
+creaeffet sculptant 12                                -31.929    115.850   -0.28  0.78288    
+creaEFFET SCULPTANT LA FEMME 12'' v2                  149.833    116.965    1.28  0.20036    
+creaEFFET SCULPTANT LA FEMME 20'' v1                  292.901    111.888    2.62  0.00893 ** 
+creala chaussure pour toutes les morpho'              -25.052    113.408   -0.22  0.82519    
+creala lingerie pour toutes les morpho                -30.716    113.584   -0.27  0.78687    
+creala mode pour toutes les morpho                    -35.528    145.635   -0.24  0.80730    
+creala terrasse                                         9.447    111.213    0.08  0.93231    
+creamiroir                                            -35.129    116.107   -0.30  0.76226    
+creaversion de base                                        NA         NA      NA       NA    
+budgetbrut                                              2.717      0.531    5.12  3.4e-07 ***
+budgetnet                                             -14.764      2.950   -5.00  6.2e-07 ***
+grp                                                   -96.279     14.075   -6.84  1.1e-11 ***
+grpref                                                445.479     35.060   12.71  < 2e-16 ***
+tavAA                                                  50.942     99.932    0.51  0.61028    
+tavAAA                                                210.183    143.103    1.47  0.14208    
+tavAAB                                                -48.123    208.591   -0.23  0.81757    
+tavAAC                                                458.262    281.204    1.63  0.10336    
+tavAAD                                                327.806    281.742    1.16  0.24479    
+tavAAF                                                -57.173    204.230   -0.28  0.77955    
+tavAAG                                                -48.435    246.457   -0.20  0.84422    
+tavAAI                                                 67.289    301.447    0.22  0.82339    
+tavAAM                                                151.496    286.986    0.53  0.59765    
+tavAB                                                 -21.516     96.350   -0.22  0.82332    
+tavABA                                                 81.379    122.226    0.67  0.50562    
+tavABB                                               -105.796    119.649   -0.88  0.37670    
+tavABC                                               -125.483    183.706   -0.68  0.49466    
+tavABF                                                 -5.253    114.988   -0.05  0.96357    
+tavABL                                                112.454    277.836    0.40  0.68571    
+tavAC                                                   4.812     88.120    0.05  0.95645    
+tavACA                                               -131.437    108.577   -1.21  0.22624    
+tavACB                                                158.910     95.814    1.66  0.09739 .  
+tavACC                                                 40.616     92.648    0.44  0.66116    
+tavAE                                                -201.978    329.866   -0.61  0.54042    
+tavAF                                                -143.498    330.107   -0.43  0.66383    
+tavC                                                   92.790    122.044    0.76  0.44718    
+tavCAA                                                 89.239    164.225    0.54  0.58693    
+tavCBA                                                114.580    100.260    1.14  0.25327    
+tavCBB                                                 70.490     99.793    0.71  0.48005    
+tavCC                                                 -40.389    130.282   -0.31  0.75659    
+tavCD                                                -397.414    181.265   -2.19  0.02848 *  
+tavCE                                                      NA         NA      NA       NA    
+tavCFA                                                  5.401    295.782    0.02  0.98543    
+tavD                                                  -74.635    287.228   -0.26  0.79501    
+tavDAA                                               -197.704    386.130   -0.51  0.60871    
+tavDDB                                                 96.720    111.945    0.86  0.38771    
+tavDG                                                 -75.425    159.929   -0.47  0.63726    
+tavE                                                   -2.048    135.606   -0.02  0.98795    
+tavEA                                                 -20.842     98.118   -0.21  0.83181    
+tavEAG                                                 68.482    375.491    0.18  0.85531    
+tavEAJ                                                 16.248    111.393    0.15  0.88404    
+tavEAK                                                -34.823    273.651   -0.13  0.89875    
+tavEAL                                                439.593    159.948    2.75  0.00605 ** 
+tavEB                                                -108.246     97.676   -1.11  0.26793    
+tavEBD                                                 35.005    101.703    0.34  0.73075    
+tavEBF                                                  3.814    126.661    0.03  0.97598    
+tavEBJ                                               -201.640    125.187   -1.61  0.10742    
+tavEBK                                                -66.294    183.630   -0.36  0.71813    
+tavEBL                                                 46.064     96.853    0.48  0.63442    
+tavEBN                                                197.604    176.353    1.12  0.26266    
+tavEBP                                                     NA         NA      NA       NA    
+tavFBG                                               -548.690    308.717   -1.78  0.07569 .  
+tavFBM                                               -309.505    255.866   -1.21  0.22658    
+tavG                                                   58.985    324.966    0.18  0.85599    
+tavIH                                                      NA         NA      NA       NA    
+tavJ                                                  -59.851     70.690   -0.85  0.39730    
+hour1                                                      NA         NA      NA       NA    
+hour7                                                  10.913    156.870    0.07  0.94455    
+hour8                                                  -9.081     87.508   -0.10  0.91736    
+hour9                                                      NA         NA      NA       NA    
+hour10                                                -18.823     74.692   -0.25  0.80106    
+hour11                                                     NA         NA      NA       NA    
+hour12                                                -16.008     75.387   -0.21  0.83186    
+hour13                                                     NA         NA      NA       NA    
+hour14                                               -108.122     72.304   -1.50  0.13499    
+hour15                                                     NA         NA      NA       NA    
+hour16                                               -826.841     86.625   -9.55  < 2e-16 ***
+hour17                                                     NA         NA      NA       NA    
+hour18                                                     NA         NA      NA       NA    
+hour19                                                     NA         NA      NA       NA    
+hour20                                                -52.504    269.341   -0.19  0.84547    
+hour21                                                     NA         NA      NA       NA    
+hour22                                                -39.902     77.504   -0.51  0.60673    
+hour23                                                     NA         NA      NA       NA    
+month2                                               -147.201     18.698   -7.87  6.1e-15 ***
+month3                                                  5.048     33.442    0.15  0.88004    
+month4                                                  2.538     23.117    0.11  0.91260    
+month5                                                     NA         NA      NA       NA    
+dayofweek2                                           -436.696    396.490   -1.10  0.27087    
+dayofweek3                                           -453.762    396.357   -1.14  0.25244    
+dayofweek4                                           -464.408    396.887   -1.17  0.24211    
+dayofweek5                                           -428.152    397.271   -1.08  0.28130    
+dayofweek6                                           -476.400    395.598   -1.20  0.22866    
+dayofweek7                                            -31.142     33.488   -0.93  0.35253    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 248 on 1739 degrees of freedom
+Multiple R-squared:  0.819,	Adjusted R-squared:  0.77 
+F-statistic: 16.8 on 470 and 1739 DF,  p-value: <2e-16
+
+        date Visite.gain TypeWeekDay length   channel DAYPART MMDAYPART   ChaineEcranWD ChaineDaypartWD
+1 2014-01-19         -88          WE     20        M6     DAY   DAY1617        M61810WE         M6DAYWE
+2 2014-01-19        1537          WE     30        M6     DAY   DAY1415        M61550WE         M6DAYWE
+3 2014-01-19         -35         date Visite.gain TypeWeekDay length   channel DAYPART MMDAYPART   ChaineEcranWD ChaineDaypartWD
+1 2014-01-19         -88          WE     20        M6     DAY   DAY1617        M61810WE         M6DAYWE
+2 2014-01-19        1537          WE     30        M6     DAY   DAY1415        M61550WE         M6DAYWE
+3 2014-01-19         -35          WE     20 SerieClub     DAY   DAY1415 SerieClub1841WE  SerieClubDAYWE
+4 2014-01-19        3392          WE     20        M6   NIGHT NIGHT2223        M62160WE       M6NIGHTWE
+5 2014-01-19         835          WE     30      Teva    PEAK      PEAK      Teva2151WE      TevaPEAKWE
+6 2014-01-19        -168          WE     20 SerieClub    PEAK      PEAK SerieClub1001WE SerieClubPEAKWE
+   ChaineMMDaypartWD                                            crea budgetbrut budgetnet  grp grpref tav tavtap
+1        M6DAY1617WE DOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      13770    2478.6 4.14   2.59 DDB    DDB
+2        M6DAY1415WE                        COEUR DES FEMMES 30'' v1      15000    2700.0 4.41   2.46 EAL    EAL
+3 SerieClubDAY1415WE                                 version de base        397      79.4 0.09   0.06  AC     AC
+4      M6NIGHT2223WE                EFFET SCULPTANT LA FEMME 20'' v1      27540    4957.2 5.12   3.99 DDB    DDB
+5         TevaPEAKWE                        COEUR DES FEMMES 30'' v1       1210     242.0 0.38   0.27  AC     AC
+6    SerieClubPEAKWE                                 version de base        138      27.6 0.06   0.03  AC     AC
+   EmavShort hour month dayofweek festival
+1 66 MINUTES   17     1         1        0
+2 RECHERCHE    15     1         1        0
+3 PREUVE A L   15     1         1        0
+4 ZONE INTER   22     1         1        0
+5 DROP DEAD    21     1         1        0
+6 NEW YORK 9   21     1         1        0
+
+Call:
+lm(formula = Visite.gain ~ ., data = traindata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1519.9   -63.2     0.0    63.4  1785.3 
+
+Coefficients: (125 not defined because of singularities)
+                                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                           486.050    768.738    0.63  0.52730    
+TypeWeekDayWE                                        -114.909    544.493   -0.21  0.83288    
+length20                                              -15.020     48.751   -0.31  0.75804    
+length30                                              -12.836     49.731   -0.26  0.79636    
+channelParisPremiere                                 -261.131    867.315   -0.30  0.76339    
+channelPuissanceTNT                                   -37.112    872.055   -0.04  0.96606    
+channelSerieClub                                      138.360    888.879    0.16  0.87632    
+channelTeva                                          -247.102    739.497   -0.33  0.73831    
+DAYPARTDAY                                              5.334    213.220    0.03  0.98005    
+DAYPARTNIGHT                                          -19.027    501.866   -0.04  0.96976    
+DAYPARTPEAK                                            50.350    466.143    0.11  0.91400    
+MMDAYPARTACCESS19                                    -161.040    222.889   -0.72  0.47008    
+MMDAYPARTDAY0309                                     -997.161    394.497   -2.53  0.01157 *  
+MMDAYPARTDAY1011                                    -1114.085    407.974   -2.73  0.00638 ** 
+MMDAYPARTDAY1213                                    -1049.999    253.683   -4.14  3.7e-05 ***
+MMDAYPARTDAY1415                                     -866.472    177.472   -4.88  1.1e-06 ***
+MMDAYPARTDAY1617                                           NA         NA      NA       NA    
+MMDAYPARTNIGHT0002                                     17.405    226.108    0.08  0.93865    
+MMDAYPARTNIGHT2223                                         NA         NA      NA       NA    
+MMDAYPARTPEAK                                              NA         NA      NA       NA    
+ChaineEcranWDM60845WE                                 196.831    352.477    0.56  0.57663    
+ChaineEcranWDM60905WE                                 439.342    284.426    1.54  0.12261    
+ChaineEcranWDM60950WD                                 897.527    738.342    1.22  0.22431    
+ChaineEcranWDM60950WE                                 496.780    308.830    1.61  0.10789    
+ChaineEcranWDM61015WD                                 898.317    726.212    1.24  0.21626    
+ChaineEcranWDM61040WD                                 474.835    771.695    0.62  0.53843    
+ChaineEcranWDM61040WE                                 655.455    605.434    1.08  0.27913    
+ChaineEcranWDM61105WE                                 679.549    603.429    1.13  0.26026    
+ChaineEcranWDM61120WD                                 891.748    728.453    1.22  0.22106    
+ChaineEcranWDM61120WE                                 615.349    651.221    0.94  0.34484    
+ChaineEcranWDM61150WE                                 712.772    624.929    1.14  0.25421    
+ChaineEcranWDM61205WD                                 792.061    728.556    1.09  0.27712    
+ChaineEcranWDM61205WE                                  41.961    594.278    0.07  0.94372    
+ChaineEcranWDM61230WD                                 452.954    665.069    0.68  0.49592    
+ChaineEcranWDM61240WD                                 381.888    665.277    0.57  0.56602    
+ChaineEcranWDM61240WE                                -270.212    604.112   -0.45  0.65472    
+ChaineEcranWDM61242WE                                -136.624    645.959   -0.21  0.83252    
+ChaineEcranWDM61250WD                                 457.346    668.631    0.68  0.49407    
+ChaineEcranWDM61250WE                                 361.656    616.217    0.59  0.55735    
+ChaineEcranWDM61305WD                                 242.052    673.559    0.36  0.71937    
+ChaineEcranWDM61310WE                                   7.143    741.984    0.01  0.99232    
+ChaineEcranWDM61340WD                                 293.841    666.521    0.44  0.65937    
+ChaineEcranWDM61340WE                                -464.083    647.792   -0.72  0.47384    
+ChaineEcranWDM61350WE                                -347.764    603.486   -0.58  0.56452    
+ChaineEcranWDM61410WD                                 528.759    651.131    0.81  0.41687    
+ChaineEcranWDM61410WE                                -241.749    527.764   -0.46  0.64697    
+ChaineEcranWDM61420WE                                -222.252    514.953   -0.43  0.66609    
+ChaineEcranWDM61440WD                                 621.217    651.701    0.95  0.34061    
+ChaineEcranWDM61440WE                                 457.247    512.522    0.89  0.37244    
+ChaineEcranWDM61450WE                                  69.404    560.710    0.12  0.90150    
+ChaineEcranWDM61510WE                                 200.920    507.473    0.40  0.69221    
+ChaineEcranWDM61515WD                                 452.465    655.034    0.69  0.48982    
+ChaineEcranWDM61530WD                                 440.613    648.005    0.68  0.49663    
+ChaineEcranWDM61550WE                                  17.362    515.238    0.03  0.97312    
+ChaineEcranWDM61610WD                                 534.387    626.317    0.85  0.39366    
+ChaineEcranWDM61610WE                                -130.062    511.307   -0.25  0.79924    
+ChaineEcranWDM61620WE                                -464.550    550.964   -0.84  0.39926    
+ChaineEcranWDM61640WD                                 796.492    625.560    1.27  0.20310    
+ChaineEcranWDM61640WE                                  38.347    486.315    0.08  0.93716    
+ChaineEcranWDM61650WE                                 119.667    500.888    0.24  0.81120    
+ChaineEcranWDM61710WD                                  36.134    632.867    0.06  0.95448    
+ChaineEcranWDM61710WE                                -210.720    492.650   -0.43  0.66890    
+ChaineEcranWDM61730WE                                -544.656    544.583   -1.00  0.31739    
+ChaineEcranWDM61740WE                                -722.629    504.534   -1.43  0.15225    
+ChaineEcranWDM61800WE                                -783.388    492.076   -1.59  0.11157    
+ChaineEcranWDM61805WD                                -482.166    634.672   -0.76  0.44753    
+ChaineEcranWDM61810WE                               -1210.937    497.501   -2.43  0.01503 *  
+ChaineEcranWDM61830WD                                -552.540    617.536   -0.89  0.37105    
+ChaineEcranWDM61830WE                                -274.984    537.463   -0.51  0.60897    
+ChaineEcranWDM61900WD                                -613.615    618.200   -0.99  0.32105    
+ChaineEcranWDM61900WE                                -486.490    561.467   -0.87  0.38636    
+ChaineEcranWDM61910WE                                -648.521    548.467   -1.18  0.23720    
+ChaineEcranWDM61930WD                                -741.397    669.566   -1.11  0.26833    
+ChaineEcranWDM61930WE                               -1068.486    591.316   -1.81  0.07094 .  
+ChaineEcranWDM61940WD                                -466.537    670.802   -0.70  0.48684    
+ChaineEcranWDM61945WD                                -609.316    683.982   -0.89  0.37314    
+ChaineEcranWDM61945WE                               -1029.834    589.435   -1.75  0.08079 .  
+ChaineEcranWDM62005WD                               -2065.377    831.069   -2.49  0.01304 *  
+ChaineEcranWDM62005WE                               -1511.811    769.109   -1.97  0.04950 *  
+ChaineEcranWDM62010WD                               -2027.794    825.812   -2.46  0.01417 *  
+ChaineEcranWDM62025WD                               -2546.307    747.251   -3.41  0.00067 ***
+ChaineEcranWDM62025WE                               -2440.019    667.967   -3.65  0.00027 ***
+ChaineEcranWDM62035WE                               -2279.865    711.020   -3.21  0.00137 ** 
+ChaineEcranWDM62040WD                               -2170.946    748.159   -2.90  0.00376 ** 
+ChaineEcranWDM62045WD                               -2338.716    741.121   -3.16  0.00163 ** 
+ChaineEcranWDM62045WE                               -2072.051    680.881   -3.04  0.00238 ** 
+ChaineEcranWDM62050WD                               -1073.684    753.354   -1.43  0.15428    
+ChaineEcranWDM62050WE                               -2097.547    673.736   -3.11  0.00188 ** 
+ChaineEcranWDM62130WD                               -1167.202    806.700   -1.45  0.14811    
+ChaineEcranWDM62130WE                               -1857.930    720.193   -2.58  0.00997 ** 
+ChaineEcranWDM62140WD                               -1925.559    787.748   -2.44  0.01461 *  
+ChaineEcranWDM62140WE                               -2914.194    755.003   -3.86  0.00012 ***
+ChaineEcranWDM62160WD                               -1035.800    788.667   -1.31  0.18924    
+ChaineEcranWDM62160WE                               -1085.425    723.199   -1.50  0.13358    
+ChaineEcranWDM62170WD                                -503.551    814.623   -0.62  0.53657    
+ChaineEcranWDM62170WE                                -970.820    746.719   -1.30  0.19374    
+ChaineEcranWDM62180WD                                -236.801    794.458   -0.30  0.76569    
+ChaineEcranWDM62180WE                               -1043.993    739.616   -1.41  0.15827    
+ChaineEcranWDM62190WD                                  45.884    831.838    0.06  0.95602    
+ChaineEcranWDM62240WE                                -781.335    791.753   -0.99  0.32386    
+ChaineEcranWDM62250WE                                -680.747    781.063   -0.87  0.38357    
+ChaineEcranWDM62280WD                                 127.239    799.306    0.16  0.87354    
+ChaineEcranWDM62280WE                                -746.949    775.593   -0.96  0.33565    
+ChaineEcranWDM62360WD                                 103.400    965.406    0.11  0.91472    
+ChaineEcranWDM62360WE                                -776.348    784.989   -0.99  0.32281    
+ChaineEcranWDM62370WD                                 557.003    835.816    0.67  0.50523    
+ChaineEcranWDM62370WE                                -427.638    910.410   -0.47  0.63862    
+ChaineEcranWDM62380WD                                   3.688    949.199    0.00  0.99690    
+ChaineEcranWDM62530WD                                 286.634    859.338    0.33  0.73876    
+ChaineEcranWDParisPremiere0721WD                      831.595    782.183    1.06  0.28785    
+ChaineEcranWDParisPremiere0741WE                      508.880    850.823    0.60  0.54985    
+ChaineEcranWDParisPremiere0751WD                      883.477    777.944    1.14  0.25626    
+ChaineEcranWDParisPremiere0751WE                      522.187    845.215    0.62  0.53678    
+ChaineEcranWDParisPremiere1111WE                     1021.766    870.905    1.17  0.24087    
+ChaineEcranWDParisPremiere1121WE                     1048.394    851.230    1.23  0.21826    
+ChaineEcranWDParisPremiere1131WE                     1052.656    851.813    1.24  0.21671    
+ChaineEcranWDParisPremiere1221WE                      944.176    819.034    1.15  0.24916    
+ChaineEcranWDParisPremiere1231WD                     1015.835    833.305    1.22  0.22300    
+ChaineEcranWDParisPremiere1241WD                     1050.129    810.898    1.30  0.19549    
+ChaineEcranWDParisPremiere1301WE                      887.963    850.477    1.04  0.29660    
+ChaineEcranWDParisPremiere1321WE                      672.442    826.194    0.81  0.41581    
+ChaineEcranWDParisPremiere1340WD                     1145.435    829.592    1.38  0.16755    
+ChaineEcranWDParisPremiere1341WD                     1108.284    839.846    1.32  0.18714    
+ChaineEcranWDParisPremiere1401WE                      765.267    762.873    1.00  0.31594    
+ChaineEcranWDParisPremiere1411WD                     1126.679    750.544    1.50  0.13350    
+ChaineEcranWDParisPremiere1411WE                      787.648    763.751    1.03  0.30255    
+ChaineEcranWDParisPremiere1421WD                     1032.832    751.653    1.37  0.16960    
+ChaineEcranWDParisPremiere1511WD                     1015.829    697.398    1.46  0.14541    
+ChaineEcranWDParisPremiere1511WE                      694.092    761.856    0.91  0.36240    
+ChaineEcranWDParisPremiere1611WD                      916.631    697.681    1.31  0.18908    
+ChaineEcranWDParisPremiere1611WE                      639.071    772.598    0.83  0.40826    
+ChaineEcranWDParisPremiere1721WD                      344.439    660.535    0.52  0.60212    
+ChaineEcranWDParisPremiere1801WE                       73.976    856.039    0.09  0.93115    
+ChaineEcranWDParisPremiere1821WD                      312.964    617.562    0.51  0.61238    
+ChaineEcranWDParisPremiere1831WE                     -460.351    767.473   -0.60  0.54870    
+ChaineEcranWDParisPremiere1841WD                      153.263    553.630    0.28  0.78194    
+ChaineEcranWDParisPremiere1851WE                     -147.353    821.354   -0.18  0.85764    
+ChaineEcranWDParisPremiere1920WD                       43.770    561.613    0.08  0.93789    
+ChaineEcranWDParisPremiere1921WD                      -38.399    554.178   -0.07  0.94477    
+ChaineEcranWDParisPremiere1931WE                       42.682    881.313    0.05  0.96138    
+ChaineEcranWDParisPremiere1941WE                       11.693    882.496    0.01  0.98943    
+ChaineEcranWDParisPremiere1951WD                       60.811    560.091    0.11  0.91355    
+ChaineEcranWDParisPremiere1951WE                     -111.508    632.624   -0.18  0.86011    
+ChaineEcranWDParisPremiere2021WD                     -175.390    489.478   -0.36  0.72015    
+ChaineEcranWDParisPremiere2021WE                     -205.728    593.013   -0.35  0.72870    
+ChaineEcranWDParisPremiere2050WD                      -80.141    568.401   -0.14  0.88789    
+ChaineEcranWDParisPremiere2050WE                     -485.254    638.564   -0.76  0.44741    
+ChaineEcranWDParisPremiere2051WD                        8.767    540.165    0.02  0.98705    
+ChaineEcranWDParisPremiere2051WE                      -92.355    602.864   -0.15  0.87826    
+ChaineEcranWDParisPremiere2121WD                      132.286    485.306    0.27  0.78521    
+ChaineEcranWDParisPremiere2141WE                     -117.287    571.803   -0.21  0.83751    
+ChaineEcranWDParisPremiere2150WD                       10.289    357.680    0.03  0.97705    
+ChaineEcranWDParisPremiere2151WE                      -22.915    633.547   -0.04  0.97115    
+ChaineEcranWDParisPremiere2201WD                       18.931    538.109    0.04  0.97194    
+ChaineEcranWDParisPremiere2211WD                       84.073    306.478    0.27  0.78387    
+ChaineEcranWDParisPremiere2211WE                       49.546    667.453    0.07  0.94083    
+ChaineEcranWDParisPremiere2221WD                       26.060    279.745    0.09  0.92579    
+ChaineEcranWDParisPremiere2221WE                      131.881    667.214    0.20  0.84334    
+ChaineEcranWDParisPremiere2231WD                       80.725    283.056    0.29  0.77553    
+ChaineEcranWDParisPremiere2241WD                       17.660    247.826    0.07  0.94320    
+ChaineEcranWDParisPremiere2251WD                      167.699    230.186    0.73  0.46638    
+ChaineEcranWDParisPremiere2251WE                      -38.202    622.233   -0.06  0.95105    
+ChaineEcranWDParisPremiere2311WD                        1.044    286.369    0.00  0.99709    
+ChaineEcranWDParisPremiere2321WD                       83.981    418.299    0.20  0.84090    
+ChaineEcranWDParisPremiere2321WE                      -66.979    717.680   -0.09  0.92565    
+ChaineEcranWDParisPremiere2351WD                           NA         NA      NA       NA    
+ChaineEcranWDPuissanceTNT0739WD                       780.217    785.154    0.99  0.32050    
+ChaineEcranWDPuissanceTNT0809WD                       740.488    756.628    0.98  0.32788    
+ChaineEcranWDPuissanceTNT0809WE                       451.525    867.054    0.52  0.60260    
+ChaineEcranWDPuissanceTNT0839WD                       790.391    755.444    1.05  0.29559    
+ChaineEcranWDPuissanceTNT0839WE                       432.820    859.497    0.50  0.61463    
+ChaineEcranWDPuissanceTNT0900WD                       953.259    763.329    1.25  0.21190    
+ChaineEcranWDPuissanceTNT0930WD                       956.149    720.363    1.33  0.18458    
+ChaineEcranWDPuissanceTNT1030WD                       878.422    709.741    1.24  0.21601    
+ChaineEcranWDPuissanceTNT1100WD                       951.434    692.512    1.37  0.16966    
+ChaineEcranWDPuissanceTNT1100WE                       639.641    896.278    0.71  0.47553    
+ChaineEcranWDPuissanceTNT1130WD                       954.433    686.884    1.39  0.16486    
+ChaineEcranWDPuissanceTNT1130WE                       724.275    867.226    0.84  0.40374    
+ChaineEcranWDPuissanceTNT1150WD                       982.583    697.606    1.41  0.15916    
+ChaineEcranWDPuissanceTNT1200WE                       674.841    840.813    0.80  0.42231    
+ChaineEcranWDPuissanceTNT1220WD                       932.291    674.514    1.38  0.16710    
+ChaineEcranWDPuissanceTNT1230WD                       922.981    666.760    1.38  0.16645    
+ChaineEcranWDPuissanceTNT1230WE                       635.452    848.663    0.75  0.45410    
+ChaineEcranWDPuissanceTNT1250WD                       850.597    664.448    1.28  0.20066    
+ChaineEcranWDPuissanceTNT1320WD                       806.336    662.337    1.22  0.22362    
+ChaineEcranWDPuissanceTNT1320WE                       512.954    864.606    0.59  0.55307    
+ChaineEcranWDPuissanceTNT1340WE                       590.580    849.551    0.70  0.48705    
+ChaineEcranWDPuissanceTNT1350WD                       866.950    641.633    1.35  0.17682    
+ChaineEcranWDPuissanceTNT1350WE                       545.338    788.758    0.69  0.48942    
+ChaineEcranWDPuissanceTNT1420WD                       836.755    638.547    1.31  0.19024    
+ChaineEcranWDPuissanceTNT1420WE                       536.517    791.882    0.68  0.49817    
+ChaineEcranWDPuissanceTNT1429WE                       867.454    800.595    1.08  0.27873    
+ChaineEcranWDPuissanceTNT1440WE                       466.485    785.587    0.59  0.55272    
+ChaineEcranWDPuissanceTNT1500WD                       755.939    630.069    1.20  0.23039    
+ChaineEcranWDPuissanceTNT1500WE                       436.402    759.656    0.57  0.56572    
+ChaineEcranWDPuissanceTNT1530WD                       787.049    629.931    1.25  0.21168    
+ChaineEcranWDPuissanceTNT1540WE                       442.995    764.958    0.58  0.56259    
+ChaineEcranWDPuissanceTNT1610WD                       724.129    612.986    1.18  0.23764    
+ChaineEcranWDPuissanceTNT1700WE                       436.977    746.885    0.59  0.55858    
+ChaineEcranWDPuissanceTNT1710WD                      -109.873    610.432   -0.18  0.85718    
+ChaineEcranWDPuissanceTNT1710WE                      -377.020    769.597   -0.49  0.62427    
+ChaineEcranWDPuissanceTNT1800WD                      -167.793    623.052   -0.27  0.78773    
+ChaineEcranWDPuissanceTNT1800WE                      -327.073    769.983   -0.42  0.67105    
+ChaineEcranWDPuissanceTNT1820WD                      -151.520    646.818   -0.23  0.81482    
+ChaineEcranWDPuissanceTNT1820WE                      -566.328    737.302   -0.77  0.44253    
+ChaineEcranWDPuissanceTNT1850WD                      -141.949    656.044   -0.22  0.82872    
+ChaineEcranWDPuissanceTNT1850WE                      -575.871    751.639   -0.77  0.44369    
+ChaineEcranWDPuissanceTNT1910WD                      -101.546    625.659   -0.16  0.87109    
+ChaineEcranWDPuissanceTNT1910WE                      -534.069    686.193   -0.78  0.43650    
+ChaineEcranWDPuissanceTNT1930WE                      -517.856    666.221   -0.78  0.43709    
+ChaineEcranWDPuissanceTNT2000WD                      -275.590    633.797   -0.43  0.66374    
+ChaineEcranWDPuissanceTNT2000WE                      -652.123    605.354   -1.08  0.28152    
+ChaineEcranWDPuissanceTNT2020WD                      -635.670    487.840   -1.30  0.19274    
+ChaineEcranWDPuissanceTNT2040WD                      -294.451    495.542   -0.59  0.55246    
+ChaineEcranWDPuissanceTNT2050WD                      -138.641    482.025   -0.29  0.77367    
+ChaineEcranWDPuissanceTNT2060WD                      -458.960    462.676   -0.99  0.32135    
+ChaineEcranWDPuissanceTNT2060WE                      -445.114    609.154   -0.73  0.46506    
+ChaineEcranWDPuissanceTNT2140WD                      -415.682    336.965   -1.23  0.21752    
+ChaineEcranWDPuissanceTNT2140WE                      -762.349    544.508   -1.40  0.16167    
+ChaineEcranWDPuissanceTNT2160WD                      -680.455    318.388   -2.14  0.03272 *  
+ChaineEcranWDPuissanceTNT2160WE                      -801.164    572.452   -1.40  0.16184    
+ChaineEcranWDPuissanceTNT2180WD                      -329.429    388.883   -0.85  0.39705    
+ChaineEcranWDPuissanceTNT2360WD                            NA         NA      NA       NA    
+ChaineEcranWDSerieClub0851WD                          689.157    709.515    0.97  0.33153    
+ChaineEcranWDSerieClub0911WE                         -646.717    597.974   -1.08  0.27962    
+ChaineEcranWDSerieClub0921WD                          632.752    713.049    0.89  0.37499    
+ChaineEcranWDSerieClub0951WD                          706.240    708.364    1.00  0.31891    
+ChaineEcranWDSerieClub0951WE                         -686.612    587.626   -1.17  0.24279    
+ChaineEcranWDSerieClub1001WD                          658.818    694.124    0.95  0.34269    
+ChaineEcranWDSerieClub1001WE                         -709.556    517.643   -1.37  0.17064    
+ChaineEcranWDSerieClub1011WD                          799.219    651.798    1.23  0.22030    
+ChaineEcranWDSerieClub1011WE                         -705.683    542.195   -1.30  0.19325    
+ChaineEcranWDSerieClub1041WD                          693.947    651.382    1.07  0.28687    
+ChaineEcranWDSerieClub1041WE                         -649.670    551.535   -1.18  0.23899    
+ChaineEcranWDSerieClub1141WE                         -751.861    547.677   -1.37  0.16999    
+ChaineEcranWDSerieClub1211WD                          759.570    638.747    1.19  0.23454    
+ChaineEcranWDSerieClub1251WD                          778.896    627.768    1.24  0.21487    
+ChaineEcranWDSerieClub1301WE                         -732.176    558.755   -1.31  0.19025    
+ChaineEcranWDSerieClub1321WE                         -758.068    554.067   -1.37  0.17143    
+ChaineEcranWDSerieClub1341WD                          979.771    624.701    1.57  0.11698    
+ChaineEcranWDSerieClub1401WD                          824.872    602.585    1.37  0.17121    
+ChaineEcranWDSerieClub1401WE                         -761.894    605.534   -1.26  0.20848    
+ChaineEcranWDSerieClub1451WD                          801.490    579.668    1.38  0.16695    
+ChaineEcranWDSerieClub1451WE                        -1126.970    605.149   -1.86  0.06273 .  
+ChaineEcranWDSerieClub1521WD                          711.322    575.097    1.24  0.21630    
+ChaineEcranWDSerieClub1531WE                        -1338.955    675.074   -1.98  0.04748 *  
+ChaineEcranWDSerieClub1541WE                        -1261.656    705.451   -1.79  0.07388 .  
+ChaineEcranWDSerieClub1551WE                        -1207.507    698.645   -1.73  0.08411 .  
+ChaineEcranWDSerieClub1601WD                          749.595    577.017    1.30  0.19409    
+ChaineEcranWDSerieClub1611WD                          721.739    559.905    1.29  0.19756    
+ChaineEcranWDSerieClub1621WE                        -1157.972    749.046   -1.55  0.12231    
+ChaineEcranWDSerieClub1651WE                        -1089.288    744.597   -1.46  0.14367    
+ChaineEcranWDSerieClub1701WD                          737.662    558.748    1.32  0.18694    
+ChaineEcranWDSerieClub1741WD                          -13.845    554.746   -0.02  0.98009    
+ChaineEcranWDSerieClub1751WE                        -1765.891    714.366   -2.47  0.01353 *  
+ChaineEcranWDSerieClub1811WE                        -2096.347    726.140   -2.89  0.00394 ** 
+ChaineEcranWDSerieClub1821WD                         -136.780    552.330   -0.25  0.80444    
+ChaineEcranWDSerieClub1841WE                        -1566.623    697.823   -2.25  0.02489 *  
+ChaineEcranWDSerieClub1921WD                         -145.052    568.173   -0.26  0.79853    
+ChaineEcranWDSerieClub1921WE                        -1570.526    713.652   -2.20  0.02789 *  
+ChaineEcranWDSerieClub1941WD                            3.082    529.699    0.01  0.99536    
+ChaineEcranWDSerieClub1951WE                        -1666.332    724.803   -2.30  0.02162 *  
+ChaineEcranWDSerieClub2031WD                         -107.315    353.722   -0.30  0.76163    
+ChaineEcranWDSerieClub2031WE                         -290.730    541.874   -0.54  0.59166    
+ChaineEcranWDSerieClub2051WD                          -84.249    363.677   -0.23  0.81683    
+ChaineEcranWDSerieClub2051WE                         -333.414    536.703   -0.62  0.53453    
+ChaineEcranWDSerieClub2121WE                         -400.551    466.329   -0.86  0.39049    
+ChaineEcranWDSerieClub2131WD                         -196.265    228.212   -0.86  0.38990    
+ChaineEcranWDSerieClub2141WD                         -186.497    228.344   -0.82  0.41419    
+ChaineEcranWDSerieClub2211WE                         -383.296    467.994   -0.82  0.41289    
+ChaineEcranWDSerieClub2221WE                         -268.147    364.340   -0.74  0.46184    
+ChaineEcranWDSerieClub2231WD                            1.301    190.379    0.01  0.99455    
+ChaineEcranWDSerieClub2241WE                         -266.487    354.745   -0.75  0.45263    
+ChaineEcranWDSerieClub2251WD                               NA         NA      NA       NA    
+ChaineEcranWDTeva0721WD                               994.130    684.632    1.45  0.14667    
+ChaineEcranWDTeva0721WE                              1065.459    759.747    1.40  0.16098    
+ChaineEcranWDTeva0741WE                               764.012    735.621    1.04  0.29914    
+ChaineEcranWDTeva0901WD                              1050.846    670.902    1.57  0.11746    
+ChaineEcranWDTeva0931WD                              1276.800    663.410    1.92  0.05445 .  
+ChaineEcranWDTeva0931WE                               837.566    700.852    1.20  0.23223    
+ChaineEcranWDTeva1001WD                              1243.730    652.976    1.90  0.05699 .  
+ChaineEcranWDTeva1001WE                              1088.104    701.665    1.55  0.12115    
+ChaineEcranWDTeva1011WE                              1231.675    719.663    1.71  0.08718 .  
+ChaineEcranWDTeva1021WE                              1154.999    727.150    1.59  0.11238    
+ChaineEcranWDTeva1051WD                              1212.541    651.478    1.86  0.06289 .  
+ChaineEcranWDTeva1051WE                              1259.467    719.251    1.75  0.08011 .  
+ChaineEcranWDTeva1101WE                              1124.773    716.779    1.57  0.11679    
+ChaineEcranWDTeva1111WE                              1137.995    751.254    1.51  0.13001    
+ChaineEcranWDTeva1121WE                              1242.098    709.365    1.75  0.08013 .  
+ChaineEcranWDTeva1131WD                              1151.698    626.835    1.84  0.06634 .  
+ChaineEcranWDTeva1131WE                              1007.269    713.361    1.41  0.15813    
+ChaineEcranWDTeva1151WE                               830.575    768.380    1.08  0.27988    
+ChaineEcranWDTeva1211WD                              1171.559    628.913    1.86  0.06266 .  
+ChaineEcranWDTeva1211WE                              1146.113    672.426    1.70  0.08848 .  
+ChaineEcranWDTeva1221WE                              1093.454    640.376    1.71  0.08791 .  
+ChaineEcranWDTeva1231WD                              1192.641    570.487    2.09  0.03671 *  
+ChaineEcranWDTeva1231WE                              1042.341    647.010    1.61  0.10736    
+ChaineEcranWDTeva1241WE                               890.765    634.879    1.40  0.16078    
+ChaineEcranWDTeva1251WD                              1329.968    574.340    2.32  0.02070 *  
+ChaineEcranWDTeva1251WE                              1105.151    635.567    1.74  0.08224 .  
+ChaineEcranWDTeva1301WD                              1272.230    566.203    2.25  0.02477 *  
+ChaineEcranWDTeva1310WD                              1283.910    616.070    2.08  0.03731 *  
+ChaineEcranWDTeva1311WD                              1367.360    589.995    2.32  0.02059 *  
+ChaineEcranWDTeva1321WD                              1283.263    564.720    2.27  0.02319 *  
+ChaineEcranWDTeva1331WE                               984.053    670.070    1.47  0.14213    
+ChaineEcranWDTeva1341WD                              1227.733    557.306    2.20  0.02773 *  
+ChaineEcranWDTeva1341WE                              1172.360    647.301    1.81  0.07029 .  
+ChaineEcranWDTeva1351WE                              1039.930    618.484    1.68  0.09286 .  
+ChaineEcranWDTeva1401WE                               873.313    624.690    1.40  0.16230    
+ChaineEcranWDTeva1411WD                               959.125    561.158    1.71  0.08760 .  
+ChaineEcranWDTeva1411WE                               929.890    610.548    1.52  0.12793    
+ChaineEcranWDTeva1421WD                              1087.652    553.134    1.97  0.04942 *  
+ChaineEcranWDTeva1441WE                              1055.876    616.976    1.71  0.08719 .  
+ChaineEcranWDTeva1451WD                              1040.536    569.108    1.83  0.06767 .  
+ChaineEcranWDTeva1451WE                               802.324    623.214    1.29  0.19813    
+ChaineEcranWDTeva1501WE                              1013.111    605.293    1.67  0.09436 .  
+ChaineEcranWDTeva1511WD                              1025.415    545.285    1.88  0.06021 .  
+ChaineEcranWDTeva1511WE                               821.478    596.392    1.38  0.16857    
+ChaineEcranWDTeva1521WE                               775.775    600.362    1.29  0.19647    
+ChaineEcranWDTeva1531WE                               919.317    599.707    1.53  0.12547    
+ChaineEcranWDTeva1541WE                               820.740    584.081    1.41  0.16015    
+ChaineEcranWDTeva1551WE                               741.296    615.846    1.20  0.22887    
+ChaineEcranWDTeva1611WD                              1059.386    530.232    2.00  0.04588 *  
+ChaineEcranWDTeva1611WE                               738.181    589.227    1.25  0.21045    
+ChaineEcranWDTeva1641WD                              1204.646    534.967    2.25  0.02446 *  
+ChaineEcranWDTeva1651WE                               570.703    607.111    0.94  0.34733    
+ChaineEcranWDTeva1721WE                               -80.602    584.389   -0.14  0.89032    
+ChaineEcranWDTeva1731WD                               394.984    528.103    0.75  0.45461    
+ChaineEcranWDTeva1741WD                               310.152    527.612    0.59  0.55672    
+ChaineEcranWDTeva1741WE                                82.563    587.094    0.14  0.88818    
+ChaineEcranWDTeva1801WD                                87.476    506.165    0.17  0.86281    
+ChaineEcranWDTeva1801WE                              -171.484    563.542   -0.30  0.76094    
+ChaineEcranWDTeva1811WE                               115.225    555.795    0.21  0.83579    
+ChaineEcranWDTeva1831WD                                98.615    536.408    0.18  0.85416    
+ChaineEcranWDTeva1831WE                               -76.523    538.340   -0.14  0.88698    
+ChaineEcranWDTeva1841WD                               -25.227    479.357   -0.05  0.95804    
+ChaineEcranWDTeva1851WD                               336.941    428.337    0.79  0.43161    
+ChaineEcranWDTeva1851WE                                31.170    506.440    0.06  0.95093    
+ChaineEcranWDTeva1921WE                               162.187    500.775    0.32  0.74607    
+ChaineEcranWDTeva1931WD                                79.877    442.914    0.18  0.85690    
+ChaineEcranWDTeva1931WE                               197.861    501.004    0.39  0.69295    
+ChaineEcranWDTeva1941WD                               302.466    392.805    0.77  0.44140    
+ChaineEcranWDTeva2021WE                                 0.368    404.523    0.00  0.99927    
+ChaineEcranWDTeva2031WE                                94.309    447.493    0.21  0.83311    
+ChaineEcranWDTeva2051WD                               300.988    373.139    0.81  0.41999    
+ChaineEcranWDTeva2051WE                               -62.208    400.525   -0.16  0.87659    
+ChaineEcranWDTeva2131WE                               456.249    334.654    1.36  0.17295    
+ChaineEcranWDTeva2141WD                               263.111    257.596    1.02  0.30720    
+ChaineEcranWDTeva2141WE                               208.815    257.068    0.81  0.41674    
+ChaineEcranWDTeva2151WD                               253.146    227.719    1.11  0.26644    
+ChaineEcranWDTeva2151WE                               362.579    208.991    1.73  0.08294 .  
+ChaineEcranWDTeva2221WD                               189.678    250.838    0.76  0.44965    
+ChaineEcranWDTeva2221WE                               221.788    209.515    1.06  0.28994    
+ChaineEcranWDTeva2251WD                                56.042    218.977    0.26  0.79804    
+ChaineEcranWDTeva2251WE                                    NA         NA      NA       NA    
+ChaineEcranWDTeva2321WD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6ACCESSWE                                  NA         NA      NA       NA    
+ChaineDaypartWDM6DAYWD                                 75.011    253.336    0.30  0.76720    
+ChaineDaypartWDM6DAYWE                                     NA         NA      NA       NA    
+ChaineDaypartWDM6NIGHTWD                            -1059.656    224.017   -4.73  2.4e-06 ***
+ChaineDaypartWDM6NIGHTWE                             -163.809    254.459   -0.64  0.51982    
+ChaineDaypartWDM6PEAKWD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6PEAKWE                                    NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereACCESSWD                  130.782    410.136    0.32  0.74986    
+ChaineDaypartWDParisPremiereACCESSWE                   43.042    530.976    0.08  0.93540    
+ChaineDaypartWDParisPremiereDAYWD                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereDAYWE                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereNIGHTWD                   139.898    379.871    0.37  0.71271    
+ChaineDaypartWDParisPremiereNIGHTWE                   -22.860    371.105   -0.06  0.95089    
+ChaineDaypartWDParisPremierePEAKWD                         NA         NA      NA       NA    
+ChaineDaypartWDParisPremierePEAKWE                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTACCESSWD                    92.559    336.409    0.28  0.78324    
+ChaineDaypartWDPuissanceTNTACCESSWE                        NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWD                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWE                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWD                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWE                    204.577    351.950    0.58  0.56114    
+ChaineDaypartWDPuissanceTNTPEAKWD                          NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTPEAKWE                          NA         NA      NA       NA    
+ChaineDaypartWDSerieClubACCESSWD                       53.049    245.319    0.22  0.82882    
+ChaineDaypartWDSerieClubACCESSWE                     1427.464    700.895    2.04  0.04184 *  
+ChaineDaypartWDSerieClubDAYWD                              NA         NA      NA       NA    
+ChaineDaypartWDSerieClubDAYWE                        1580.978    743.818    2.13  0.03369 *  
+ChaineDaypartWDSerieClubNIGHTWD                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubNIGHTWE                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWD                             NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWE                             NA         NA      NA       NA    
+ChaineDaypartWDTevaACCESSWD                           189.657    372.491    0.51  0.61071    
+ChaineDaypartWDTevaACCESSWE                                NA         NA      NA       NA    
+ChaineDaypartWDTevaDAYWD                              -43.381    474.988   -0.09  0.92724    
+ChaineDaypartWDTevaDAYWE                                   NA         NA      NA       NA    
+ChaineDaypartWDTevaNIGHTWD                            185.467    215.739    0.86  0.39008    
+ChaineDaypartWDTevaNIGHTWE                                 NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWD                                  NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS18WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WD                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY0309WD                          -21.726    544.345   -0.04  0.96817    
+ChaineMMDaypartWDM6DAY0309WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1213WD                           94.244    257.196    0.37  0.71409    
+ChaineMMDaypartWDM6DAY1213WE                          415.267    361.726    1.15  0.25112    
+ChaineMMDaypartWDM6DAY1415WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1415WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWD                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS18WD             -328.684    343.102   -0.96  0.33821    
+ChaineMMDaypartWDParisPremiereACCESS18WE              319.944    337.384    0.95  0.34311    
+ChaineMMDaypartWDParisPremiereACCESS19WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS19WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1011WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1213WD                 6.438    505.640    0.01  0.98984    
+ChaineMMDaypartWDParisPremiereDAY1213WE               -22.569    352.212   -0.06  0.94892    
+ChaineMMDaypartWDParisPremiereDAY1415WD               -12.667    392.311   -0.03  0.97425    
+ChaineMMDaypartWDParisPremiereDAY1415WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT0002WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WE                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWD                       NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWE                       NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WE                17.629    380.818    0.05  0.96308    
+ChaineMMDaypartWDPuissanceTNTACCESS19WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS19WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1011WD                170.976    434.160    0.39  0.69377    
+ChaineMMDaypartWDPuissanceTNTDAY1011WE                103.996    547.651    0.19  0.84941    
+ChaineMMDaypartWDPuissanceTNTDAY1213WD                122.109    248.084    0.49  0.62264    
+ChaineMMDaypartWDPuissanceTNTDAY1213WE                 82.784    390.696    0.21  0.83222    
+ChaineMMDaypartWDPuissanceTNTDAY1415WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1415WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWD                        NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WE                 -165.464    269.429   -0.61  0.53921    
+ChaineMMDaypartWDSerieClubACCESS19WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS19WE                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY0309WD                   165.335    556.352    0.30  0.76637    
+ChaineMMDaypartWDSerieClubDAY0309WE                  -265.561    646.333   -0.41  0.68122    
+ChaineMMDaypartWDSerieClubDAY1011WD                   234.492    491.497    0.48  0.63335    
+ChaineMMDaypartWDSerieClubDAY1011WE                  -121.078    590.201   -0.21  0.83748    
+ChaineMMDaypartWDSerieClubDAY1213WD                    97.872    327.984    0.30  0.76543    
+ChaineMMDaypartWDSerieClubDAY1213WE                  -158.058    483.091   -0.33  0.74357    
+ChaineMMDaypartWDSerieClubDAY1415WD                    31.511    204.448    0.15  0.87753    
+ChaineMMDaypartWDSerieClubDAY1415WE                   222.649    284.259    0.78  0.43358    
+ChaineMMDaypartWDSerieClubDAY1617WD                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY1617WE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WD                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WE                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWD                           NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1011WD                        198.053    498.055    0.40  0.69094    
+ChaineMMDaypartWDTevaDAY1011WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1213WD                        140.510    294.324    0.48  0.63314    
+ChaineMMDaypartWDTevaDAY1213WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1415WD                        132.826    219.821    0.60  0.54576    
+ChaineMMDaypartWDTevaDAY1415WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WD                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWD                                NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWE                                NA         NA      NA       NA    
+creaCOEUR DES FEMMES 20'' v2                          292.740    118.775    2.46  0.01381 *  
+creaCOEUR DES FEMMES 30'' v1                          464.311    119.067    3.90  0.00010 ***
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1   319.832    113.887    2.81  0.00504 ** 
+creaeffet push-up                                    -184.806    126.930   -1.46  0.14559    
+creaeffet sculptant                                   -79.975    113.288   -0.71  0.48032    
+creaeffet sculptant 12                                -54.009    119.184   -0.45  0.65049    
+creaEFFET SCULPTANT LA FEMME 12'' v2                  147.783    120.140    1.23  0.21883    
+creaEFFET SCULPTANT LA FEMME 20'' v1                  291.839    114.427    2.55  0.01085 *  
+creala chaussure pour toutes les morpho'              -32.780    116.492   -0.28  0.77845    
+creala lingerie pour toutes les morpho                -35.784    116.610   -0.31  0.75898    
+creala mode pour toutes les morpho                    -61.401    152.486   -0.40  0.68724    
+creala terrasse                                        -1.753    113.732   -0.02  0.98770    
+creamiroir                                            -41.011    118.781   -0.35  0.72994    
+creaversion de base                                    27.377    331.174    0.08  0.93413    
+budgetbrut                                              2.973      0.557    5.34  1.0e-07 ***
+budgetnet                                             -16.193      3.095   -5.23  1.9e-07 ***
+grp                                                   -93.872     14.255   -6.59  6.0e-11 ***
+grpref                                                437.190     35.457   12.33  < 2e-16 ***
+tavAA                                                 -48.740    137.940   -0.35  0.72388    
+tavAAA                                                -20.808    213.534   -0.10  0.92238    
+tavAAB                                                 -9.780    219.684   -0.04  0.96450    
+tavAAC                                                460.123    287.030    1.60  0.10911    
+tavAAD                                                344.296    287.602    1.20  0.23142    
+tavAAF                                                -70.275    275.461   -0.26  0.79866    
+tavAAG                                                  3.351    259.393    0.01  0.98969    
+tavAAI                                                 88.472    437.520    0.20  0.83977    
+tavAB                                                 -96.833    126.551   -0.77  0.44428    
+tavABA                                                 28.463    177.087    0.16  0.87232    
+tavABB                                                 60.310    159.749    0.38  0.70583    
+tavABC                                                -43.219    294.260   -0.15  0.88325    
+tavABF                                                 30.022    153.583    0.20  0.84504    
+tavABL                                                144.661    294.335    0.49  0.62315    
+tavAC                                                  67.488    117.156    0.58  0.56466    
+tavACA                                               -122.896    120.516   -1.02  0.30799    
+tavACB                                                218.565    128.528    1.70  0.08922 .  
+tavACC                                                101.597    119.458    0.85  0.39518    
+tavAE                                                -201.391    331.115   -0.61  0.54312    
+tavAF                                                -141.695    331.361   -0.43  0.66899    
+tavC                                                  367.967    235.906    1.56  0.11899    
+tavCAA                                                146.670    257.333    0.57  0.56878    
+tavCBA                                                 -2.059    202.140   -0.01  0.99188    
+tavCBB                                                417.210    215.086    1.94  0.05258 .  
+tavCC                                                 -14.600    162.389   -0.09  0.92837    
+tavCD                                                -327.324    191.831   -1.71  0.08813 .  
+tavCE                                                      NA         NA      NA       NA    
+tavCFA                                                195.269    380.087    0.51  0.60749    
+tavD                                                  -60.093    294.625   -0.20  0.83841    
+tavDAA                                               -173.021    392.563   -0.44  0.65945    
+tavDDB                                               -170.845    159.830   -1.07  0.28526    
+tavDG                                                 -62.319    171.546   -0.36  0.71644    
+tavE                                                 -129.426    315.174   -0.41  0.68138    
+tavEA                                                 -70.631    132.048   -0.53  0.59280    
+tavEAG                                                 39.816    388.733    0.10  0.91843    
+tavEAJ                                                -87.405    389.276   -0.22  0.82237    
+tavEAK                                                -21.017    282.802   -0.07  0.94077    
+tavEAL                                                458.556    170.978    2.68  0.00739 ** 
+tavEB                                                -210.395    133.419   -1.58  0.11499    
+tavEBD                                                 54.086    118.809    0.46  0.64900    
+tavEBF                                                -36.399    142.899   -0.25  0.79897    
+tavEBJ                                               -292.790    142.646   -2.05  0.04027 *  
+tavEBK                                                -59.156    194.973   -0.30  0.76162    
+tavEBL                                                 78.239    116.380    0.67  0.50150    
+tavEBN                                                273.213    206.728    1.32  0.18648    
+tavEBP                                                     NA         NA      NA       NA    
+tavFBG                                               -664.497    317.625   -2.09  0.03658 *  
+tavFBM                                               -259.233    265.597   -0.98  0.32918    
+tavG                                                  136.690    335.230    0.41  0.68351    
+tavIH                                                      NA         NA      NA       NA    
+tavJ                                                  -35.520    113.310   -0.31  0.75395    
+hour1                                                      NA         NA      NA       NA    
+hour7                                                  52.349    162.010    0.32  0.74664    
+hour8                                                  -2.432     88.196   -0.03  0.97800    
+hour9                                                      NA         NA      NA       NA    
+hour10                                                -10.895     76.495   -0.14  0.88676    
+hour11                                                     NA         NA      NA       NA    
+hour12                                                -15.457     76.256   -0.20  0.83939    
+hour13                                                     NA         NA      NA       NA    
+hour14                                               -102.866     72.819   -1.41  0.15795    
+hour15                                                     NA         NA      NA       NA    
+hour16                                               -826.127     87.267   -9.47  < 2e-16 ***
+hour17                                                     NA         NA      NA       NA    
+hour18                                                     NA         NA      NA       NA    
+hour19                                                     NA         NA      NA       NA    
+hour20                                                -51.861    270.363   -0.19  0.84791    
+hour21                                                     NA         NA      NA       NA    
+hour22                                                -30.189     77.384   -0.39  0.69650    
+hour23                                                     NA         NA      NA       NA    
+month2                                               -149.911     18.907   -7.93  4.0e-15 ***
+month3                                                  8.260     33.926    0.24  0.80768    
+month4                                                  3.571     23.387    0.15  0.87868    
+month5                                                     NA         NA      NA       NA    
+dayofweek2                                           -390.444    435.562   -0.90  0.37016    
+dayofweek3                                           -405.918    435.461   -0.93  0.35139    
+dayofweek4                                           -413.077    435.885   -0.95  0.34343    
+dayofweek5                                           -379.588    436.302   -0.87  0.38442    
+dayofweek6                                           -427.761    434.706   -0.98  0.32524    
+dayofweek7                                            -32.262     34.610   -0.93  0.35139    
+tavtapAA                                              139.255    113.745    1.22  0.22102    
+tavtapAAA                                             365.116    237.934    1.53  0.12509    
+tavtapAAB                                                  NA         NA      NA       NA    
+tavtapAAC                                                  NA         NA      NA       NA    
+tavtapAAD                                                  NA         NA      NA       NA    
+tavtapAAF                                              -2.476    369.307   -0.01  0.99465    
+tavtapAAG                                                  NA         NA      NA       NA    
+tavtapAAI                                              58.014    478.040    0.12  0.90342    
+tavtapAB                                               98.172     89.583    1.10  0.27329    
+tavtapABA                                              62.495    187.040    0.33  0.73833    
+tavtapABB                                            -283.345    169.901   -1.67  0.09556 .  
+tavtapABC                                            -125.532    342.637   -0.37  0.71413    
+tavtapABF                                             -58.128    159.267   -0.36  0.71518    
+tavtapAC                                              -69.013     76.429   -0.90  0.36667    
+tavtapACA                                                  NA         NA      NA       NA    
+tavtapACB                                             -71.061     95.486   -0.74  0.45685    
+tavtapACC                                             -69.121     71.593   -0.97  0.33445    
+tavtapAE                                                   NA         NA      NA       NA    
+tavtapAF                                                   NA         NA      NA       NA    
+tavtapC                                              -307.124    236.766   -1.30  0.19475    
+tavtapCAA                                               5.476    264.304    0.02  0.98347    
+tavtapCBA                                             114.463    181.722    0.63  0.52886    
+tavtapCBB                                            -338.761    196.357   -1.73  0.08467 .  
+tavtapCC                                              -51.039    163.781   -0.31  0.75536    
+tavtapCD                                                   NA         NA      NA       NA    
+tavtapCFA                                                  NA         NA      NA       NA    
+tavtapDDB                                             394.733    146.963    2.69  0.00730 ** 
+tavtapE                                               134.078    319.463    0.42  0.67476    
+tavtapEA                                               60.159    104.813    0.57  0.56606    
+tavtapEAG                                                  NA         NA      NA       NA    
+tavtapEAJ                                             138.870    380.935    0.36  0.71549    
+tavtapEAK                                                  NA         NA      NA       NA    
+tavtapEAL                                                  NA         NA      NA       NA    
+tavtapEB                                              129.694    103.203    1.26  0.20904    
+tavtapEBD                                             156.268    232.921    0.67  0.50237    
+tavtapEBJ                                             366.092    374.264    0.98  0.32813    
+tavtapEBL                                             -30.716     84.793   -0.36  0.71721    
+tavtapJ                                               -28.567    105.191   -0.27  0.78598    
+tavtapSPLIT                                                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 249 on 1706 degrees of freedom
+Multiple R-squared:  0.821,	Adjusted R-squared:  0.769 
+F-statistic: 15.8 on 496 and 1706 DF,  p-value: <2e-16
+
+        date Visite.gain TypeWeekDay length   channel DAYPART MMDAYPART   ChaineEcranWD ChaineDaypartWD
+1 2014-01-19         -88          WE     20        M6     DAY   DAY1617        M61810WE         M6DAYWE
+2 2014-01-19        1537          WE     30        M6     DAY   DAY1415        M61550WE         M6DAYWE
+3 2014-01-19         -35          WE     20 SerieClub     DAY   DAY1415 SerieClub1841WE  SerieClubDAYWE
+4 2014-01-19        3392          WE     20        M6   NIGHT NIGHT2223        M62160WE       M6NIGHTWE
+5 2014-01-19         835          WE     30      Teva    PEAK      PEAK      Teva2151WE      TevaPEAKWE
+6 2014-01-19        -168          WE     20 SerieClub    PEAK      PEAK SerieClub1001WE SerieClubPEAKWE
+   ChaineMMDaypartWD                                            crea budgetbrut budgetnet  grp grpref tav tavtap
+1        M6DAY1617WE DOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      13770    2478.6 4.14   2.59 DDB    DDB
+2        M6DAY1415WE                        COEUR DES FEMMES 30'' v1      15000    2700.0 4.41   2.46 EAL    EAL
+3 SerieClubDAY1415WE                                 version de base        397      79.4 0.09   0.06  AC     AC
+4      M6NIGHT2223WE                EFFET SCULPTANT LA FEMME 20'' v1      27540    4957.2 5.12   3.99 DDB    DDB
+5         TevaPEAKWE                        COEUR DES FEMMES 30'' v1       1210     242.0 0.38   0.27  AC     AC
+6    SerieClubPEAKWE                                 version de base        138      27.6 0.06   0.03  AC     AC
+   EmavShort hour month dayofweek festival
+1 66 MINUTES   17     1         1        0
+2 RECHERCHE    15     1         1        0
+3 PREUVE A L   15     1         1        0
+4 ZONE INTER   22     1         1        0
+5 DROP DEAD    21     1         1        0
+6 NEW YORK 9   21     1         1        0
+
+Call:
+lm(formula = Visite.gain ~ ., data = traindata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1520.7   -63.9     0.0    63.0  1785.0 
+
+Coefficients: (126 not defined because of singularities)
+                                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                           476.461    769.175    0.62  0.53571    
+TypeWeekDayWE                                        -115.706    544.473   -0.21  0.83174    
+length20                                              -12.897     48.054   -0.27  0.78844    
+length30                                              -11.172     49.393   -0.23  0.82108    
+channelParisPremiere                                 -255.241    867.579   -0.29  0.76864    
+channelPuissanceTNT                                   -24.075    872.442   -0.03  0.97799    
+channelSerieClub                                      126.979    889.633    0.14  0.88652    
+channelTeva                                          -239.085    739.993   -0.32  0.74667    
+DAYPARTDAY                                              5.632    213.278    0.03  0.97894    
+DAYPARTNIGHT                                          -25.064    502.400   -0.05  0.96022    
+DAYPARTPEAK                                            52.621    466.192    0.11  0.91014    
+MMDAYPARTACCESS19                                    -157.865    222.900   -0.71  0.47890    
+MMDAYPARTDAY0309                                     -990.684    394.971   -2.51  0.01223 *  
+MMDAYPARTDAY1011                                    -1114.270    407.168   -2.74  0.00627 ** 
+MMDAYPARTDAY1213                                    -1049.694    252.475   -4.16  3.4e-05 ***
+MMDAYPARTDAY1415                                     -867.027    175.922   -4.93  9.1e-07 ***
+MMDAYPARTDAY1617                                           NA         NA      NA       NA    
+MMDAYPARTNIGHT0002                                     17.480    226.122    0.08  0.93839    
+MMDAYPARTNIGHT2223                                         NA         NA      NA       NA    
+MMDAYPARTPEAK                                              NA         NA      NA       NA    
+ChaineEcranWDM60845WE                                 196.357    352.499    0.56  0.57757    
+ChaineEcranWDM60905WE                                 439.093    284.450    1.54  0.12286    
+ChaineEcranWDM60950WD                                 903.409    738.436    1.22  0.22134    
+ChaineEcranWDM60950WE                                 497.061    308.954    1.61  0.10783    
+ChaineEcranWDM61015WD                                 911.048    726.228    1.25  0.20983    
+ChaineEcranWDM61040WD                                 480.721    771.840    0.62  0.53348    
+ChaineEcranWDM61040WE                                 666.295    605.198    1.10  0.27107    
+ChaineEcranWDM61105WE                                 688.487    603.214    1.14  0.25388    
+ChaineEcranWDM61120WD                                 895.920    728.572    1.23  0.21898    
+ChaineEcranWDM61120WE                                 622.349    651.133    0.96  0.33931    
+ChaineEcranWDM61150WE                                 724.560    624.781    1.16  0.24633    
+ChaineEcranWDM61205WD                                 790.967    728.784    1.09  0.27793    
+ChaineEcranWDM61205WE                                  45.593    594.265    0.08  0.93885    
+ChaineEcranWDM61230WD                                 453.936    665.042    0.68  0.49497    
+ChaineEcranWDM61240WD                                 379.806    665.404    0.57  0.56822    
+ChaineEcranWDM61240WE                                -264.197    604.124   -0.44  0.66193    
+ChaineEcranWDM61242WE                                -129.749    645.919   -0.20  0.84082    
+ChaineEcranWDM61250WD                                 458.844    668.558    0.69  0.49261    
+ChaineEcranWDM61250WE                                 365.271    616.237    0.59  0.55343    
+ChaineEcranWDM61305WD                                 243.353    673.575    0.36  0.71793    
+ChaineEcranWDM61310WE                                  20.912    741.825    0.03  0.97751    
+ChaineEcranWDM61340WD                                 297.474    666.790    0.45  0.65556    
+ChaineEcranWDM61340WE                                -454.266    647.818   -0.70  0.48326    
+ChaineEcranWDM61350WE                                -344.370    603.533   -0.57  0.56835    
+ChaineEcranWDM61410WD                                 534.477    651.376    0.82  0.41203    
+ChaineEcranWDM61410WE                                -235.921    527.802   -0.45  0.65494    
+ChaineEcranWDM61420WE                                -212.633    515.034   -0.41  0.67977    
+ChaineEcranWDM61440WD                                 626.918    651.957    0.96  0.33639    
+ChaineEcranWDM61440WE                                 465.718    512.564    0.91  0.36369    
+ChaineEcranWDM61450WE                                  85.240    560.601    0.15  0.87916    
+ChaineEcranWDM61510WE                                 209.742    507.563    0.41  0.67949    
+ChaineEcranWDM61515WD                                 456.180    655.209    0.70  0.48638    
+ChaineEcranWDM61530WD                                 443.693    648.205    0.68  0.49376    
+ChaineEcranWDM61550WE                                  27.432    515.198    0.05  0.95754    
+ChaineEcranWDM61610WD                                 537.979    626.531    0.86  0.39065    
+ChaineEcranWDM61610WE                                -122.008    511.811   -0.24  0.81161    
+ChaineEcranWDM61620WE                                -454.558    551.441   -0.82  0.40988    
+ChaineEcranWDM61640WD                                 805.434    625.713    1.29  0.19819    
+ChaineEcranWDM61640WE                                  45.265    486.915    0.09  0.92594    
+ChaineEcranWDM61650WE                                 132.553    501.379    0.26  0.79152    
+ChaineEcranWDM61710WD                                  46.259    633.016    0.07  0.94175    
+ChaineEcranWDM61710WE                                -203.540    493.243   -0.41  0.67991    
+ChaineEcranWDM61730WE                                -531.382    545.026   -0.97  0.32972    
+ChaineEcranWDM61740WE                                -709.248    505.087   -1.40  0.16044    
+ChaineEcranWDM61800WE                                -772.152    492.609   -1.57  0.11719    
+ChaineEcranWDM61805WD                                -474.840    634.914   -0.75  0.45463    
+ChaineEcranWDM61810WE                               -1202.830    498.069   -2.41  0.01584 *  
+ChaineEcranWDM61830WD                                -544.714    617.726   -0.88  0.37801    
+ChaineEcranWDM61830WE                                -266.076    537.958   -0.49  0.62094    
+ChaineEcranWDM61900WD                                -604.965    618.390   -0.98  0.32807    
+ChaineEcranWDM61900WE                                -477.744    561.907   -0.85  0.39532    
+ChaineEcranWDM61910WE                                -635.268    548.920   -1.16  0.24731    
+ChaineEcranWDM61930WD                                -739.530    669.962   -1.10  0.26982    
+ChaineEcranWDM61930WE                               -1057.464    591.734   -1.79  0.07411 .  
+ChaineEcranWDM61940WD                                -462.886    671.174   -0.69  0.49050    
+ChaineEcranWDM61945WD                                -601.336    684.316   -0.88  0.37967    
+ChaineEcranWDM61945WE                               -1020.780    589.862   -1.73  0.08371 .  
+ChaineEcranWDM62005WD                               -2048.004    831.153   -2.46  0.01384 *  
+ChaineEcranWDM62005WE                               -1493.469    769.286   -1.94  0.05238 .  
+ChaineEcranWDM62010WD                               -2017.776    826.068   -2.44  0.01468 *  
+ChaineEcranWDM62025WD                               -2533.043    747.602   -3.39  0.00072 ***
+ChaineEcranWDM62025WE                               -2426.260    668.455   -3.63  0.00029 ***
+ChaineEcranWDM62035WE                               -2265.847    711.465   -3.18  0.00147 ** 
+ChaineEcranWDM62040WD                               -2156.383    748.568   -2.88  0.00402 ** 
+ChaineEcranWDM62045WD                               -2326.276    741.534   -3.14  0.00174 ** 
+ChaineEcranWDM62045WE                               -2165.308    693.612   -3.12  0.00183 ** 
+ChaineEcranWDM62050WD                               -1059.488    753.755   -1.41  0.16002    
+ChaineEcranWDM62050WE                               -2100.080    674.440   -3.11  0.00188 ** 
+ChaineEcranWDM62130WD                               -1157.154    807.148   -1.43  0.15186    
+ChaineEcranWDM62130WE                               -1848.972    720.685   -2.57  0.01039 *  
+ChaineEcranWDM62140WD                               -1913.177    788.132   -2.43  0.01531 *  
+ChaineEcranWDM62140WE                               -2901.168    755.510   -3.84  0.00013 ***
+ChaineEcranWDM62160WD                               -1022.747    789.046   -1.30  0.19509    
+ChaineEcranWDM62160WE                               -1074.794    723.666   -1.49  0.13767    
+ChaineEcranWDM62170WD                                -493.277    815.018   -0.61  0.54510    
+ChaineEcranWDM62170WE                                -958.481    747.145   -1.28  0.19972    
+ChaineEcranWDM62180WD                                -221.563    794.775   -0.28  0.78045    
+ChaineEcranWDM62180WE                                -993.821    741.274   -1.34  0.18020    
+ChaineEcranWDM62190WD                                  57.256    832.165    0.07  0.94515    
+ChaineEcranWDM62240WE                                -767.262    792.078   -0.97  0.33285    
+ChaineEcranWDM62250WE                                -667.361    781.488   -0.85  0.39325    
+ChaineEcranWDM62280WD                                 142.438    799.662    0.18  0.85865    
+ChaineEcranWDM62280WE                                -729.372    776.030   -0.94  0.34741    
+ChaineEcranWDM62360WD                                 122.124    965.692    0.13  0.89938    
+ChaineEcranWDM62360WE                                -762.544    785.398   -0.97  0.33173    
+ChaineEcranWDM62370WD                                 568.607    836.126    0.68  0.49657    
+ChaineEcranWDM62370WE                                -417.399    910.748   -0.46  0.64679    
+ChaineEcranWDM62380WD                                  16.893    949.460    0.02  0.98581    
+ChaineEcranWDM62530WD                                 300.313    859.616    0.35  0.72686    
+ChaineEcranWDParisPremiere0721WD                      825.883    782.691    1.06  0.29149    
+ChaineEcranWDParisPremiere0741WE                      506.386    851.190    0.59  0.55198    
+ChaineEcranWDParisPremiere0751WD                      876.892    778.460    1.13  0.26014    
+ChaineEcranWDParisPremiere0751WE                      519.862    845.593    0.61  0.53878    
+ChaineEcranWDParisPremiere1111WE                     1022.042    870.126    1.17  0.24032    
+ChaineEcranWDParisPremiere1121WE                     1047.913    850.648    1.23  0.21816    
+ChaineEcranWDParisPremiere1131WE                     1053.707    851.075    1.24  0.21585    
+ChaineEcranWDParisPremiere1221WE                      939.527    818.521    1.15  0.25120    
+ChaineEcranWDParisPremiere1231WD                     1010.584    833.629    1.21  0.22558    
+ChaineEcranWDParisPremiere1241WD                     1047.977    811.288    1.29  0.19662    
+ChaineEcranWDParisPremiere1301WE                      884.246    850.067    1.04  0.29839    
+ChaineEcranWDParisPremiere1321WE                      666.369    825.869    0.81  0.41985    
+ChaineEcranWDParisPremiere1340WD                     1143.101    829.998    1.38  0.16862    
+ChaineEcranWDParisPremiere1341WD                     1107.079    840.281    1.32  0.18784    
+ChaineEcranWDParisPremiere1401WE                      758.302    762.488    0.99  0.32012    
+ChaineEcranWDParisPremiere1411WD                     1123.841    750.953    1.50  0.13469    
+ChaineEcranWDParisPremiere1411WE                      782.583    763.365    1.03  0.30543    
+ChaineEcranWDParisPremiere1421WD                     1030.447    752.078    1.37  0.17083    
+ChaineEcranWDParisPremiere1511WD                     1012.930    697.834    1.45  0.14681    
+ChaineEcranWDParisPremiere1511WE                      690.930    761.451    0.91  0.36433    
+ChaineEcranWDParisPremiere1611WD                      914.318    698.120    1.31  0.19048    
+ChaineEcranWDParisPremiere1611WE                      635.652    772.838    0.82  0.41091    
+ChaineEcranWDParisPremiere1721WD                      340.667    660.982    0.52  0.60634    
+ChaineEcranWDParisPremiere1801WE                       72.477    856.345    0.08  0.93256    
+ChaineEcranWDParisPremiere1821WD                      307.045    617.868    0.50  0.61929    
+ChaineEcranWDParisPremiere1831WE                     -462.701    767.739   -0.60  0.54680    
+ChaineEcranWDParisPremiere1841WD                      148.665    553.936    0.27  0.78844    
+ChaineEcranWDParisPremiere1851WE                     -146.161    821.667   -0.18  0.85884    
+ChaineEcranWDParisPremiere1920WD                       35.462    561.968    0.06  0.94969    
+ChaineEcranWDParisPremiere1921WD                      -44.603    554.554   -0.08  0.93590    
+ChaineEcranWDParisPremiere1931WE                       42.708    881.759    0.05  0.96138    
+ChaineEcranWDParisPremiere1941WE                       11.541    882.862    0.01  0.98957    
+ChaineEcranWDParisPremiere1951WD                       54.624    560.464    0.10  0.92237    
+ChaineEcranWDParisPremiere1951WE                     -116.601    632.837   -0.18  0.85384    
+ChaineEcranWDParisPremiere2021WD                     -180.932    489.908   -0.37  0.71194    
+ChaineEcranWDParisPremiere2021WE                     -209.273    593.213   -0.35  0.72430    
+ChaineEcranWDParisPremiere2050WD                      -83.319    568.709   -0.15  0.88354    
+ChaineEcranWDParisPremiere2050WE                     -486.490    638.682   -0.76  0.44634    
+ChaineEcranWDParisPremiere2051WD                        5.058    540.497    0.01  0.99253    
+ChaineEcranWDParisPremiere2051WE                      -96.272    603.062   -0.16  0.87318    
+ChaineEcranWDParisPremiere2121WD                      126.875    485.795    0.26  0.79399    
+ChaineEcranWDParisPremiere2141WE                     -120.277    572.009   -0.21  0.83348    
+ChaineEcranWDParisPremiere2150WD                        1.440    357.978    0.00  0.99679    
+ChaineEcranWDParisPremiere2151WE                      -29.085    633.706   -0.05  0.96340    
+ChaineEcranWDParisPremiere2201WD                       12.483    538.732    0.02  0.98152    
+ChaineEcranWDParisPremiere2211WD                       74.374    307.423    0.24  0.80886    
+ChaineEcranWDParisPremiere2211WE                       45.093    667.722    0.07  0.94617    
+ChaineEcranWDParisPremiere2221WD                       19.925    279.959    0.07  0.94327    
+ChaineEcranWDParisPremiere2221WE                      127.234    667.475    0.19  0.84885    
+ChaineEcranWDParisPremiere2231WD                       72.906    283.628    0.26  0.79717    
+ChaineEcranWDParisPremiere2241WD                       11.022    248.201    0.04  0.96458    
+ChaineEcranWDParisPremiere2251WD                      163.497    230.326    0.71  0.47789    
+ChaineEcranWDParisPremiere2251WE                      -33.410    622.192   -0.05  0.95718    
+ChaineEcranWDParisPremiere2311WD                       -1.353    286.398    0.00  0.99623    
+ChaineEcranWDParisPremiere2321WD                       80.539    418.394    0.19  0.84738    
+ChaineEcranWDParisPremiere2321WE                      -62.894    717.713   -0.09  0.93018    
+ChaineEcranWDParisPremiere2351WD                           NA         NA      NA       NA    
+ChaineEcranWDPuissanceTNT0739WD                       770.071    785.893    0.98  0.32729    
+ChaineEcranWDPuissanceTNT0809WD                       700.282    757.863    0.92  0.35561    
+ChaineEcranWDPuissanceTNT0809WE                       414.060    867.929    0.48  0.63338    
+ChaineEcranWDPuissanceTNT0839WD                       759.834    756.380    1.00  0.31525    
+ChaineEcranWDPuissanceTNT0839WE                       389.070    860.585    0.45  0.65126    
+ChaineEcranWDPuissanceTNT0900WD                       940.751    764.048    1.23  0.21839    
+ChaineEcranWDPuissanceTNT0930WD                       942.819    721.126    1.31  0.19124    
+ChaineEcranWDPuissanceTNT1030WD                       870.825    709.928    1.23  0.22013    
+ChaineEcranWDPuissanceTNT1100WD                       943.241    692.694    1.36  0.17347    
+ChaineEcranWDPuissanceTNT1100WE                       633.557    896.070    0.71  0.47964    
+ChaineEcranWDPuissanceTNT1130WD                       945.566    687.089    1.38  0.16894    
+ChaineEcranWDPuissanceTNT1130WE                       702.844    865.481    0.81  0.41686    
+ChaineEcranWDPuissanceTNT1150WD                       973.373    697.814    1.39  0.16323    
+ChaineEcranWDPuissanceTNT1200WE                       669.522    840.556    0.80  0.42584    
+ChaineEcranWDPuissanceTNT1220WD                       923.650    674.674    1.37  0.17117    
+ChaineEcranWDPuissanceTNT1230WD                       913.582    666.874    1.37  0.17088    
+ChaineEcranWDPuissanceTNT1230WE                       630.963    848.395    0.74  0.45715    
+ChaineEcranWDPuissanceTNT1250WD                       843.891    664.511    1.27  0.20428    
+ChaineEcranWDPuissanceTNT1320WD                       800.548    662.583    1.21  0.22713    
+ChaineEcranWDPuissanceTNT1320WE                       510.995    864.467    0.59  0.55453    
+ChaineEcranWDPuissanceTNT1340WE                       590.694    849.182    0.70  0.48677    
+ChaineEcranWDPuissanceTNT1350WD                       860.787    641.704    1.34  0.17997    
+ChaineEcranWDPuissanceTNT1350WE                       543.133    788.385    0.69  0.49097    
+ChaineEcranWDPuissanceTNT1420WD                       829.888    638.607    1.30  0.19394    
+ChaineEcranWDPuissanceTNT1420WE                       535.992    791.496    0.68  0.49838    
+ChaineEcranWDPuissanceTNT1429WE                       863.512    800.242    1.08  0.28071    
+ChaineEcranWDPuissanceTNT1440WE                       463.756    785.237    0.59  0.55487    
+ChaineEcranWDPuissanceTNT1500WD                       750.146    630.157    1.19  0.23405    
+ChaineEcranWDPuissanceTNT1500WE                       433.838    759.333    0.57  0.56784    
+ChaineEcranWDPuissanceTNT1530WD                       781.256    630.007    1.24  0.21512    
+ChaineEcranWDPuissanceTNT1540WE                       440.513    764.584    0.58  0.56459    
+ChaineEcranWDPuissanceTNT1610WD                       718.193    613.621    1.17  0.24200    
+ChaineEcranWDPuissanceTNT1700WE                       432.418    747.311    0.58  0.56291    
+ChaineEcranWDPuissanceTNT1710WD                      -114.803    611.048   -0.19  0.85099    
+ChaineEcranWDPuissanceTNT1710WE                      -378.702    769.996   -0.49  0.62291    
+ChaineEcranWDPuissanceTNT1800WD                      -174.798    623.697   -0.28  0.77931    
+ChaineEcranWDPuissanceTNT1800WE                      -329.126    770.319   -0.43  0.66924    
+ChaineEcranWDPuissanceTNT1820WD                      -156.657    647.432   -0.24  0.80883    
+ChaineEcranWDPuissanceTNT1820WE                      -572.902    737.553   -0.78  0.43741    
+ChaineEcranWDPuissanceTNT1850WD                      -146.368    656.650   -0.22  0.82364    
+ChaineEcranWDPuissanceTNT1850WE                      -583.717    751.877   -0.78  0.43765    
+ChaineEcranWDPuissanceTNT1910WD                      -106.164    626.254   -0.17  0.86541    
+ChaineEcranWDPuissanceTNT1910WE                      -539.206    686.458   -0.79  0.43228    
+ChaineEcranWDPuissanceTNT1930WE                      -521.637    666.447   -0.78  0.43390    
+ChaineEcranWDPuissanceTNT2000WD                      -282.930    634.469   -0.45  0.65570    
+ChaineEcranWDPuissanceTNT2000WE                      -653.579    605.538   -1.08  0.28059    
+ChaineEcranWDPuissanceTNT2020WD                      -640.803    488.330   -1.31  0.18962    
+ChaineEcranWDPuissanceTNT2040WD                      -300.490    495.964   -0.61  0.54468    
+ChaineEcranWDPuissanceTNT2050WD                      -145.930    482.495   -0.30  0.76235    
+ChaineEcranWDPuissanceTNT2060WD                      -463.513    463.157   -1.00  0.31708    
+ChaineEcranWDPuissanceTNT2060WE                      -448.255    609.329   -0.74  0.46204    
+ChaineEcranWDPuissanceTNT2140WD                      -422.991    337.671   -1.25  0.21050    
+ChaineEcranWDPuissanceTNT2140WE                      -765.898    544.700   -1.41  0.15988    
+ChaineEcranWDPuissanceTNT2160WD                      -685.916    318.913   -2.15  0.03163 *  
+ChaineEcranWDPuissanceTNT2160WE                      -804.513    572.655   -1.40  0.16024    
+ChaineEcranWDPuissanceTNT2180WD                      -336.051    389.383   -0.86  0.38824    
+ChaineEcranWDPuissanceTNT2360WD                            NA         NA      NA       NA    
+ChaineEcranWDSerieClub0851WD                          687.978    710.504    0.97  0.33303    
+ChaineEcranWDSerieClub0911WE                         -647.703    597.957   -1.08  0.27888    
+ChaineEcranWDSerieClub0921WD                          630.581    714.039    0.88  0.37730    
+ChaineEcranWDSerieClub0951WD                          705.018    709.340    0.99  0.32041    
+ChaineEcranWDSerieClub0951WE                         -688.091    587.580   -1.17  0.24174    
+ChaineEcranWDSerieClub1001WD                          657.576    695.093    0.95  0.34427    
+ChaineEcranWDSerieClub1001WE                         -712.441    517.770   -1.38  0.16901    
+ChaineEcranWDSerieClub1011WD                          796.710    652.753    1.22  0.22243    
+ChaineEcranWDSerieClub1011WE                         -707.294    542.381   -1.30  0.19239    
+ChaineEcranWDSerieClub1041WD                          691.654    652.420    1.06  0.28923    
+ChaineEcranWDSerieClub1041WE                         -652.659    551.619   -1.18  0.23691    
+ChaineEcranWDSerieClub1141WE                         -755.814    548.339   -1.38  0.16827    
+ChaineEcranWDSerieClub1211WD                          750.656    639.425    1.17  0.24058    
+ChaineEcranWDSerieClub1251WD                          768.006    628.678    1.22  0.22202    
+ChaineEcranWDSerieClub1301WE                         -734.529    560.934   -1.31  0.19055    
+ChaineEcranWDSerieClub1321WE                         -769.926    554.729   -1.39  0.16534    
+ChaineEcranWDSerieClub1341WD                          972.957    625.324    1.56  0.11991    
+ChaineEcranWDSerieClub1401WD                          818.808    603.131    1.36  0.17477    
+ChaineEcranWDSerieClub1401WE                         -759.124    606.683   -1.25  0.21101    
+ChaineEcranWDSerieClub1451WD                          795.697    580.225    1.37  0.17044    
+ChaineEcranWDSerieClub1451WE                        -1125.931    606.456   -1.86  0.06354 .  
+ChaineEcranWDSerieClub1521WD                          709.029    575.430    1.23  0.21805    
+ChaineEcranWDSerieClub1531WE                        -1337.300    676.379   -1.98  0.04819 *  
+ChaineEcranWDSerieClub1541WE                        -1257.677    706.416   -1.78  0.07519 .  
+ChaineEcranWDSerieClub1551WE                        -1206.261    699.974   -1.72  0.08502 .  
+ChaineEcranWDSerieClub1601WD                          744.836    577.578    1.29  0.19737    
+ChaineEcranWDSerieClub1611WD                          716.704    560.467    1.28  0.20115    
+ChaineEcranWDSerieClub1621WE                        -1154.914    750.165   -1.54  0.12386    
+ChaineEcranWDSerieClub1651WE                        -1088.171    745.775   -1.46  0.14472    
+ChaineEcranWDSerieClub1701WD                          732.475    559.314    1.31  0.19051    
+ChaineEcranWDSerieClub1741WD                          -26.437    554.838   -0.05  0.96200    
+ChaineEcranWDSerieClub1751WE                        -1764.359    715.629   -2.47  0.01378 *  
+ChaineEcranWDSerieClub1811WE                        -2094.148    727.176   -2.88  0.00403 ** 
+ChaineEcranWDSerieClub1821WD                         -140.792    552.897   -0.25  0.79903    
+ChaineEcranWDSerieClub1841WE                        -1564.574    699.041   -2.24  0.02534 *  
+ChaineEcranWDSerieClub1921WD                         -149.314    568.737   -0.26  0.79294    
+ChaineEcranWDSerieClub1921WE                        -1568.701    714.703   -2.19  0.02831 *  
+ChaineEcranWDSerieClub1941WD                           -4.477    530.307   -0.01  0.99326    
+ChaineEcranWDSerieClub1951WE                        -1664.852    725.842   -2.29  0.02193 *  
+ChaineEcranWDSerieClub2031WD                         -112.994    354.238   -0.32  0.74978    
+ChaineEcranWDSerieClub2031WE                         -292.087    541.974   -0.54  0.59000    
+ChaineEcranWDSerieClub2051WD                          -89.708    364.202   -0.25  0.80547    
+ChaineEcranWDSerieClub2051WE                         -335.037    536.806   -0.62  0.53262    
+ChaineEcranWDSerieClub2121WE                         -402.601    466.455   -0.86  0.38820    
+ChaineEcranWDSerieClub2131WD                         -202.310    228.984   -0.88  0.37709    
+ChaineEcranWDSerieClub2141WD                         -192.660    229.105   -0.84  0.40051    
+ChaineEcranWDSerieClub2211WE                         -385.165    468.093   -0.82  0.41071    
+ChaineEcranWDSerieClub2221WE                         -270.555    364.396   -0.74  0.45790    
+ChaineEcranWDSerieClub2231WD                           -4.363    190.915   -0.02  0.98177    
+ChaineEcranWDSerieClub2241WE                         -266.737    354.705   -0.75  0.45216    
+ChaineEcranWDSerieClub2251WD                               NA         NA      NA       NA    
+ChaineEcranWDTeva0721WD                              1005.879    693.029    1.45  0.14685    
+ChaineEcranWDTeva0721WE                              1061.957    760.432    1.40  0.16274    
+ChaineEcranWDTeva0741WE                               756.423    736.401    1.03  0.30448    
+ChaineEcranWDTeva0901WD                              1061.516    679.263    1.56  0.11830    
+ChaineEcranWDTeva0931WD                              1287.472    671.988    1.92  0.05554 .  
+ChaineEcranWDTeva0931WE                               825.678    701.482    1.18  0.23934    
+ChaineEcranWDTeva1001WD                              1254.328    661.681    1.90  0.05817 .  
+ChaineEcranWDTeva1001WE                              1078.846    702.379    1.54  0.12473    
+ChaineEcranWDTeva1011WE                              1230.512    719.262    1.71  0.08730 .  
+ChaineEcranWDTeva1021WE                              1151.507    726.840    1.58  0.11332    
+ChaineEcranWDTeva1051WD                              1224.110    660.221    1.85  0.06390 .  
+ChaineEcranWDTeva1051WE                              1261.751    718.529    1.76  0.07926 .  
+ChaineEcranWDTeva1101WE                              1124.836    716.118    1.57  0.11643    
+ChaineEcranWDTeva1111WE                              1137.027    750.876    1.51  0.13014    
+ChaineEcranWDTeva1121WE                              1242.090    708.673    1.75  0.07983 .  
+ChaineEcranWDTeva1131WD                              1160.786    636.077    1.82  0.06819 .  
+ChaineEcranWDTeva1131WE                              1004.506    712.934    1.41  0.15902    
+ChaineEcranWDTeva1151WE                               828.755    767.820    1.08  0.28058    
+ChaineEcranWDTeva1211WD                              1180.896    638.182    1.85  0.06443 .  
+ChaineEcranWDTeva1211WE                              1142.852    672.194    1.70  0.08928 .  
+ChaineEcranWDTeva1221WE                              1092.647    639.782    1.71  0.08785 .  
+ChaineEcranWDTeva1231WD                              1203.411    580.896    2.07  0.03845 *  
+ChaineEcranWDTeva1231WE                              1037.734    646.973    1.60  0.10890    
+ChaineEcranWDTeva1241WE                               886.743    634.870    1.40  0.16268    
+ChaineEcranWDTeva1251WD                              1341.951    584.201    2.30  0.02174 *  
+ChaineEcranWDTeva1251WE                              1103.554    635.531    1.74  0.08267 .  
+ChaineEcranWDTeva1301WD                              1285.156    576.350    2.23  0.02589 *  
+ChaineEcranWDTeva1310WD                              1297.263    625.196    2.07  0.03814 *  
+ChaineEcranWDTeva1311WD                              1380.434    599.541    2.30  0.02143 *  
+ChaineEcranWDTeva1321WD                              1296.929    574.804    2.26  0.02418 *  
+ChaineEcranWDTeva1331WE                               984.135    670.243    1.47  0.14220    
+ChaineEcranWDTeva1341WD                              1242.265    567.356    2.19  0.02869 *  
+ChaineEcranWDTeva1341WE                              1172.815    646.778    1.81  0.06996 .  
+ChaineEcranWDTeva1351WE                              1037.241    618.394    1.68  0.09366 .  
+ChaineEcranWDTeva1401WE                               871.078    624.436    1.39  0.16320    
+ChaineEcranWDTeva1411WD                               971.754    571.426    1.70  0.08920 .  
+ChaineEcranWDTeva1411WE                               928.060    610.243    1.52  0.12849    
+ChaineEcranWDTeva1421WD                              1101.753    563.207    1.96  0.05060 .  
+ChaineEcranWDTeva1441WE                              1057.077    616.553    1.71  0.08662 .  
+ChaineEcranWDTeva1451WD                              1054.326    579.099    1.82  0.06884 .  
+ChaineEcranWDTeva1451WE                               802.201    623.332    1.29  0.19828    
+ChaineEcranWDTeva1501WE                              1010.607    604.992    1.67  0.09501 .  
+ChaineEcranWDTeva1511WD                              1040.484    555.611    1.87  0.06128 .  
+ChaineEcranWDTeva1511WE                               815.790    596.168    1.37  0.17137    
+ChaineEcranWDTeva1521WE                               774.004    600.180    1.29  0.19736    
+ChaineEcranWDTeva1531WE                               919.197    599.892    1.53  0.12564    
+ChaineEcranWDTeva1541WE                               821.950    582.045    1.41  0.15808    
+ChaineEcranWDTeva1551WE                               732.959    616.392    1.19  0.23456    
+ChaineEcranWDTeva1611WD                              1074.997    540.806    1.99  0.04700 *  
+ChaineEcranWDTeva1611WE                               736.040    589.872    1.25  0.21228    
+ChaineEcranWDTeva1641WD                              1215.532    546.091    2.23  0.02615 *  
+ChaineEcranWDTeva1651WE                               569.244    607.417    0.94  0.34881    
+ChaineEcranWDTeva1721WE                               -83.296    584.652   -0.14  0.88672    
+ChaineEcranWDTeva1731WD                               409.447    538.585    0.76  0.44722    
+ChaineEcranWDTeva1741WD                               328.209    538.078    0.61  0.54197    
+ChaineEcranWDTeva1741WE                                83.697    587.623    0.14  0.88675    
+ChaineEcranWDTeva1801WD                               104.272    517.024    0.20  0.84019    
+ChaineEcranWDTeva1801WE                              -173.473    564.171   -0.31  0.75851    
+ChaineEcranWDTeva1811WE                               115.166    556.355    0.21  0.83603    
+ChaineEcranWDTeva1831WD                               121.308    546.659    0.22  0.82441    
+ChaineEcranWDTeva1831WE                               -78.965    538.728   -0.15  0.88348    
+ChaineEcranWDTeva1841WD                                -5.113    490.739   -0.01  0.99169    
+ChaineEcranWDTeva1851WD                               355.970    441.081    0.81  0.41976    
+ChaineEcranWDTeva1851WE                                25.027    506.984    0.05  0.96064    
+ChaineEcranWDTeva1921WE                               152.243    501.302    0.30  0.76140    
+ChaineEcranWDTeva1931WD                                96.142    455.155    0.21  0.83273    
+ChaineEcranWDTeva1931WE                               189.543    501.612    0.38  0.70558    
+ChaineEcranWDTeva1941WD                               294.798    393.760    0.75  0.45416    
+ChaineEcranWDTeva2021WE                                -3.050    405.128   -0.01  0.99399    
+ChaineEcranWDTeva2031WE                                85.527    448.123    0.19  0.84866    
+ChaineEcranWDTeva2051WD                               295.827    374.235    0.79  0.42935    
+ChaineEcranWDTeva2051WE                               -65.035    401.025   -0.16  0.87119    
+ChaineEcranWDTeva2131WE                               454.141    336.006    1.35  0.17669    
+ChaineEcranWDTeva2141WD                               254.097    259.161    0.98  0.32700    
+ChaineEcranWDTeva2141WE                               205.003    258.135    0.79  0.42721    
+ChaineEcranWDTeva2151WD                               244.261    229.383    1.06  0.28709    
+ChaineEcranWDTeva2151WE                               359.175    210.021    1.71  0.08741 .  
+ChaineEcranWDTeva2221WD                               183.019    252.234    0.73  0.46819    
+ChaineEcranWDTeva2221WE                               214.456    217.259    0.99  0.32373    
+ChaineEcranWDTeva2251WD                                44.720    229.409    0.19  0.84547    
+ChaineEcranWDTeva2251WE                                    NA         NA      NA       NA    
+ChaineEcranWDTeva2321WD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6ACCESSWE                                  NA         NA      NA       NA    
+ChaineDaypartWDM6DAYWD                                 75.903    253.354    0.30  0.76452    
+ChaineDaypartWDM6DAYWE                                     NA         NA      NA       NA    
+ChaineDaypartWDM6NIGHTWD                            -1060.685    224.031   -4.73  2.4e-06 ***
+ChaineDaypartWDM6NIGHTWE                             -164.870    254.524   -0.65  0.51723    
+ChaineDaypartWDM6PEAKWD                                    NA         NA      NA       NA    
+ChaineDaypartWDM6PEAKWE                                    NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereACCESSWD                  128.619    410.155    0.31  0.75387    
+ChaineDaypartWDParisPremiereACCESSWE                   36.554    531.068    0.07  0.94513    
+ChaineDaypartWDParisPremiereDAYWD                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereDAYWE                          NA         NA      NA       NA    
+ChaineDaypartWDParisPremiereNIGHTWD                   142.715    379.846    0.38  0.70717    
+ChaineDaypartWDParisPremiereNIGHTWE                   -22.431    371.146   -0.06  0.95182    
+ChaineDaypartWDParisPremierePEAKWD                         NA         NA      NA       NA    
+ChaineDaypartWDParisPremierePEAKWE                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTACCESSWD                    91.613    336.471    0.27  0.78544    
+ChaineDaypartWDPuissanceTNTACCESSWE                        NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWD                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTDAYWE                           NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWD                         NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTNIGHTWE                    203.805    351.974    0.58  0.56264    
+ChaineDaypartWDPuissanceTNTPEAKWD                          NA         NA      NA       NA    
+ChaineDaypartWDPuissanceTNTPEAKWE                          NA         NA      NA       NA    
+ChaineDaypartWDSerieClubACCESSWD                       53.928    245.374    0.22  0.82607    
+ChaineDaypartWDSerieClubACCESSWE                     1422.892    701.787    2.03  0.04276 *  
+ChaineDaypartWDSerieClubDAYWD                              NA         NA      NA       NA    
+ChaineDaypartWDSerieClubDAYWE                        1578.001    744.809    2.12  0.03426 *  
+ChaineDaypartWDSerieClubNIGHTWD                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubNIGHTWE                            NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWD                             NA         NA      NA       NA    
+ChaineDaypartWDSerieClubPEAKWE                             NA         NA      NA       NA    
+ChaineDaypartWDTevaACCESSWD                           166.094    386.427    0.43  0.66738    
+ChaineDaypartWDTevaACCESSWE                                NA         NA      NA       NA    
+ChaineDaypartWDTevaDAYWD                              -63.808    486.254   -0.13  0.89561    
+ChaineDaypartWDTevaDAYWE                                   NA         NA      NA       NA    
+ChaineDaypartWDTevaNIGHTWD                            184.689    215.751    0.86  0.39210    
+ChaineDaypartWDTevaNIGHTWE                                 NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWD                                  NA         NA      NA       NA    
+ChaineDaypartWDTevaPEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS18WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WD                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6ACCESS19WE                              NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY0309WD                          -28.909    544.121   -0.05  0.95763    
+ChaineMMDaypartWDM6DAY0309WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1011WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1213WD                           96.289    256.672    0.38  0.70760    
+ChaineMMDaypartWDM6DAY1213WE                          418.105    361.753    1.16  0.24793    
+ChaineMMDaypartWDM6DAY1415WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1415WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WD                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6DAY1617WE                               NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT0002WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6NIGHT2223WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWD                                  NA         NA      NA       NA    
+ChaineMMDaypartWDM6PEAKWE                                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS18WD             -324.322    343.143   -0.95  0.34472    
+ChaineMMDaypartWDParisPremiereACCESS18WE              323.932    337.467    0.96  0.33725    
+ChaineMMDaypartWDParisPremiereACCESS19WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereACCESS19WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY0309WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1011WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1213WD                 4.892    505.175    0.01  0.99227    
+ChaineMMDaypartWDParisPremiereDAY1213WE               -20.122    352.259   -0.06  0.95445    
+ChaineMMDaypartWDParisPremiereDAY1415WD               -14.295    391.729   -0.04  0.97089    
+ChaineMMDaypartWDParisPremiereDAY1415WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereDAY1617WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT0002WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WD                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremiereNIGHT2223WE                  NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWD                       NA         NA      NA       NA    
+ChaineMMDaypartWDParisPremierePEAKWE                       NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS18WE                22.711    380.838    0.06  0.95245    
+ChaineMMDaypartWDPuissanceTNTACCESS19WD                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTACCESS19WE                    NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY0309WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1011WD                173.144    434.202    0.40  0.69012    
+ChaineMMDaypartWDPuissanceTNTDAY1011WE                106.624    547.704    0.19  0.84567    
+ChaineMMDaypartWDPuissanceTNTDAY1213WD                121.622    248.094    0.49  0.62404    
+ChaineMMDaypartWDPuissanceTNTDAY1213WE                 81.428    390.714    0.21  0.83494    
+ChaineMMDaypartWDPuissanceTNTDAY1415WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1415WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WD                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTDAY1617WE                     NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WD                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTNIGHT2223WE                   NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWD                        NA         NA      NA       NA    
+ChaineMMDaypartWDPuissanceTNTPEAKWE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS18WE                 -163.253    269.439   -0.61  0.54466    
+ChaineMMDaypartWDSerieClubACCESS19WD                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubACCESS19WE                       NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY0309WD                   155.999    557.365    0.28  0.77960    
+ChaineMMDaypartWDSerieClubDAY0309WE                  -268.721    648.316   -0.41  0.67857    
+ChaineMMDaypartWDSerieClubDAY1011WD                   233.369    491.634    0.47  0.63508    
+ChaineMMDaypartWDSerieClubDAY1011WE                  -115.607    591.505   -0.20  0.84507    
+ChaineMMDaypartWDSerieClubDAY1213WD                    99.637    327.141    0.30  0.76073    
+ChaineMMDaypartWDSerieClubDAY1213WE                  -157.281    482.437   -0.33  0.74445    
+ChaineMMDaypartWDSerieClubDAY1415WD                    32.747    203.155    0.16  0.87196    
+ChaineMMDaypartWDSerieClubDAY1415WE                   223.285    283.262    0.79  0.43065    
+ChaineMMDaypartWDSerieClubDAY1617WD                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubDAY1617WE                        NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WD                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubNIGHT2223WE                      NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWD                           NA         NA      NA       NA    
+ChaineMMDaypartWDSerieClubPEAKWE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS18WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WD                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaACCESS19WE                            NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY0309WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1011WD                        204.069    497.801    0.41  0.68190    
+ChaineMMDaypartWDTevaDAY1011WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1213WD                        142.572    293.446    0.49  0.62713    
+ChaineMMDaypartWDTevaDAY1213WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1415WD                        134.291    218.756    0.61  0.53937    
+ChaineMMDaypartWDTevaDAY1415WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WD                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaDAY1617WE                             NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WD                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaNIGHT2223WE                           NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWD                                NA         NA      NA       NA    
+ChaineMMDaypartWDTevaPEAKWE                                NA         NA      NA       NA    
+creaCOEUR DES FEMMES 20'' v2                          296.082    118.660    2.50  0.01268 *  
+creaCOEUR DES FEMMES 30'' v1                          465.566    119.235    3.90  9.8e-05 ***
+creaDOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1   320.747    113.882    2.82  0.00491 ** 
+creaeffet push-up                                    -175.410    127.052   -1.38  0.16758    
+creaeffet sculptant                                   -78.638    113.238   -0.69  0.48749    
+creaeffet sculptant 12                                -52.337    118.999   -0.44  0.66013    
+creaEFFET SCULPTANT LA FEMME 12'' v2                  153.607    120.138    1.28  0.20122    
+creaEFFET SCULPTANT LA FEMME 20'' v1                  293.008    114.417    2.56  0.01053 *  
+creala chaussure pour toutes les morpho'              -31.625    116.377   -0.27  0.78585    
+creala lingerie pour toutes les morpho                -33.970    116.518   -0.29  0.77067    
+creala mode pour toutes les morpho                    -59.283    152.441   -0.39  0.69741    
+creala terrasse                                        -1.023    113.713   -0.01  0.99282    
+creamiroir                                            -38.889    118.694   -0.33  0.74322    
+creaversion de base                                    48.753    331.995    0.15  0.88327    
+budgetbrut                                              2.961      0.559    5.30  1.3e-07 ***
+budgetnet                                             -16.127      3.106   -5.19  2.3e-07 ***
+grp                                                   -92.619     14.296   -6.48  1.2e-10 ***
+grpref                                                433.571     35.494   12.22  < 2e-16 ***
+tavAA                                                 -48.938    138.029   -0.35  0.72297    
+tavAAA                                                -20.409    213.561   -0.10  0.92388    
+tavAAB                                                 -8.970    219.774   -0.04  0.96745    
+tavAAC                                                455.458    287.075    1.59  0.11280    
+tavAAD                                                348.002    287.659    1.21  0.22653    
+tavAAF                                                -68.231    275.572   -0.25  0.80447    
+tavAAG                                                  6.618    259.452    0.03  0.97965    
+tavAAI                                                 91.683    437.577    0.21  0.83406    
+tavAAM                                                170.778    294.024    0.58  0.56143    
+tavAB                                                 -96.583    126.975   -0.76  0.44697    
+tavABA                                                 30.002    176.903    0.17  0.86535    
+tavABB                                                 59.790    159.724    0.37  0.70820    
+tavABC                                                -41.644    294.160   -0.14  0.88744    
+tavABF                                                 30.984    153.263    0.20  0.83981    
+tavABL                                                147.731    294.201    0.50  0.61563    
+tavAC                                                  67.962    117.443    0.58  0.56288    
+tavACA                                               -121.191    120.674   -1.00  0.31538    
+tavACB                                                219.351    128.434    1.71  0.08784 .  
+tavACC                                                105.642    119.743    0.88  0.37777    
+tavAE                                                -198.838    331.146   -0.60  0.54828    
+tavAF                                                -139.374    331.391   -0.42  0.67412    
+tavC                                                  368.126    236.115    1.56  0.11916    
+tavCAA                                                164.263    258.069    0.64  0.52453    
+tavCBA                                                  2.004    202.185    0.01  0.99209    
+tavCBB                                                416.622    215.168    1.94  0.05300 .  
+tavCC                                                 -15.408    162.496   -0.09  0.92447    
+tavCD                                                -323.422    191.969   -1.68  0.09222 .  
+tavCE                                                      NA         NA      NA       NA    
+tavCFA                                                221.641    381.361    0.58  0.56119    
+tavD                                                  -60.346    294.668   -0.20  0.83776    
+tavDAA                                               -178.671    392.400   -0.46  0.64893    
+tavDDB                                               -170.277    159.899   -1.06  0.28707    
+tavDG                                                 -63.193    171.619   -0.37  0.71276    
+tavE                                                 -130.258    315.262   -0.41  0.67953    
+tavEA                                                 -70.201    132.139   -0.53  0.59530    
+tavEAG                                                 38.245    388.789    0.10  0.92165    
+tavEAJ                                                -88.037    389.330   -0.23  0.82113    
+tavEAK                                                -22.008    282.862   -0.08  0.93799    
+tavEAL                                                460.363    171.092    2.69  0.00720 ** 
+tavEB                                                -211.131    133.533   -1.58  0.11404    
+tavEBD                                                 52.423    118.923    0.44  0.65940    
+tavEBF                                                -36.768    142.950   -0.26  0.79705    
+tavEBJ                                               -291.904    142.766   -2.04  0.04104 *  
+tavEBK                                                -59.537    195.018   -0.31  0.76018    
+tavEBL                                                 76.221    116.469    0.65  0.51292    
+tavEBN                                                318.435    212.913    1.50  0.13494    
+tavEBP                                                     NA         NA      NA       NA    
+tavFBG                                               -667.221    317.738   -2.10  0.03588 *  
+tavFBM                                               -241.042    266.225   -0.91  0.36538    
+tavG                                                  136.863    335.337    0.41  0.68322    
+tavIH                                                      NA         NA      NA       NA    
+tavJ                                                  -36.863    113.418   -0.33  0.74521    
+hour1                                                      NA         NA      NA       NA    
+hour7                                                  50.938    162.012    0.31  0.75325    
+hour8                                                  -3.417     88.203   -0.04  0.96911    
+hour9                                                      NA         NA      NA       NA    
+hour10                                                -11.941     76.501   -0.16  0.87598    
+hour11                                                     NA         NA      NA       NA    
+hour12                                                -12.752     76.229   -0.17  0.86717    
+hour13                                                     NA         NA      NA       NA    
+hour14                                               -102.139     72.823   -1.40  0.16093    
+hour15                                                     NA         NA      NA       NA    
+hour16                                               -825.353     87.274   -9.46  < 2e-16 ***
+hour17                                                     NA         NA      NA       NA    
+hour18                                                     NA         NA      NA       NA    
+hour19                                                     NA         NA      NA       NA    
+hour20                                                -52.563    270.365   -0.19  0.84588    
+hour21                                                     NA         NA      NA       NA    
+hour22                                                -21.897     79.478   -0.28  0.78296    
+hour23                                                     NA         NA      NA       NA    
+month2                                               -149.437     18.920   -7.90  5.0e-15 ***
+month3                                                  5.551     33.777    0.16  0.86949    
+month4                                                  2.812     23.349    0.12  0.90415    
+month5                                                     NA         NA      NA       NA    
+dayofweek2                                           -388.490    435.590   -0.89  0.37259    
+dayofweek3                                           -402.950    435.489   -0.93  0.35495    
+dayofweek4                                           -410.684    435.917   -0.94  0.34627    
+dayofweek5                                           -377.681    436.325   -0.87  0.38683    
+dayofweek6                                           -425.510    434.730   -0.98  0.32782    
+dayofweek7                                            -32.493     34.446   -0.94  0.34567    
+tavtapAA                                              140.905    113.755    1.24  0.21564    
+tavtapAAA                                             363.016    237.873    1.53  0.12717    
+tavtapAAB                                                  NA         NA      NA       NA    
+tavtapAAC                                                  NA         NA      NA       NA    
+tavtapAAD                                                  NA         NA      NA       NA    
+tavtapAAF                                              -2.664    369.328   -0.01  0.99425    
+tavtapAAG                                                  NA         NA      NA       NA    
+tavtapAAI                                              56.354    478.081    0.12  0.90618    
+tavtapAAM                                                  NA         NA      NA       NA    
+tavtapAB                                               98.352     89.953    1.09  0.27439    
+tavtapABA                                              59.039    186.750    0.32  0.75194    
+tavtapABB                                            -283.344    169.727   -1.67  0.09522 .  
+tavtapABC                                            -127.685    342.464   -0.37  0.70931    
+tavtapABF                                             -59.941    158.823   -0.38  0.70592    
+tavtapAC                                              -70.747     76.762   -0.92  0.35684    
+tavtapACA                                                  NA         NA      NA       NA    
+tavtapACB                                             -70.217     95.345   -0.74  0.46155    
+tavtapACC                                             -72.553     71.969   -1.01  0.31355    
+tavtapAE                                                   NA         NA      NA       NA    
+tavtapAF                                                   NA         NA      NA       NA    
+tavtapC                                              -299.931    237.012   -1.27  0.20588    
+tavtapCAA                                              14.777    264.506    0.06  0.95545    
+tavtapCBA                                             112.510    181.866    0.62  0.53623    
+tavtapCBB                                            -341.547    196.352   -1.74  0.08213 .  
+tavtapCC                                              -49.265    163.811   -0.30  0.76365    
+tavtapCD                                                   NA         NA      NA       NA    
+tavtapCFA                                                  NA         NA      NA       NA    
+tavtapDDB                                             397.637    146.983    2.71  0.00689 ** 
+tavtapE                                               135.799    319.502    0.43  0.67087    
+tavtapEA                                               61.242    104.356    0.59  0.55738    
+tavtapEAG                                                  NA         NA      NA       NA    
+tavtapEAJ                                             142.135    380.949    0.37  0.70911    
+tavtapEAK                                                  NA         NA      NA       NA    
+tavtapEAL                                                  NA         NA      NA       NA    
+tavtapEB                                              129.717    103.136    1.26  0.20866    
+tavtapEBD                                             185.314    234.948    0.79  0.43037    
+tavtapEBJ                                             368.264    374.288    0.98  0.32530    
+tavtapEBL                                             -30.258     84.781   -0.36  0.72122    
+tavtapJ                                               -27.491    105.218   -0.26  0.79391    
+tavtapSPLIT                                                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 249 on 1705 degrees of freedom
+Multiple R-squared:  0.821,	Adjusted R-squared:  0.769 
+F-statistic: 15.8 on 497 and 1705 DF,  p-value: <2e-16
+
+        date Visite.gain TypeWeekDay length   channel DAYPART MMDAYPART   ChaineEcranWD ChaineDaypartWD
+1 2014-01-19         -88          WE     20        M6     DAY   DAY1617        M61810WE         M6DAYWE
+2 2014-01-19        1537          WE     30        M6     DAY   DAY1415        M61550WE         M6DAYWE
+3 2014-01-19         -35          WE     20 SerieClub     DAY   DAY1415 SerieClub1841WE  SerieClubDAYWE
+4 2014-01-19        3392          WE     20        M6   NIGHT NIGHT2223        M62160WE       M6NIGHTWE
+5 2014-01-19         835          WE     30      Teva    PEAK      PEAK      Teva2151WE      TevaPEAKWE
+6 2014-01-19        -168          WE     20 SerieClub    PEAK      PEAK SerieClub1001WE SerieClubPEAKWE
+   ChaineMMDaypartWD                                            crea budgetbrut budgetnet  grp grpref tav tavtap
+1        M6DAY1617WE DOUBLE PROFONDEUR DE BONNET LA TERRASSE 20'' v1      13770    2478.6 4.14   2.59 DDB    DDB
+2        M6DAY1415WE                        COEUR DES FEMMES 30'' v1      15000    2700.0 4.41   2.46 EAL    EAL
+3 SerieClubDAY1415WE                                 version de base        397      79.4 0.09   0.06  AC     AC
+4      M6NIGHT2223WE                EFFET SCULPTANT LA FEMME 20'' v1      27540    4957.2 5.12   3.99 DDB    DDB
+5         TevaPEAKWE                        COEUR DES FEMMES 30'' v1       1210     242.0 0.38   0.27  AC     AC
+6    SerieClubPEAKWE                                 version de base        138      27.6 0.06   0.03  AC     AC
+   EmavShort hour month dayofweek festival
+1 66 MINUTES   17     1         1        0
+2 RECHERCHE    15     1         1        0
+3 PREUVE A L   15     1         1        0
+4 ZONE INTER   22     1         1        0
+5 DROP DEAD    21     1         1        0
+6 NEW YORK 9   21     1         1        0
