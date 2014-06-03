@@ -18,7 +18,14 @@ predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
 #          lty=c(1,1,1),                    # Line type  
 #          lwd=c(1,1,1),                    # Line width  
 #          title="Time series")  
+x <- cor(originY[traningSize:FulldataSize],pre[traningSize:FulldataSize]) 
+y <- MAE(originY[traningSize:FulldataSize],pre[traningSize:FulldataSize])
+print(paste("COR",x))
+print(paste("Mean Err",y))
   return (pre)
+}
+MAE <- function (actual, pre){
+  mean((actual - pre) * (actual - pre))
 }
 
 predictAndPlotSpecial<-function(index,subdata,lm_model,traningSize,FulldataSize){
