@@ -1,28 +1,29 @@
 data <- read.csv("TripAdvisor//tidyData.csv",header=TRUE)
-FulldataSize <- nrow(data)
+FulldataSize <- 607
 traningSize <- as.integer(0.8 * FulldataSize)
-
-cf<- c( "weekday" , "festival","month")
+#, "festival"
+cf<- c( "weekday" ,"month")
 data[,cf]<- lapply(data[,cf], as.factor)
+print(head(data))
 
-sf <- c("date","sessions","festival",
-         "nthweek","weekday" , "month","index")
+sf <- c("date","sessions","energy.consumption","index",
+         "nthweek","weekday" , "month")
+
 data <- data[,sf]
-
+#,"Holidays", "Cnt.to.Holidays" ,"Cnt.after.Holidays"
 subdata <- data[,c(-1)]
 print (names(subdata))
 index<-factor(data[,1])
 #names (subdata) <- c("y","x1","x2","x3","x4","x5","x6")
 traindata <- subdata[1:traningSize,]
-
+#,"Holidays"
 
 
 #the_best_model <- lm(y~poly(x1,2)+poly(x2,10)+poly(x3,5)+poly(x4,21)+poly(x5,3)+x6,data=traindata, x = TRUE)
 
 
-linear_model <- lm(sessions~(weekday+month+festival)^2+poly(nthweek,21)+index,data=traindata)
+linear_model <- lm(sessions~(.-index)^2+poly(nthweek,21)+index,data=traindata)
 
-#testing_model <- lm(y~I(x1^2)+I(x2^2)+I(x2^5)+I(x2^7)+I(x2^10)+x3+I(x3^4)+poly(x4,21)+x6,data=traindata)
 
 # library(MASS)
 # step <- stepAIC(the_best_model, direction="both")
@@ -35,7 +36,7 @@ print(summary(linear_model))
 predictAndPlot(index,subdata,linear_model,traningSize,FulldataSize)
 library(DAAG)
 
-cv.lm(df=traindata, linear_model, m=10) 
+#cv.lm(df=traindata, linear_model, m=10) 
 # x<-the_best_model$x
 # outs <- leaps(x, traindata[,1], int = FALSE, strictly.compatible = FALSE)
 # plot(outs$size, outs$Cp, log = "y", xlab = "p", ylab = expression(C[p]))

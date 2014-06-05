@@ -29,7 +29,7 @@ best_log_on_sale_model <- lm(log(y)~x1+x2+x3+x4+x5+poly(x7,2)+x8+poly(x6,7)+x9,d
 
 #check_model <- lm(y~I(x1^2)+I(x1^3)+I(x2^4)+I(x2^3)+I(x2^5)+I(x3^4)+I(x4^3)+I(x4^5)+I(x5^2)+poly(x7,2)+poly(x6,2)+I(x6^4),data=traindata, x = TRUE)
 
-source('C:/Users/zixing.liu/Desktop/regression/predictAndPlot.r')
+source('C:/Users/zixing.liu/Desktop/AD_impact_prediction/predictAndPlot.r')
 #predictAndPlot(index,subdata,the_best_model,traningSize,FulldataSize)
 #par(mfrow=c(2,1))
 #predictAndPlotSpecial(index,subdata,the_best_model ,traningSize,FulldataSize)
