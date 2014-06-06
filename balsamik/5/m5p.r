@@ -5,7 +5,7 @@ m5p_balsamik<- function (iii){
   #init
   data <- read.csv("tidyData.csv",header=TRUE)
   #data <-data[-c(1:1000),]
-  data <- data[data$Visite.gain > -50&data$Visite.gain < 1500,]
+  #data <- data[data$Visite.gain > -50&data$Visite.gain < 1500,]
   FulldataSize <- nrow(data)
   
   
