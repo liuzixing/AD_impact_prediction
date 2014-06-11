@@ -50,13 +50,13 @@ sf2 <- c("Visite.gain","hour","month","dayofweek","TypeWeekDay","nthweek"
   traindata <- subdata[1:traningSize,]
   
   #lm_model_pow1 <- lm(Visite.gain~.,data =traindata)
-  lm_model_pow2 <- lm(Visite.gain~poly(budgetbrut,5)+poly(budgetnet,5)+poly(grp,1)+poly(grpref,1)
-                      +poly(cumGrpRef,1)
-                      +poly(cumGrp,1)+poly(cumGrpTotal,1)+poly(cumGrpRefTotal,1)+poly(hour,1)
-                      +poly(dayofweek,1)+cos(cumGrpRef)+sin(cumGrpRefTotal)+
-                        (.-budgetbrut-budgetnet-grp-grpref-cumGrpRef
-                         -cumGrpTotal-cumGrpRefTotal-hour-cumGrp)
-                        ,data =traindata)
+#   lm_model_pow2 <- lm(Visite.gain~poly(budgetbrut,5)+poly(budgetnet,5)+poly(grp,1)+poly(grpref,1)
+#                       +poly(cumGrpRef,1)
+#                       +poly(cumGrp,1)+poly(cumGrpTotal,1)+poly(cumGrpRefTotal,1)+poly(hour,1)
+#                       +poly(dayofweek,1)+cos(cumGrpRef)+sin(cumGrpRefTotal)+
+#                         (.-budgetbrut-budgetnet-grp-grpref-cumGrpRef
+#                          -cumGrpTotal-cumGrpRefTotal-hour-cumGrp)
+#                         ,data =traindata)
   
   #sink("sink-examp.txt", split=TRUE)
   
@@ -68,7 +68,7 @@ sf2 <- c("Visite.gain","hour","month","dayofweek","TypeWeekDay","nthweek"
   # print (anova(lm_model_pow1,lm_model_pow1,test = "Chisq"))
   #print (summary(lm_model_pow1))d
   
-   predictAndPlot(index,subdata,lm_model_pow2,traningSize,FulldataSize)
+ #  predictAndPlot(index,subdata,lm_model_pow2,traningSize,FulldataSize)
 
 predictAndPlot<-function(index,subdata,lm_model,traningSize,FulldataSize){
   
