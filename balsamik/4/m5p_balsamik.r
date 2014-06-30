@@ -61,7 +61,7 @@ predictAndPlot<-function(index,subdata,model,traningSize,FulldataSize){
   return (y)
 }
 MAE <- function (actual, pre){
-  mean(abs(actual - pre))
+  mean((actual - pre)*(actual - pre))
 }
 
 
